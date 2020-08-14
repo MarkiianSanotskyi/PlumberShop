@@ -1,0 +1,1762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CatalogueInner</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/png">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/thumbs.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/media.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css" media="screen">
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox-buttons.css" media="screen">
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox-thumbs.css"  media="screen">
+</head>
+
+<body>
+<div class="wrapper">
+  <header>
+    <div class="top-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6 col-sm-3 col-md-2" id="logo"> <a href="index.html" title="Сантехника 24 – мебель и сантехника для ванных комнат"><img src="images/logo.gif" alt="Сантехника 24 – мебель и сантехника для ванных комнат"></a> </div>
+          <div class="col-xs-6 col-sm-2 col-md-4" id="cart"> <a class="btn btn-default btn-lg dropdown-toggle" href="cart.html"  rel="nofollow"> <span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;<small class="hidden-xs"> Заргузка...</small> </a> </div>
+          <div class="col-xs-12 col-sm-7 col-md-6 clearfix" id="bigphone">
+            <div class="pull-right">
+              <div id="wh" style="float:left; margin-top:0">Звоните!<br>
+                с 10:00 до 19:00</div>
+              <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>&nbsp; <span class="geo_msk"> <a href="tel:+84956629907" class="phone">8 (495) 662-99-07</a><br>
+              <a id="callback" data-toggle="modal" data-target="#callback-form" class="hidden-xs">Заказать обратный звонок</a> </span> <span class="geo_region"> <a href="tel:+88005558563" class="phone">8 (800) 555-85-63</a> <i class="i-block">Звонок бесплатный!</i> </span> </div>
+          </div>
+        </div>
+        
+       <!--POPUP CART-->
+        <div class="modal fade" id="cart-modal" tabindex="-1" role="dialog" aria-labelledby="cartlabel" aria-hidden="true" style="display: none;">
+          <div class="modal-dialog">
+            <div class="modal-content mobile-modal-padding">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <p class="modal-title h3" id="cartlabel">Ваша корзина</p>
+              </div>
+              <div class="modal-body modal-with-overflow">
+                <table class="table cart">
+                  <thead>
+                    <tr>
+                      <th>Изобр.</th>
+                      <th>Название товара</th>
+                      <th>Кол-во</th>
+                      <th>Стоимость</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="item-25450 item">
+                      <td><div class="thumbnail"><img src="images/img-new-products/185466_thumb.jpg" alt="Sunrise раковина+пьедестал"></div></td>
+                      <td><a href="#">Vitra Sunrise раковина+пьедестал</a></td>
+                      <td class="count"><div class="input-group"> <span class="input-group-btn">
+                          <button class="btn btn-default minus" type="button">-</button>
+                          </span>
+                          <input type="text" class="form-control" name="count" value="1" data-item_id="25450" data-opt_id="">
+                          <span class="input-group-btn">
+                          <button class="btn btn-default plus" type="button">+</button>
+                          </span> </div></td>
+                      <td class="sum price" data-price="3500">3500&nbsp;<span class="glyphicon glyphicon-ruble"></span></td>
+                      <td><button type="button" class="close remove" data-dismiss="alert" aria-hidden="true">×</button></td>
+                    </tr>
+                  </tbody>
+                  <tfoot class="summary">
+                    <tr>
+                      <td colspan="2">Итого:</td>
+                      <td><span class="count">1</span>&nbsp;шт</td>
+                      <td colspan="2" class="price"><span class="sum">3500</span>&nbsp;<span class="glyphicon glyphicon-ruble"></span></td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                <a class="btn-primary btn" href="cart.html">Оформить заказ</a> </div>
+            </div>
+          </div>
+        </div>
+        
+        <!--POPUP CART END--> 
+        
+        <a class="btn btn-primary visible-xs" href="#" id="fullview">Полная версия</a> </div>
+    </div>
+  </header>
+  <div class="navbar navbar-default navbar-static-top top-menu" role="navigation">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="navbar-header clearfix">
+            <button type="button" class="navbar-toggle btn-default" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            <span class="visible-xs-block navbar-brand">Меню и поиск</span> </div>
+          <div class="navbar-collapse collapse clearfix">
+            <ul class="nav navbar-nav">
+              <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">О магазине<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="about-magazine.html">О магазине</a></li>
+                  <li><a href="about-us-comments.html">Отзывы о нас</a></li>
+                  <li><a href="articles.html">Статьи</a></li>
+                </ul>
+              </li>
+              <li><a href="delivery.html">Доставка</a></li>
+              <li><a href="payment.html">Оплата</a></li>
+              <li><a href="reciept.html" >Получение и возврат товара</a></li>
+              <li><a href="guarantee.html">Гарантия</a></li>
+              <li><a href="contacts.html" >Контакты</a></li>
+            </ul>
+            <form class="navbar-form navbar-right">
+              <div class="input-group">
+                <input type="text" class="form-control" name="words" placeholder="я ищу сантехнику ..." value="">
+                <span class="input-group-btn">
+                <button class="btn btn-default" type="button">Найти!</button>
+                </span> </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="content-box">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-lg-2">
+          <nav class="nav list-group left-menu">
+            <div class="list-header list-group-item">
+              <button type="button" class="navbar-toggle visible-xs" data-toggle="collapse" data-target=".left-menu-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+              <a href="catalogue.html">Каталог</a> </div>
+            <div class="left-menu-collapse collapse-xs collapse">
+              <ul class="left-menu-list left-menu-list-active clearfix">
+                <li class="list-group-item list-cat active"> <a href="#" class="list-group-item list-cat">Мебель для ванной</a>
+                  <ul id="cat-898" class="slidedown-menu collapse in clearfix">
+                    <li><a href="#" class="list-group-item list-subcat active">Комплекты мебели</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Напольные тумбы</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Подвесные тумбы</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Шкафы и пеналы</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Навесные шкафы</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Зеркальные шкафы</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Зеркала</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Столешницы</a></li>
+                  </ul>
+                </li>
+                <li><a href="#" class="list-group-item list-cat">Акриловые ванны</a> <a class="c" data-toggle="collapse" data-target="#cat-920"><i class="caret"></i></a>
+                  <ul id="cat-920" class="slidedown-menu collapse clearfix">
+                    <li> <a href="#" class="list-group-item list-subcat">Прямоугольные ванны</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Овальные ванны</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Квадратные ванны</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Круглые ванны</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Угловые ванны</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Многогранные ванны</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Сливы-переливы</a></li>
+                  </ul>
+                </li>
+                <li><a href="#" class="list-group-item list-cat">Чугунные ванны</a> <a class="c" data-toggle="collapse" data-target="#cat-931"><i class="caret"></i></a>
+                  <ul id="cat-931" class="slidedown-menu collapse clearfix">
+                    <li><a href="#" class="list-group-item list-subcat">Прямоугольные ванны</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Овальные ванны</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Отдельностоящие ванны</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Сливы-переливы</a></li>
+                  </ul>
+                </li>
+                <li><a href="#" class="list-group-item list-cat">Стальные ванны</a></li>
+                <li><a href="#" class="list-group-item list-cat">Ванны из литьевого мрамора</a> <a class="c" data-toggle="collapse" data-target="#cat-930"><i class="caret"></i></a>
+                  <ul id="cat-930" class="slidedown-menu collapse clearfix">
+                    <li><a href="#" class="list-group-item list-subcat">Прямоугольные ванны</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Овальные ванны</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Круглые ванны</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Отдельностоящие ванны</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Угловые ванны</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Асимметричные ванны</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Сливы-переливы</a></li>
+                  </ul>
+                </li>
+                <li> <a href="#" class="list-group-item list-cat">Смесители</a> <a class="c" data-toggle="collapse" data-target="#cat-911"><i class="caret"></i></a>
+                  <ul id="cat-911" class="slidedown-menu collapse">
+                    <li><a href="#" class="list-group-item list-subcat">для раковины</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">для кухни</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">для ванны и душа</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">для душа</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">на борт ванны</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">для биде</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">специальные смесители</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Комплектующие для смесителей</a></li>
+                  </ul>
+                </li>
+                <li> <a href="#" class="list-group-item list-cat">Душ</a> <a class="c" data-toggle="collapse" data-target="#cat-948"><i class="caret"></i></a>
+                  <ul id="cat-948" class="slidedown-menu collapse">
+                    <li><a href="#" class="list-group-item list-subcat">Душевые стойки</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Душевые панели</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Душевые гарнитуры</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Душевые лейки</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Верхний душ</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Гигиенические души</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Душевые шланги</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Держатели для душа</a></li>
+                  </ul>
+                </li>
+                <li> <a href="#" class="list-group-item list-cat">Душевые кабины</a> <a class="c" data-toggle="collapse" data-target="#cat-935"><i class="caret"></i></a>
+                  <ul id="cat-935" class="slidedown-menu collapse">
+                    <li><a href="#" class="list-group-item list-subcat">С баней</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">С  крышей</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Без крыши</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">С гидромассажем</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Без бани</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Сауны</a></li>
+                  </ul>
+                </li>
+                <li> <a href="#" class="list-group-item list-cat border-none">Душевые боксы</a> </li>
+                <li> <a href="#" class="list-group-item list-cat border-none">Душевые ограждения</a> </li>
+                <li> <a class="c" data-toggle="collapse" data-target="#cat-946"><i class="caret"></i></a>
+                  <ul id="cat-946" class="slidedown-menu collapse">
+                    <li><a href="#" class="list-group-item list-subcat">Душевые двери</a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Шторки для ванной</a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Душевые углы</a> </li>
+                  </ul>
+                </li>
+                <li> <a href="#" class="list-group-item list-cat border-none">Душевые поддоны</a> </li>
+                <li> <a href="#" class="list-group-item list-cat">Унитазы</a> <a class="c" data-toggle="collapse" data-target="#cat-960"><i class="caret"></i></a>
+                  <ul id="cat-960" class="slidedown-menu collapse">
+                    <li><a href="#" class="list-group-item list-subcat">Напольные </a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Подвесные</a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Приставные </a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Детские</a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Чаши Генуя</a> </li>
+                  </ul>
+                </li>
+                <li> <a href="#" class="list-group-item list-cat">Раковины</a> <a class="c" data-toggle="collapse" data-target="#cat-953"><i class="caret"></i></a>
+                  <ul id="cat-953" class="slidedown-menu collapse">
+                    <li><a href="#" class="list-group-item list-subcat">Накладные</a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Напольные</a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Угловые</a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Подвесные</a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Встраиваемые</a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Сифоны для раковин</a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Донные клапаны</a> </li>
+                  </ul>
+                </li>
+                <li> <a href="#" class="list-group-item list-cat">Биде</a> <a class="c" data-toggle="collapse" data-target="#cat-965"><i class="caret"></i></a>
+                  <ul id="cat-965" class="slidedown-menu collapse">
+                    <li><a href="#" class="list-group-item list-subcat">Напольные</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Подвесные</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Сифоны для биде</a></li>
+                  </ul>
+                </li>
+                <li> <a href="#" class="list-group-item list-cat border-none">Писсуары</a> </li>
+                <li> <a href="#" class="list-group-item list-cat">Полотенцесушители</a> <a class="c" data-toggle="collapse" data-target="#cat-971"><i class="caret"></i></a>
+                  <ul id="cat-971" class="slidedown-menu collapse">
+                    <li><a href="#" class="list-group-item list-subcat">Водяные</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Электрические</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Комплектующие</a></li>
+                  </ul>
+                </li>
+                <li> <a href="#" class="list-group-item list-cat">Системы инсталляции</a> <a class="c" data-toggle="collapse" data-target="#cat-969"><i class="caret"></i></a>
+                  <ul id="cat-969" class="slidedown-menu collapse">
+                    <li><a href="#" class="list-group-item list-subcat">Инсталляции для унитаза</a></li>
+                    <li> <a href="#" class="list-group-item list-subcat">Инсталляции для биде</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Инсталляции для писсуаров</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Инсталляции для раковин</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Смывные клавиши</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Смывные бачки</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Комплектующие</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Устройства управления смывом</a></li>
+                  </ul>
+                </li>
+                <li> <a href="#" class="list-group-item list-cat border-none">Аксессуары</a> </li>
+                <li> <a href="#" class="list-group-item list-cat border-none">Мини бассейны</a> </li>
+                <li> <a href="#" class="list-group-item list-cat">Комплектующие</a> <a class="c" data-toggle="collapse" data-target="#cat-980"><i class="caret"></i></a>
+                  <ul id="cat-980" class="slidedown-menu collapse">
+                    <li><a href="#" class="list-group-item list-subcat">Сифоны для биде</a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Сифоны для раковин</a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Шланги</a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Держатели для душа</a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Колонны</a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Штуцеры</a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Удлинители</a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Для смесителей</a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Донные клапаны</a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Сливы-переливы</a> </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="col-md-7 col-lg-8">
+          <ol class="breadcrumb">
+            <li><a href="index.html">Сантехника 24</a></li>
+            <li><a href="#">Каталог сантехники</a></li>
+            <li><a href="#">Акриловые ванны</a></li>
+            <li class="active">1MarKa</li>
+          </ol>
+          <div class="page-header">
+            <h1>Сантехника 1МарКа</h1>
+          </div>
+          <div class="row subcats">
+            <div class="col-md-3 col-xl-3 col-sm-4 hidden-xs">
+              <div class="thumbnail"> <a rel="nofollow" href="#"><img src="images/opadiris_capri.jpg" alt=""></a> <a href="#">Комплекты мебели</a> </div>
+            </div>
+            <div class="col-md-3 col-xl-3 col-sm-4 hidden-xs">
+              <div class="thumbnail"> <a rel="nofollow" href="#"><img src="images/Double-15599-Uiyt_50_1.jpg" alt=""></a> <a href="#">Напольные тумбы</a> </div>
+            </div>
+            <div class="col-md-3 col-xl-3 col-sm-4 hidden-xs">
+              <div class="thumbnail"> <a rel="nofollow" href="#"><img src="images/PP01_817433_311321_401181_CGP_Q_TF_ppt_A4.jpeg" alt=""></a> <a href="#">Подвесные тумбы</a> </div>
+            </div>
+            <div class="col-md-3 col-xl-3 col-sm-4 hidden-xs">
+              <div class="thumbnail"> <a rel="nofollow" href="#"><img src="images/PP01_458011_GCR_Q_TF_ppt_A4.jpeg" alt=""></a> <a href="#">Шкафы и пеналы</a> </div>
+            </div>
+            <div class="col-md-3 col-xl-3 col-sm-4 hidden-xs">
+              <div class="thumbnail"> <a rel="nofollow" href="#"><img src="images/Shkaf_Misty_Lilija_50_s_jashikom-228x228(1).jpg" alt=""></a> <a href="#">Навесные шкафы</a> </div>
+            </div>
+            <div class="col-md-3 col-xl-3 col-sm-4 hidden-xs">
+              <div class="thumbnail"> <a rel="nofollow" href="#"><img src="images/PP01_448235_light_off_GCR_Q_TF_ppt_A4.jpeg" alt=""></a> <a href="#">Зеркальные шкафы</a> </div>
+            </div>
+            <div class="col-md-3 col-xl-3 col-sm-4 hidden-xs">
+              <div class="thumbnail"> <a rel="nofollow" href="#"><img src="images/PP01_447211_GCR_CGP_Q_TF_ppt_A4.jpeg" alt=""></a> <a href="#">Зеркала</a> </div>
+            </div>
+            <div class="col-md-3 col-xl-3 col-sm-4 hidden-xs">
+              <div class="thumbnail"> <a rel="nofollow" href="#"><img src="images/PP01_405120_Top_GCR_CGP_TF_ppt_A4.jpeg" alt=""></a> <a href="#">Столешницы</a> </div>
+            </div>
+          </div>
+          <form name="filter" method="get" action="/akrilovie-vanni/1marka/" onSubmit="return filterSubmit()">
+            <div class="panel panel-gold podbor">
+              <div class="panel-heading"> <a data-toggle="collapse" data-target="#accardion"><span class="glyphicon glyphicon-filter"></span> Подборать  по параметрам <i class="caret"></i></a> </div>
+              <div class="collapse in" id="accardion">
+                <div class="panel-body">
+                  <div class="row">
+                    <div class="col-md-8"> <span class="title">Цена</span>
+                      <div class="input-group"> <span class="input-group-addon">от</span>
+                        <input type="text" name="price_min" placeholder="5370" value="" class="form-control">
+                        <span class="input-group-addon">до</span>
+                        <input type="text" name="price_max" placeholder="694253" value="" class="form-control">
+                        <span class="input-group-addon">руб</span> </div>
+                    </div>
+                    <!--							<div class="col-md-4">
+								<button type="button" data-toggle="collapse" data-target="#accardion" class="btn btn-default"><span class="glyphicon glyphicon-chevron-down"></span> Показать все параметры</button>
+							</div>
+//--> 
+                  </div>
+                </div>
+                <div>
+                  <ul class="list-group podbor-col">
+                    <li class="list-group-item"> <a data-toggle="collapse" data-target=".podbor .attr21" data-parent="#accardion">По типу <b class="caret"></b></a>
+                      <ul class="list-group collapse attr21 values clearfix">
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">встраиваемые ванны
+                          <input name="a21" type="checkbox" value="встраиваемые ванны" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">отдельностоящие ванны
+                          <input name="a21" type="checkbox" value="отдельностоящие ванны" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">пристенные ванны
+                          <input name="a21" type="checkbox" value="пристенные ванны" class="pull-right" >
+                          </span></li>
+                      </ul>
+                    </li>
+                    <li class="list-group-item"> <a data-toggle="collapse" data-target=".podbor .attr26" data-parent="#accardion">По длине <b class="caret"></b></a>
+                      <ul class="list-group collapse attr26 values clearfix">
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">120 см
+                          <input name="a26" type="checkbox" value="120 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">128 см
+                          <input name="a26" type="checkbox" value="128 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">130 см
+                          <input name="a26" type="checkbox" value="130 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">135 см
+                          <input name="a26" type="checkbox" value="135 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">140 см
+                          <input name="a26" type="checkbox" value="140 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">145 см
+                          <input name="a26" type="checkbox" value="145 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">150 см
+                          <input name="a26" type="checkbox" value="150 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">152 см
+                          <input name="a26" type="checkbox" value="152 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">153 см
+                          <input name="a26" type="checkbox" value="153 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">155 см
+                          <input name="a26" type="checkbox" value="155 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">160 см
+                          <input name="a26" type="checkbox" value="160 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">162 см
+                          <input name="a26" type="checkbox" value="162 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">170 см
+                          <input name="a26" type="checkbox" value="170 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">171 см
+                          <input name="a26" type="checkbox" value="171 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">172 см
+                          <input name="a26" type="checkbox" value="172 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">173 см
+                          <input name="a26" type="checkbox" value="173 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">175 см
+                          <input name="a26" type="checkbox" value="175 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">176 см
+                          <input name="a26" type="checkbox" value="176 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">177 см
+                          <input name="a26" type="checkbox" value="177 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">180 см
+                          <input name="a26" type="checkbox" value="180 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">182 см
+                          <input name="a26" type="checkbox" value="182 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">183 см
+                          <input name="a26" type="checkbox" value="183 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">185 см
+                          <input name="a26" type="checkbox" value="185 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">190 см
+                          <input name="a26" type="checkbox" value="190 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">195 см
+                          <input name="a26" type="checkbox" value="195 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">196 см
+                          <input name="a26" type="checkbox" value="196 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">200 см
+                          <input name="a26" type="checkbox" value="200 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">210 см
+                          <input name="a26" type="checkbox" value="210 см" class="pull-right" >
+                          </span></li>
+                      </ul>
+                    </li>
+                    <li class="list-group-item"> <a data-toggle="collapse" data-target=".podbor .attr24" data-parent="#accardion">По форме <b class="caret"></b></a>
+                      <ul class="list-group collapse attr24 values clearfix">
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">квадратные ванны
+                          <input name="a24" type="checkbox" value="квадратные ванны" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">круглые ванны
+                          <input name="a24" type="checkbox" value="круглые ванны" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">многогранные ванны
+                          <input name="a24" type="checkbox" value="многогранные ванны" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">нестандартные ванны
+                          <input name="a24" type="checkbox" value="нестандартные ванны" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">овальные ванны
+                          <input name="a24" type="checkbox" value="овальные ванны" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">полукруглые ванны
+                          <input name="a24" type="checkbox" value="полукруглые ванны" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">прямоугольные ванны
+                          <input name="a24" type="checkbox" value="прямоугольные ванны" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">угловые ванны
+                          <input name="a24" type="checkbox" value="угловые ванны" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">четверть круга
+                          <input name="a24" type="checkbox" value="четверть круга" class="pull-right" >
+                          </span></li>
+                      </ul>
+                    </li>
+                    <li class="list-group-item"> <a data-toggle="collapse" data-target=".podbor .attr17" data-parent="#accardion">По ширине <b class="caret"></b></a>
+                      <ul class="list-group collapse attr17 values  clearfix">
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">100 см
+                          <input name="a17" type="checkbox" value="100 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">102 см
+                          <input name="a17" type="checkbox" value="102 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">103 см
+                          <input name="a17" type="checkbox" value="103 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">105 см
+                          <input name="a17" type="checkbox" value="105 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">106 см
+                          <input name="a17" type="checkbox" value="106 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">110 см
+                          <input name="a17" type="checkbox" value="110 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">115 см
+                          <input name="a17" type="checkbox" value="115 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">118 см
+                          <input name="a17" type="checkbox" value="118 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">119 см
+                          <input name="a17" type="checkbox" value="119 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">120 см
+                          <input name="a17" type="checkbox" value="120 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">122 см
+                          <input name="a17" type="checkbox" value="122 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">125 см
+                          <input name="a17" type="checkbox" value="125 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">126 см
+                          <input name="a17" type="checkbox" value="126 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">130 см
+                          <input name="a17" type="checkbox" value="130 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">134 см
+                          <input name="a17" type="checkbox" value="134 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">135 см
+                          <input name="a17" type="checkbox" value="135 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">139 см
+                          <input name="a17" type="checkbox" value="139 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">140 см
+                          <input name="a17" type="checkbox" value="140 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">143 см
+                          <input name="a17" type="checkbox" value="143 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">145 см
+                          <input name="a17" type="checkbox" value="145 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">148 см
+                          <input name="a17" type="checkbox" value="148 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">149 см
+                          <input name="a17" type="checkbox" value="149 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">150 см
+                          <input name="a17" type="checkbox" value="150 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">151 см
+                          <input name="a17" type="checkbox" value="151 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">152 см
+                          <input name="a17" type="checkbox" value="152 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">153 см
+                          <input name="a17" type="checkbox" value="153 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">155 см
+                          <input name="a17" type="checkbox" value="155 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">157.7 см
+                          <input name="a17" type="checkbox" value="157.7 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">160 см
+                          <input name="a17" type="checkbox" value="160 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">161 см
+                          <input name="a17" type="checkbox" value="161 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">162 см
+                          <input name="a17" type="checkbox" value="162 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">165 см
+                          <input name="a17" type="checkbox" value="165 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">168 см
+                          <input name="a17" type="checkbox" value="168 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">174 см
+                          <input name="a17" type="checkbox" value="174 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">177 см
+                          <input name="a17" type="checkbox" value="177 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">180 см
+                          <input name="a17" type="checkbox" value="180 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">183 см
+                          <input name="a17" type="checkbox" value="183 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">185 см
+                          <input name="a17" type="checkbox" value="185 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">190 см
+                          <input name="a17" type="checkbox" value="190 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">193 см
+                          <input name="a17" type="checkbox" value="193 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">210 см
+                          <input name="a17" type="checkbox" value="210 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">70 см
+                          <input name="a17" type="checkbox" value="70 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">70.5 см
+                          <input name="a17" type="checkbox" value="70.5 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">74 см
+                          <input name="a17" type="checkbox" value="74 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">75 см
+                          <input name="a17" type="checkbox" value="75 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">76 см
+                          <input name="a17" type="checkbox" value="76 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">78 см
+                          <input name="a17" type="checkbox" value="78 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">79 см
+                          <input name="a17" type="checkbox" value="79 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">80 см
+                          <input name="a17" type="checkbox" value="80 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">81 см
+                          <input name="a17" type="checkbox" value="81 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">82 см
+                          <input name="a17" type="checkbox" value="82 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">84 см
+                          <input name="a17" type="checkbox" value="84 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">85 см
+                          <input name="a17" type="checkbox" value="85 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">86 см
+                          <input name="a17" type="checkbox" value="86 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">88 см
+                          <input name="a17" type="checkbox" value="88 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">89 см
+                          <input name="a17" type="checkbox" value="89 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">90 см
+                          <input name="a17" type="checkbox" value="90 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">91 см
+                          <input name="a17" type="checkbox" value="91 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">91.5 см
+                          <input name="a17" type="checkbox" value="91.5 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">92 см
+                          <input name="a17" type="checkbox" value="92 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">94 см
+                          <input name="a17" type="checkbox" value="94 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">95 см
+                          <input name="a17" type="checkbox" value="95 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">96 см
+                          <input name="a17" type="checkbox" value="96 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">99.5 см
+                          <input name="a17" type="checkbox" value="99.5 см" class="pull-right" >
+                          </span></li>
+                      </ul>
+                    </li>
+                    <li class="list-group-item"> <a data-toggle="collapse" data-target=".podbor .attr16" data-parent="#accardion">По высоте <b class="caret"></b></a>
+                      <ul class="list-group collapse attr16 values clearfix">
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">220 см
+                          <input name="a16" type="checkbox" value="220 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">225 см
+                          <input name="a16" type="checkbox" value="225 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">38 см
+                          <input name="a16" type="checkbox" value="38 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">40 см
+                          <input name="a16" type="checkbox" value="40 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">41 см
+                          <input name="a16" type="checkbox" value="41 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">42
+                          <input name="a16" type="checkbox" value="42" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">42 см
+                          <input name="a16" type="checkbox" value="42 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">42.5 см
+                          <input name="a16" type="checkbox" value="42.5 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">43 см
+                          <input name="a16" type="checkbox" value="43 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">43.5 см
+                          <input name="a16" type="checkbox" value="43.5 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">44 см
+                          <input name="a16" type="checkbox" value="44 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">44.5 см
+                          <input name="a16" type="checkbox" value="44.5 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">45 см
+                          <input name="a16" type="checkbox" value="45 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">45.5 см
+                          <input name="a16" type="checkbox" value="45.5 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">45.9 см
+                          <input name="a16" type="checkbox" value="45.9 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">46 см
+                          <input name="a16" type="checkbox" value="46 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">46.5 см
+                          <input name="a16" type="checkbox" value="46.5 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">47 см
+                          <input name="a16" type="checkbox" value="47 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">47.5 см
+                          <input name="a16" type="checkbox" value="47.5 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">48 см
+                          <input name="a16" type="checkbox" value="48 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">48.5 см
+                          <input name="a16" type="checkbox" value="48.5 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">49 см
+                          <input name="a16" type="checkbox" value="49 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">49.5 см
+                          <input name="a16" type="checkbox" value="49.5 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">5 см
+                          <input name="a16" type="checkbox" value="5 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">50 см
+                          <input name="a16" type="checkbox" value="50 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">51 см
+                          <input name="a16" type="checkbox" value="51 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">52 см
+                          <input name="a16" type="checkbox" value="52 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">53 см
+                          <input name="a16" type="checkbox" value="53 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">54 см
+                          <input name="a16" type="checkbox" value="54 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">55 см
+                          <input name="a16" type="checkbox" value="55 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">56 см
+                          <input name="a16" type="checkbox" value="56 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">57 см
+                          <input name="a16" type="checkbox" value="57 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">58 см
+                          <input name="a16" type="checkbox" value="58 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">59 см
+                          <input name="a16" type="checkbox" value="59 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">60 см
+                          <input name="a16" type="checkbox" value="60 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">61 см
+                          <input name="a16" type="checkbox" value="61 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">62 см
+                          <input name="a16" type="checkbox" value="62 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">62.5 см
+                          <input name="a16" type="checkbox" value="62.5 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">63 см
+                          <input name="a16" type="checkbox" value="63 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">64 см
+                          <input name="a16" type="checkbox" value="64 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">64.5 см
+                          <input name="a16" type="checkbox" value="64.5 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">65 см
+                          <input name="a16" type="checkbox" value="65 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">66 см
+                          <input name="a16" type="checkbox" value="66 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">67 см
+                          <input name="a16" type="checkbox" value="67 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">67.5 см
+                          <input name="a16" type="checkbox" value="67.5 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">68 см
+                          <input name="a16" type="checkbox" value="68 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">69 см
+                          <input name="a16" type="checkbox" value="69 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">70 см
+                          <input name="a16" type="checkbox" value="70 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">71 см
+                          <input name="a16" type="checkbox" value="71 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">72 см
+                          <input name="a16" type="checkbox" value="72 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">73 см
+                          <input name="a16" type="checkbox" value="73 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">74 см
+                          <input name="a16" type="checkbox" value="74 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">75 см
+                          <input name="a16" type="checkbox" value="75 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">76 см
+                          <input name="a16" type="checkbox" value="76 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">77 см
+                          <input name="a16" type="checkbox" value="77 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">78 см
+                          <input name="a16" type="checkbox" value="78 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">79 см
+                          <input name="a16" type="checkbox" value="79 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">80 см
+                          <input name="a16" type="checkbox" value="80 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">82 см
+                          <input name="a16" type="checkbox" value="82 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">83 см
+                          <input name="a16" type="checkbox" value="83 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">83.5 см
+                          <input name="a16" type="checkbox" value="83.5 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">84 см
+                          <input name="a16" type="checkbox" value="84 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">85 см
+                          <input name="a16" type="checkbox" value="85 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">86 см
+                          <input name="a16" type="checkbox" value="86 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">87 см
+                          <input name="a16" type="checkbox" value="87 см" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">90 см
+                          <input name="a16" type="checkbox" value="90 см" class="pull-right" >
+                          </span></li>
+                      </ul>
+                    </li>
+                    <li class="list-group-item"> <a data-toggle="collapse" data-target=".podbor .attr15" data-parent="#accardion">По объему <b class="caret"></b></a>
+                      <ul class="list-group collapse attr15 values  clearfix">
+                        <li class="with-bottom-margin"><span class="list-group-item cursor-pointer">100 л
+                          <input name="a15" type="checkbox" value="100 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">105 л
+                          <input name="a15" type="checkbox" value="105 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">110 л
+                          <input name="a15" type="checkbox" value="110 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">115 л
+                          <input name="a15" type="checkbox" value="115 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">120 л
+                          <input name="a15" type="checkbox" value="120 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">128 л
+                          <input name="a15" type="checkbox" value="128 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">130 л
+                          <input name="a15" type="checkbox" value="130 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">135 л
+                          <input name="a15" type="checkbox" value="135 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">139 л
+                          <input name="a15" type="checkbox" value="139 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">140 л
+                          <input name="a15" type="checkbox" value="140 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">145 л
+                          <input name="a15" type="checkbox" value="145 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">149 л
+                          <input name="a15" type="checkbox" value="149 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">150 л
+                          <input name="a15" type="checkbox" value="150 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">155 л
+                          <input name="a15" type="checkbox" value="155 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">158 л
+                          <input name="a15" type="checkbox" value="158 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">160 л
+                          <input name="a15" type="checkbox" value="160 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">165 л
+                          <input name="a15" type="checkbox" value="165 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">166 л
+                          <input name="a15" type="checkbox" value="166 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">167 л
+                          <input name="a15" type="checkbox" value="167 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">170 л
+                          <input name="a15" type="checkbox" value="170 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">175 л
+                          <input name="a15" type="checkbox" value="175 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">177 л
+                          <input name="a15" type="checkbox" value="177 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">180 л
+                          <input name="a15" type="checkbox" value="180 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">185 л
+                          <input name="a15" type="checkbox" value="185 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">190 л
+                          <input name="a15" type="checkbox" value="190 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">195 л
+                          <input name="a15" type="checkbox" value="195 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">200 л
+                          <input name="a15" type="checkbox" value="200 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">203 л
+                          <input name="a15" type="checkbox" value="203 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">205 л
+                          <input name="a15" type="checkbox" value="205 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">210 л
+                          <input name="a15" type="checkbox" value="210 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">215 л
+                          <input name="a15" type="checkbox" value="215 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">218 л
+                          <input name="a15" type="checkbox" value="218 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">220 л
+                          <input name="a15" type="checkbox" value="220 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">225 л
+                          <input name="a15" type="checkbox" value="225 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">230 л
+                          <input name="a15" type="checkbox" value="230 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">235 л
+                          <input name="a15" type="checkbox" value="235 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">236 л
+                          <input name="a15" type="checkbox" value="236 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">240 л
+                          <input name="a15" type="checkbox" value="240 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">244 л
+                          <input name="a15" type="checkbox" value="244 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">245 л
+                          <input name="a15" type="checkbox" value="245 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">249 л
+                          <input name="a15" type="checkbox" value="249 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">250 л
+                          <input name="a15" type="checkbox" value="250 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">255 л
+                          <input name="a15" type="checkbox" value="255 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">257 л
+                          <input name="a15" type="checkbox" value="257 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">260 л
+                          <input name="a15" type="checkbox" value="260 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">265 л
+                          <input name="a15" type="checkbox" value="265 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">270 л
+                          <input name="a15" type="checkbox" value="270 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">275 л
+                          <input name="a15" type="checkbox" value="275 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">277 л
+                          <input name="a15" type="checkbox" value="277 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">280 л
+                          <input name="a15" type="checkbox" value="280 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">285 л
+                          <input name="a15" type="checkbox" value="285 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">290 л
+                          <input name="a15" type="checkbox" value="290 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">295 л
+                          <input name="a15" type="checkbox" value="295 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">300 л
+                          <input name="a15" type="checkbox" value="300 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">307 л
+                          <input name="a15" type="checkbox" value="307 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">308 л
+                          <input name="a15" type="checkbox" value="308 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">310 л
+                          <input name="a15" type="checkbox" value="310 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">315 л
+                          <input name="a15" type="checkbox" value="315 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">320 л
+                          <input name="a15" type="checkbox" value="320 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">324 л
+                          <input name="a15" type="checkbox" value="324 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">330 л
+                          <input name="a15" type="checkbox" value="330 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">332 л
+                          <input name="a15" type="checkbox" value="332 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">335 л
+                          <input name="a15" type="checkbox" value="335 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">338 л
+                          <input name="a15" type="checkbox" value="338 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">340 л
+                          <input name="a15" type="checkbox" value="340 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">343 л
+                          <input name="a15" type="checkbox" value="343 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">350 л
+                          <input name="a15" type="checkbox" value="350 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">355 л
+                          <input name="a15" type="checkbox" value="355 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">360 л
+                          <input name="a15" type="checkbox" value="360 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">365 л
+                          <input name="a15" type="checkbox" value="365 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">370 л
+                          <input name="a15" type="checkbox" value="370 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">375 л
+                          <input name="a15" type="checkbox" value="375 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">380 л
+                          <input name="a15" type="checkbox" value="380 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">384 л
+                          <input name="a15" type="checkbox" value="384 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">385 л
+                          <input name="a15" type="checkbox" value="385 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">390 л
+                          <input name="a15" type="checkbox" value="390 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">400 л
+                          <input name="a15" type="checkbox" value="400 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">410 л
+                          <input name="a15" type="checkbox" value="410 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">415 л
+                          <input name="a15" type="checkbox" value="415 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">420 л
+                          <input name="a15" type="checkbox" value="420 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">430 л
+                          <input name="a15" type="checkbox" value="430 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">440 л
+                          <input name="a15" type="checkbox" value="440 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">450 л
+                          <input name="a15" type="checkbox" value="450 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">460 л
+                          <input name="a15" type="checkbox" value="460 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">475 л
+                          <input name="a15" type="checkbox" value="475 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">480 л
+                          <input name="a15" type="checkbox" value="480 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">495 л
+                          <input name="a15" type="checkbox" value="495 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">500 л
+                          <input name="a15" type="checkbox" value="500 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">520 л
+                          <input name="a15" type="checkbox" value="520 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">530 л
+                          <input name="a15" type="checkbox" value="530 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">540 л
+                          <input name="a15" type="checkbox" value="540 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">600 л
+                          <input name="a15" type="checkbox" value="600 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">763 л
+                          <input name="a15" type="checkbox" value="763 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">80 л
+                          <input name="a15" type="checkbox" value="80 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">85 л
+                          <input name="a15" type="checkbox" value="85 л" class="pull-right" >
+                          </span></li>
+                        <li class="with-bottom-margin"> <span class="list-group-item cursor-pointer">95 л
+                          <input name="a15" type="checkbox" value="95 л" class="pull-right" >
+                          </span></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <ul class="list-group podbor-col">
+                  </ul>
+                </div>
+                <div class="clearfix"></div>
+                <div class="panel-footer">
+                  <input type="submit" class="btn btn-gold" value="Подобрать">
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="googds-container">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <div class="btn-group order pull-right">
+                  <button type="button" class="btn btn-default dropdown-toggle pull-right" data-toggle="dropdown">Сортировать: по популярности <span class="caret"></span></button>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">от дешевых к дорогим</a></li>
+                    <li><a href="#">от дорогих к дешевым</a></li>
+                  </ul>
+                </div>
+                Найдено 47 товаров от 5370 до 694253&nbsp;<span class="rur">р<span>уб.</span></span> </div>
+            </div>
+            <div class="row cat catalogue-inner-list">
+              <div class="col-sm-4 col-xl-3 col-lg-4  col-xs-12 good-item">
+                <div class="thumbnail">
+                  <div class="img_wrap"> <a rel="nofollow" href="#"> <img src="images/harizma_style_80-classic-lite_01.jpg" alt="Тумба под раковину Harizma Style 80 classic Lite"> </a> </div>
+                  <div class="name_wrap">
+                    <p> <a href="#">Тумба под раковину Harizma Style 80 classic Lite</a> </p>
+                  </div>
+                  <p></p>
+                  <p class="kod_tovara">Код товара: 12264</p>
+                  <p>Гарантия: 24 месяца</p>
+                  <div class="price-wrap">
+                    <div class="price-range">15&nbsp;327 .. 16&nbsp;708 <small><span class="glyphicon glyphicon-ruble"></span></small></div>
+                    <a role="button" class="btn btn-default" rel="nofollow" data-toggle="tooltip" data-placement="top" title="" href="#" data-original-title="Выберете одну из 2 комплектаций данного товара">Выбрать <span class="badge">2</span></a> </div>
+                </div>
+              </div>
+              <div class="col-sm-4 col-xl-3 col-lg-4  col-xs-12 good-item">
+                <div class="thumbnail"> <span class="label label-danger">Бесплатная доставка</span>
+                  <div class="img_wrap"> <a rel="nofollow" href="#"> <img src="images/astra-form_alfa_70.jpg" alt="Комплект мебели для ванной Astra-Form Альфа 70"> </a> </div>
+                  <div class="name_wrap">
+                    <p> <a href="#">Комплект мебели для ванной Astra-Form Альфа 70</a> </p>
+                  </div>
+                  <p></p>
+                  <p class="kod_tovara">Код товара: 11374</p>
+                  <p>Гарантия: 12 месяцев </p>
+                  <div class="price-wrap">
+                    <div class="price-range">16&nbsp;200 .. 17&nbsp;900 <small><span class="glyphicon glyphicon-ruble"></span></small></div>
+                    <a role="button" class="btn btn-default" rel="nofollow" data-toggle="tooltip" data-placement="top" title="" href="#" data-original-title="Выберете одну из 2 комплектаций данного товара">Выбрать <span class="badge">2</span></a> </div>
+                </div>
+              </div>
+              <div class="col-sm-4 col-xl-3 col-lg-4  col-xs-12 good-item">
+                <div class="thumbnail">
+                  <div class="img_wrap"> <a rel="nofollow" href="#"> <img src="images/JacobDelafon_EB1203-N18.jpg" alt="Тумба Jacob Delafon Struktura 117 см EB1203-N18"> </a> </div>
+                  <div class="name_wrap">
+                    <p> <a href="#">Тумба Jacob Delafon Struktura 117 см EB1203-N18</a> </p>
+                  </div>
+                  <p></p>
+                  <p class="kod_tovara">Код товара: 13933</p>
+                  <p>Гарантия: 5 лет </p>
+                  <div class="price-wrap">
+                    <div class="price">18&nbsp;898 <small><span class="glyphicon glyphicon-ruble"></span></small></div>
+                    <button class="btn btn-primary cart" data-id="13933"><span class="glyphicon glyphicon-shopping-cart"></span> Купить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 col-xl-3 col-lg-4 col-xs-12 good-item">
+                <div class="thumbnail">
+                  <div class="img_wrap"> <a rel="nofollow" href="#"> <img src="images/harizma_style_80-box-lite_01.jpg" alt="Комплект мебели для ванной Harizma Style 80 Box Lite"> </a> </div>
+                  <div class="name_wrap">
+                    <p> <a href="#">Комплект мебели для ванной Harizma Style 80 Box Lite</a> </p>
+                  </div>
+                  <p></p>
+                  <p class="kod_tovara">Код товара: 12260</p>
+                  <p>Гарантия: 24 месяца</p>
+                  <div class="price-wrap">
+                    <div class="price-range">28&nbsp;770 .. 30&nbsp;514 <small><span class="glyphicon glyphicon-ruble"></span></small></div>
+                    <a class="btn btn-default" rel="nofollow" data-toggle="tooltip" data-placement="top" title="" href="/mebel-dlya-vannoy-style-80-box-lite-24471.html" data-original-title="Выберете одну из 2 комплектаций данного товара">Выбрать <span class="badge">2</span></a> </div>
+                </div>
+              </div>
+              <div class="col-sm-4 col-xl-3 col-lg-4  col-xs-12 good-item">
+                <div class="thumbnail"> <span class="label label-danger">Бесплатная доставка</span>
+                  <div class="img_wrap"> <a rel="nofollow" href="#"> <img src="images/astra-form_klassik_90.jpg.jpg" alt="Мебель для ванной Astra-Form Классик 90"> </a> </div>
+                  <div class="name_wrap">
+                    <p> <a href="#">Мебель для ванной Astra-Form Классик 90</a> </p>
+                  </div>
+                  <p></p>
+                  <p class="kod_tovara">Код товара: 11018</p>
+                  <p>Гарантия: 12 месяцев </p>
+                  <div class="price-wrap">
+                    <div class="price-range">26&nbsp;300 .. 29&nbsp;000 <small><span class="glyphicon glyphicon-ruble"></span></small></div>
+                    <a class="btn btn-default" rel="nofollow" data-toggle="tooltip" data-placement="top" title="" href="#" data-original-title="Выберете одну из 2 комплектаций данного товара">Выбрать <span class="badge">2</span></a> </div>
+                </div>
+              </div>
+              <div class="col-sm-4 col-xl-3 col-lg-4  col-xs-12 good-item">
+                <div class="thumbnail"> <span class="label label-danger">Бесплатная доставка</span>
+                  <div class="img_wrap"> <a rel="nofollow" href="#"> <img src="images/aquaton_Turin_mebel_dlya_vannoy_komnati_100.jpg" alt="Тумба под раковину Aquaton Turin 100"> </a> </div>
+                  <div class="name_wrap">
+                    <p> <a href="#">Тумба под раковину Aquaton Turin 100</a> </p>
+                  </div>
+                  <p></p>
+                  <p class="kod_tovara">Код товара: 1070</p>
+                  <p>Гарантия: 36 месяцев </p>
+                  <div class="price-wrap">
+                    <div class="price">22&nbsp;255 <small><span class="glyphicon glyphicon-ruble"></span></small></div>
+                    <button class="btn btn-primary cart" data-id="1070"><span class="glyphicon glyphicon-shopping-cart"></span> Купить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 col-xl-3 col-lg-4  col-xs-12 good-item">
+                <div class="thumbnail"> <span class="label label-danger">Бесплатная доставка</span>
+                  <div class="img_wrap"> <a rel="nofollow" href="#"> <img src="images/astra-form_rubin_90_01.jpg" alt="Мебель для ванной Astra-Form Рубин 90"> </a> </div>
+                  <div class="name_wrap">
+                    <p> <a href="#">Мебель для ванной Astra-Form Рубин 90</a> </p>
+                  </div>
+                  <p></p>
+                  <p class="kod_tovara">Код товара: 11376</p>
+                  <p>Гарантия: 12 месяцев </p>
+                  <div class="price-wrap">
+                    <div class="price-range">27&nbsp;200 .. 30&nbsp;000 <small><span class="glyphicon glyphicon-ruble"></span></small></div>
+                    <a class="btn btn-default" rel="nofollow" data-toggle="tooltip" data-placement="top" title="" href="#" data-original-title="Выберете одну из 2 комплектаций данного товара">Выбрать <span class="badge">2</span></a> </div>
+                </div>
+              </div>
+              <div class="col-sm-4 col-xl-3 col-lg-4  col-xs-12 good-item">
+                <div class="thumbnail"> <span class="label label-danger">Бесплатная доставка</span>
+                  <div class="img_wrap"> <a rel="nofollow" href="#"> <img src="images/aquanet_amelia_100.jpg" alt="Тумба под раковину Aquanet Амелия Н 100 орех (179453)"> </a> </div>
+                  <div class="name_wrap">
+                    <p> <a href="#">Тумба под раковину Aquanet Амелия Н 100 орех (179453)</a> </p>
+                  </div>
+                  <p></p>
+                  <p class="kod_tovara">Код товара: 7257</p>
+                  <p>Гарантия: 12 месяцев </p>
+                  <div class="price-wrap">
+                    <div class="price">30&nbsp;700 <small><span class="glyphicon glyphicon-ruble"></span></small></div>
+                    <button class="btn btn-primary cart" data-id="7257"><span class="glyphicon glyphicon-shopping-cart"></span> Купить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 col-xl-3 col-lg-4  col-xs-12 good-item">
+                <div class="thumbnail"> <span class="label label-danger">Бесплатная доставка</span>
+                  <div class="img_wrap"> <a rel="nofollow" href="#"> <img src="images/4444.jpg" alt="Подвесная мебель для ванной Verona Верона 75 подвесная VN113"> </a> </div>
+                  <div class="name_wrap">
+                    <p> <a href="#">Подвесная мебель для ванной Verona Верона 75 подвесная VN113</a> </p>
+                  </div>
+                  <p></p>
+                  <p class="kod_tovara">Код товара: 803</p>
+                  <p>Гарантия: 24 месяца</p>
+                  <div class="price-wrap">
+                    <div class="price">34&nbsp;756 <small><span class="glyphicon glyphicon-ruble"></span></small></div>
+                    <button class="btn btn-primary cart" data-id="803"><span class="glyphicon glyphicon-shopping-cart"></span> Купить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 col-xl-3 col-lg-4  col-xs-12 good-item">
+                <div class="thumbnail"> <span class="label label-danger">Бесплатная доставка</span>
+                  <div class="img_wrap"> <a rel="nofollow" href="#"> <img src="images/solo_110_podves.jpg" alt="Подвесная мебель для ванной Verona Верона Solo 110 подвесная SL106"> </a> </div>
+                  <div class="name_wrap">
+                    <p> <a href="#">Подвесная мебель для ванной Verona Верона Solo 110 подвесная SL106</a> </p>
+                  </div>
+                  <p></p>
+                  <p class="kod_tovara">Код товара: 744</p>
+                  <p>Гарантия: 24 месяца</p>
+                  <div class="price-wrap">
+                    <div class="price">35&nbsp;275 <small><span class="glyphicon glyphicon-ruble"></span></small></div>
+                    <button class="btn btn-primary cart" data-id="744"><span class="glyphicon glyphicon-shopping-cart"></span> Купить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 col-xl-3 col-lg-4  col-xs-12 good-item">
+                <div class="thumbnail"> <span class="label label-danger">Бесплатная доставка</span>
+                  <div class="img_wrap"> <a rel="nofollow" href="#"> <img src="images/opadiris_clio-80.jpg" alt="Мебель для ванной Opadiris Клио 80"> </a> </div>
+                  <div class="name_wrap">
+                    <p> <a href="#">Мебель для ванной Opadiris Клио 80</a> </p>
+                  </div>
+                  <p></p>
+                  <p class="kod_tovara">Код товара: 8968</p>
+                  <p>Гарантия: 5 лет </p>
+                  <div class="price-wrap">
+                    <div class="price">34&nbsp;840 <small><span class="glyphicon glyphicon-ruble"></span></small></div>
+                    <button class="btn btn-primary cart" data-id="8968"><span class="glyphicon glyphicon-shopping-cart"></span> Купить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 col-xl-3 col-lg-4  col-xs-12 good-item">
+                <div class="thumbnail"> <span class="label label-danger">Бесплатная доставка</span>
+                  <div class="img_wrap"> <a rel="nofollow" href="#"> <img src="images/aquaton_aria50-M_01(1).jpg" alt="Тумба под раковину Aquaton Ария 50 М"> </a> </div>
+                  <div class="name_wrap">
+                    <p> <a href="#">Тумба под раковину Aquaton Ария 50 М</a> </p>
+                  </div>
+                  <p></p>
+                  <p class="kod_tovara">Код товара: 6921</p>
+                  <p>Гарантия: 36 месяцев </p>
+                  <div class="price-wrap">
+                    <div class="price-range">6&nbsp;385 .. 7&nbsp;393 <small><span class="glyphicon glyphicon-ruble"></span></small></div>
+                    <a  class="btn btn-default" rel="nofollow" data-toggle="tooltip" data-placement="top" title="" href="#" data-original-title="Выберете одну из 2 комплектаций данного товара">Выбрать <span class="badge">2</span></a> </div>
+                </div>
+              </div>
+              <div class="col-sm-4 col-xl-3 col-lg-4  col-xs-12 good-item">
+                <div class="thumbnail"> <span class="label label-danger">Бесплатная доставка</span>
+                  <div class="img_wrap"> <a rel="nofollow" href="#"> <img src="images/aquaton_aria_80.jpeg" alt="Тумба под раковину Aquaton Ария 80"> </a> </div>
+                  <div class="name_wrap">
+                    <p> <a href="#">Тумба под раковину Aquaton Ария 80</a> </p>
+                  </div>
+                  <p></p>
+                  <p class="kod_tovara">Код товара: 6919</p>
+                  <p>Гарантия: 36 месяцев </p>
+                  <div class="price-wrap">
+                    <div class="price-range">6&nbsp;521 .. 7&nbsp;470 <small><span class="glyphicon glyphicon-ruble"></span></small></div>
+                    <a class="btn btn-default" rel="nofollow" data-toggle="tooltip" data-placement="top" title="" href="#" data-original-title="Выберете одну из 2 комплектаций данного товара">Выбрать <span class="badge">2</span></a> </div>
+                </div>
+              </div>
+              <div class="col-sm-4 col-xl-3 col-lg-4  col-xs-12 good-item">
+                <div class="thumbnail">
+                  <div class="img_wrap"> <a rel="nofollow" href="#"> <img src="images/harizma_zerkalo_s_topom_01.jpg" alt="Зеркало с топом Harizma Harizma 90 цветовая категория №1"> </a> </div>
+                  <div class="name_wrap">
+                    <p> <a href="#">Зеркало с топом Harizma Harizma 90 цветовая категория №1</a> </p>
+                  </div>
+                  <p></p>
+                  <p class="kod_tovara">Код товара: 12196</p>
+                  <p>Гарантия: 24 месяца</p>
+                  <div class="price-wrap">
+                    <div class="price">6&nbsp;587 <small><span class="glyphicon glyphicon-ruble"></span></small></div>
+                    <button class="btn btn-primary cart" data-id="12196"><span class="glyphicon glyphicon-shopping-cart"></span> Купить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 col-xl-3 col-lg-4  col-xs-12 good-item">
+                <div class="thumbnail">
+                  <div class="img_wrap"> <a rel="nofollow" href="#"> <img src="images/harizma_zerkalo_so_vstroennoi_podsvetkoi_01(6).jpg" alt="Зеркало с встроенной подсветкой Harizma Harizma 60 подсветкой цветовая категория №1"> </a> </div>
+                  <div class="name_wrap">
+                    <p> <a href="#">Зеркало с встроенной подсветкой Harizma Harizma 60 подсветкой цветовая категория №1</a> </p>
+                  </div>
+                  <p></p>
+                  <p class="kod_tovara">Код товара: 12188</p>
+                  <p>Гарантия: 24 месяца</p>
+                  <div class="price-wrap">
+                    <div class="price">6&nbsp;377 <small><span class="glyphicon glyphicon-ruble"></span></small></div>
+                    <button class="btn btn-primary cart" data-id="12188"><span class="glyphicon glyphicon-shopping-cart"></span> Купить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 col-xl-3 col-lg-4 col-xs-12 good-item">
+                <div class="thumbnail">
+                  <div class="img_wrap"> <a rel="nofollow" href="#"> <img src="images/harizma_penal_70_01.jpg" alt="Шкафчик с зеркалом Harizma Шкафчик Harizma 70"> </a> </div>
+                  <div class="name_wrap">
+                    <p> <a href="#">Шкафчик с зеркалом Harizma Шкафчик Harizma 70</a> </p>
+                  </div>
+                  <p></p>
+                  <p class="kod_tovara">Код товара: 12198</p>
+                  <p>Гарантия: 24 месяца</p>
+                  <div class="price-wrap">
+                    <div class="price-range">6&nbsp;985 .. 7&nbsp;254 <small><span class="glyphicon glyphicon-ruble"></span></small></div>
+                    <a class="btn btn-default" rel="nofollow" data-toggle="tooltip" data-placement="top" title="" href="#" data-original-title="Выберете одну из 2 комплектаций данного товара">Выбрать <span class="badge">2</span></a> </div>
+                </div>
+              </div>
+              <div class="col-sm-4 col-xl-3 col-lg-4 col-xs-12 good-item">
+                <div class="thumbnail"> <span class="label label-danger">Бесплатная доставка</span>
+                  <div class="img_wrap"> <a rel="nofollow" href="#"> <img src="images/185286_thumb.jpg" alt="Тумба под раковину ASB-Mebel Флоренция Квадро-80"> </a> </div>
+                  <div class="name_wrap">
+                    <p> <a href="#">Тумба под раковину ASB-Mebel Флоренция Квадро-80</a> </p>
+                  </div>
+                  <p></p>
+                  <p class="kod_tovara">Код товара: 15259</p>
+                  <p>Гарантия: 12 месяцев </p>
+                  <div class="price-wrap">
+                    <div class="price">25&nbsp;170 <small><span class="glyphicon glyphicon-ruble"></span></small></div>
+                    <button class="btn btn-primary cart" data-id="15259"><span class="glyphicon glyphicon-shopping-cart"></span> Купить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 col-xl-3 col-lg-4  col-xs-12 good-item">
+                <div class="thumbnail"> <span class="label label-danger">Бесплатная доставка</span>
+                  <div class="img_wrap"> <a rel="nofollow" href="#"> <img src="images/astra-form_solo_50.jpg" alt="Мебель для ванной Astra-Form Соло 50"> </a> </div>
+                  <div class="name_wrap">
+                    <p> <a href="#">Мебель для ванной Astra-Form Соло 50</a> </p>
+                  </div>
+                  <p></p>
+                  <p class="kod_tovara">Код товара: 11363</p>
+                  <p>Гарантия: 12 месяцев </p>
+                  <div class="price-wrap">
+                    <div class="price-range">12&nbsp;800 .. 14&nbsp;100 <small><span class="glyphicon glyphicon-ruble"></span></small></div>
+                    <a  class="btn btn-default" rel="nofollow" data-toggle="tooltip" data-placement="top" title="" href="#" data-original-title="Выберете одну из 2 комплектаций данного товара">Выбрать <span class="badge">2</span></a> </div>
+                </div>
+              </div>
+              <div class="col-sm-4 col-xl-3 col-lg-4  col-xs-12 good-item">
+                <div class="thumbnail"> <span class="label label-danger">Бесплатная доставка</span>
+                  <div class="img_wrap"> <a rel="nofollow" href="#"> <img src="images/aquanet_line_mebel_dlya_vannoy_komnati_120.jpg" alt="Тумба под раковину Aquanet Лайн 120 (164938)"> </a> </div>
+                  <div class="name_wrap">
+                    <p> <a href="#">Тумба под раковину Aquanet Лайн 120 (164938)</a> </p>
+                  </div>
+                  <p></p>
+                  <p class="kod_tovara">Код товара: 1396</p>
+                  <p>Гарантия: 12 месяцев </p>
+                  <div class="price-wrap">
+                    <div class="price">13&nbsp;790 <small><span class="glyphicon glyphicon-ruble"></span></small></div>
+                    <button class="btn btn-primary cart" data-id="1396"><span class="glyphicon glyphicon-shopping-cart"></span> Купить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 col-xl-3 col-lg-4  col-xs-12 good-item">
+                <div class="thumbnail"> <span class="label label-danger">Бесплатная доставка</span>
+                  <div class="img_wrap"> <a rel="nofollow" href="#"> <img src="images/185346_thumb.jpg" alt="Тумба под раковину ASB-Mebel Верона-65"> </a> </div>
+                  <div class="name_wrap">
+                    <p> <a href="#">Тумба под раковину ASB-Mebel Верона-65</a> </p>
+                  </div>
+                  <p></p>
+                  <p class="kod_tovara">Код товара: 19438</p>
+                  <p>Гарантия: 12 месяцев </p>
+                  <div class="price-wrap">
+                    <div class="price">16&nbsp;420 <small><span class="glyphicon glyphicon-ruble"></span></small></div>
+                    <button  class="btn btn-primary cart" data-id="19438"><span class="glyphicon glyphicon-shopping-cart"></span> Купить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 col-xl-3 col-lg-4  col-xs-12 good-item">
+                <div class="thumbnail"> <span class="label label-danger">Бесплатная доставка</span>
+                  <div class="img_wrap"> <a rel="nofollow" href="#"> <img src="images/185299_thumb.jpg" alt="Тумба под раковину ASB-Mebel Флоренция Квадро-90"> </a> </div>
+                  <div class="name_wrap">
+                    <p> <a href="#">Тумба под раковину ASB-Mebel Флоренция Квадро-90</a> </p>
+                  </div>
+                  <p></p>
+                  <p class="kod_tovara">Код товара: 19445</p>
+                  <p>Гарантия: 12 месяцев </p>
+                  <div class="price-wrap">
+                    <div class="price">28&nbsp;100 <small><span class="glyphicon glyphicon-ruble"></span></small></div>
+                    <button  class="btn btn-primary cart" data-id="19445"><span class="glyphicon glyphicon-shopping-cart"></span> Купить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 col-xl-3 col-lg-4  col-xs-12 good-item">
+                <div class="thumbnail"> <span class="label label-danger">Бесплатная доставка</span>
+                  <div class="img_wrap"> <a rel="nofollow" href="#"> <img src="images/185259_thumb.jpg" alt="Тумба под раковину ASB-Mebel Флоренция-105 Витраж"> </a> </div>
+                  <div class="name_wrap">
+                    <p> <a href="#">Тумба под раковину ASB-Mebel Флоренция-105 Витраж</a> </p>
+                  </div>
+                  <p></p>
+                  <p class="kod_tovara">Код товара: 19442</p>
+                  <p>Гарантия: 12 месяцев </p>
+                  <div class="price-wrap">
+                    <div class="price">26&nbsp;810 <small><span class="glyphicon glyphicon-ruble"></span></small></div>
+                    <button  class="btn btn-primary cart" data-id="19442"><span class="glyphicon glyphicon-shopping-cart"></span> Купить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 col-xl-3 col-lg-4  col-xs-12 good-item">
+                <div class="thumbnail"> <span class="label label-danger">Бесплатная доставка</span>
+                  <div class="img_wrap"> <a rel="nofollow" href="#"> <img src="images/Komplekt.jpg" alt="Тумба под раковину ASB-Mebel Астра 62-1Н "> </a> </div>
+                  <div class="name_wrap">
+                    <p> <a href="#">Тумба под раковину ASB-Mebel Астра 62-1Н "Ракушка"</a> </p>
+                  </div>
+                  <p></p>
+                  <p class="kod_tovara">Код товара: 13302</p>
+                  <p>Гарантия: 12 месяцев </p>
+                  <div class="price-wrap">
+                    <div class="price">4&nbsp;940 <small><span class="glyphicon glyphicon-ruble"></span></small></div>
+                    <button  class="btn btn-primary cart" data-id="13302"><span class="glyphicon glyphicon-shopping-cart"></span> Купить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 col-xl-3 col-lg-4  col-xs-12 good-item">
+                <div class="thumbnail"> <span class="label label-danger">Бесплатная доставка</span>
+                  <div class="img_wrap"> <a rel="nofollow" href="#"> <img src="images/Astra_60_Ariel.jpg" alt="Тумба под раковину ASB-Mebel Астра-60 " > </a> </div>
+                  <div class="name_wrap">
+                    <p> <a href="#">Тумба под раковину ASB-Mebel Астра-60 "Ариэль"</a> </p>
+                  </div>
+                  <p></p>
+                  <p class="kod_tovara">Код товара: 15690</p>
+                  <p>Гарантия: 12 месяцев </p>
+                  <div class="price-wrap">
+                    <div class="price">4&nbsp;940 <small><span class="glyphicon glyphicon-ruble"></span></small></div>
+                    <button  class="btn btn-primary cart" data-id="15690"><span class="glyphicon glyphicon-shopping-cart"></span> Купить</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <ul class="pagination">
+              <li class="disabled"><a>&laquo;</a></li>
+              <li class="active"><a >1</a></li>
+              <li><a href="/akrilovie-vanni/1marka/?page=2">2</a></li>
+              <li><a data-href="VIfA4ppDObrU/B7GfzwDUg5cyRtVxOC+eHjbUnkOcok=" id="pages_next" rel="nofollow">&raquo;</a></li>
+            </ul>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <h2  >Каталог ванн 1МарКа на нашем сайте</h2>
+              <p>На нашем сайте Вы сможете подобрать наиболее интересные модели известного российского производителя «Первая марка». Хотя у нас представлен очень широкий ассортимент акриловых ванн «1МарКа», каждая из них уникальна и интересна по-своему, имеет разные комплектации, форму, размеры, разные типы установки и функциональность. Изделия производителя имеют доступную стоимость: например, цена ванн Viola или «Прагматика» от «1МарКа» позволяет приобрести их даже при весьма ограниченном бюджете.</p>
+              <p>Купить ванны «1МарКа» можно и потому, что изготовитель предлагает на свое сантехническое оборудование гарантию 10 лет. Но это не значит, что изделие прослужит только одно десятилетие. Ванны настолько практичны и выносливы, что наслаждаться их прекрасным внешним видом Вы сможете на протяжении нескольких десятилетий.</p>
+              <h2 >Покупка ванн от отечественного производителя «1МарКа» по приемлемым ценам</h2>
+              <p>Кроме всех вышеперечисленных характеристик, ванны «1МарКа» могут оборудоваться качественными и функциональными гидромассажными системами. Все дополнительное оборудование компактное и в то же время мощное.</p>
+              <p>Акриловые ванные «1МарКа» также могут иметь системы аэромассажа, хромотерапии, различное количество и разное расположение форсунок для массажа спины, ног, шеи, поясницы. Дополнительно для каждой модели можно купить подголовник и аксессуары и заказать различные усовершенствованные опции.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <nav class="nav list-group left-menu">
+            <div  class="list-group-item list-header">
+              <button type="button" class="navbar-toggle visible-xs" data-toggle="collapse" data-target=".right-menu-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+              <a href="brands.html">Бренды</a> </div>
+            <ul class="right-menu-collapse collapse-xs collapse right-menu clearfix">
+              <li><a href="#" class="list-group-item">1MarKa</a></li>
+              <li><a href="#" class="list-group-item">Aessel</a></li>
+              <li><a href="#" class="list-group-item">Alligator</a></li>
+              <li><a href="#" class="list-group-item">Alpen</a></li>
+              <li><a href="#" class="list-group-item">Appollo</a></li>
+              <li><a href="#" class="list-group-item">Aquanet</a></li>
+              <li><a href="#" class="list-group-item">Aquastone</a></li>
+              <li><a href="#" class="list-group-item">Aquaton</a></li>
+              <li><a href="#" class="list-group-item">Aqwella</a></li>
+              <li><a href="#" class="list-group-item">Art & Max</a></li>
+              <li><a href="#" class="list-group-item">Art Ceram</a></li>
+              <li><a href="#" class="list-group-item">ASB-Mebel</a></li>
+              <li><a href="#" class="list-group-item">Astra-Form</a></li>
+              <li><a href="#" class="list-group-item">AXA</a></li>
+              <li><a href="#" class="list-group-item">Balteco</a></li>
+              <li><a href="#" class="list-group-item">BelBagno</a></li>
+              <li><a href="#" class="list-group-item">Bricklaer</a></li>
+              <li><a href="#" class="list-group-item">Catalano</a></li>
+              <li><a href="#" class="list-group-item">Cersanit</a></li>
+              <li><a href="#" class="list-group-item">Cezares</a></li>
+              <li><a href="#" class="list-group-item">Cisa</a></li>
+              <li><a href="#" class="list-group-item">Colombo</a></li>
+              <li><a href="#" class="list-group-item">Complimenta</a></li>
+              <li><a href="#" class="list-group-item">Dornbracht</a></li>
+              <li><a href="#" class="list-group-item">Duravit</a></li>
+              <li><a href="#" class="list-group-item">Eago</a></li>
+              <li><a href="#" class="list-group-item">Emmevi</a></li>
+              <li><a href="#" class="list-group-item">Erlit</a></li>
+              <li><a href="#" class="list-group-item">Esse</a></li>
+              <li><a href="#" class="list-group-item">Excellent</a></li>
+              <li><a href="#" class="list-group-item">Flaminia</a></li>
+              <li><a href="#" class="list-group-item">Gala</a></li>
+              <li><a href="#" class="list-group-item">Ganzer</a></li>
+              <li><a href="#" class="list-group-item">Geberit</a></li>
+              <li><a href="#" class="list-group-item">Gemelli</a></li>
+              <li><a href="#" class="list-group-item">Gemy</a></li>
+              <li><a href="#" class="list-group-item">Giulini</a></li>
+              <li><a href="#" class="list-group-item">Godi</a></li>
+              <li><a href="#" class="list-group-item">Golf</a></li>
+              <li><a href="#" class="list-group-item">Grohe</a></li>
+              <li><a href="#" class="list-group-item">Grossman</a></li>
+              <li><a href="#" class="list-group-item">Grota</a></li>
+              <li><a href="#" class="list-group-item">Gustavsberg</a></li>
+              <li><a href="#" class="list-group-item">Hansgrohe</a></li>
+              <li><a href="#" class="list-group-item">Harizma</a></li>
+              <li><a href="#" class="list-group-item">Hatria</a></li>
+              <li><a href="#" class="list-group-item">Ideal Standart</a></li>
+              <li><a href="#" class="list-group-item">Jacob Delafon</a></li>
+              <li><a href="#" class="list-group-item">Jacob Delafon (ванны чугунные)</a></li>
+              <li><a href="#" class="list-group-item">Jacuzzi</a></li>
+              <li><a href="#" class="list-group-item">Kaldewei</a></li>
+              <li><a href="#" class="list-group-item">Kerasan</a></li>
+              <li><a href="#" class="list-group-item">Kolpa-san</a></li>
+              <li><a href="#" class="list-group-item">Laufen</a></li>
+              <li><a href="#" class="list-group-item">Margaroli</a></li>
+              <li><a href="#" class="list-group-item">Marmo&Bagno</a></li>
+              <li><a href="#" class="list-group-item">Massimo</a></li>
+              <li><a href="#" class="list-group-item">Migliore</a></li>
+              <li><a href="#" class="list-group-item">Misty</a></li>
+              <li><a href="#" class="list-group-item">Nautico</a></li>
+              <li><a href="#" class="list-group-item">Nikles</a></li>
+              <li><a href="#" class="list-group-item">Nsk</a></li>
+              <li><a href="#" class="list-group-item">Olympia</a></li>
+              <li><a href="#" class="list-group-item">Opadiris</a></li>
+              <li><a href="#" class="list-group-item">Parly</a></li>
+              <li><a href="#" class="list-group-item">Pelipal</a></li>
+              <li><a href="#" class="list-group-item">Puris</a></li>
+              <li><a href="#" class="list-group-item">Radaway</a></li>
+              <li><a href="#" class="list-group-item">Rav Slezak</a></li>
+              <li><a href="#" class="list-group-item">Ravak</a></li>
+              <li><a href="#" class="list-group-item">Relisan</a></li>
+              <li><a href="#" class="list-group-item">Riho</a></li>
+              <li><a href="#" class="list-group-item">River</a></li>
+              <li><a href="#" class="list-group-item">Roca</a></li>
+              <li><a href="#" class="list-group-item">SSWW</a></li>
+              <li><a href="#" class="list-group-item">Sturm</a></li>
+              <li><a href="#" class="list-group-item">Timo</a></li>
+              <li><a href="#" class="list-group-item">Valentin</a></li>
+              <li><a href="#" class="list-group-item">Vayer</a></li>
+              <li><a href="#" class="list-group-item">Vega</a></li>
+              <li><a href="#" class="list-group-item">Verona</a></li>
+              <li><a href="#" class="list-group-item">Villeroy & Boch</a></li>
+              <li><a href="#" class="list-group-item">Vitra</a></li>
+              <li><a href="#" class="list-group-item">Wenz</a></li>
+              <li><a href="#" class="list-group-item">Акватек</a></li>
+              <li><a href="#" class="list-group-item">Санта</a></li>
+              <li><a href="#" class="list-group-item">Универсал</a></li>
+              <li><a href="#" class="list-group-item">Эстет</a></li>
+            </ul>
+          </nav>
+          <div class="panel panel-default tags tags-page">
+            <div class="panel-heading"><span class="bold">Популярные категории</span></div>
+            <div class="list-group clearfix"> <a class="list-group-item" data-toggle="collapse" data-target=".tags-1090" >Тип ванны <span class="caret"></span></a>
+              <div class="no-padding collapse tags-1090 clearfix "> <a class="list-group-item tags-1090" href="#">встраиваемые ванны</a> <a class="list-group-item tags-1090" href="#">отдельностоящие ванны</a> </div>
+              <a class="list-group-item" data-toggle="collapse" data-target=".tags-1103" >Форма ванны <span class="caret"></span></a>
+              <div class="collapse tags-1103 "> <a class="list-group-item tags-1103" href="#">круглые ванны</a> <a class="list-group-item tags-1103" href="#">асимметричные ванны</a> <a class="list-group-item tags-1103" href="#">нестандартные ванны</a> <a class="list-group-item tags-1103" href="#">полукруглые ванны</a> <a class="list-group-item tags-1103" href="#">ванны формой четверть круга</a> </div>
+              <a class="list-group-item" data-toggle="collapse" data-target=".tags-1104" >Тип управления <span class="caret"></span></a>
+              <div class="collapse tags-1104 "> <a class="list-group-item tags-1104" href="#">с пневматическим управлением</a> <a class="list-group-item tags-1104" href="#">с электронным управлением</a> </div>
+              <a class="list-group-item" data-toggle="collapse" data-target=".tags-1102" >Функции <span class="caret"></span></a>
+              <div class="collapse tags-1102 "> <a class="list-group-item tags-1102" href="#">с аэромассажем</a> <a class="list-group-item tags-1102" href="#">с гидромассажем</a> <a class="list-group-item tags-1102" href="#">без гидромассажа</a> <a class="list-group-item tags-1102" href="#">без аэромассажа</a> <a class="list-group-item tags-1102" href="#">с дезинфекцией</a> <a class="list-group-item tags-1102" href="#">с озонированием</a> <a class="list-group-item tags-1102" href="#">с регулировкой интенсивности массажа</a> <a class="list-group-item tags-1102" href="#">с массажем спины</a> <a class="list-group-item tags-1102" href="#">с подводной подсветкой</a> <a class="list-group-item tags-1102" href="#">с многоцветной подсветкой</a> <a class="list-group-item tags-1102" href="#">с противоскользящим покрытием дна</a> <a class="list-group-item tags-1102" href="#">с регулируемой высотой ножек</a> <a class="list-group-item tags-1102" href="#">с датчиком уровня воды</a> <a class="list-group-item tags-1102" href="#">с регулятором воздуха</a> <a class="list-group-item tags-1102" href="#">с массажем ног</a> <a class="list-group-item tags-1102" href="#">с аромотерапией</a> </div>
+              <a class="list-group-item" data-toggle="collapse" data-target=".tags-1094" >Объем <span class="caret"></span></a>
+              <div class="collapse tags-1094 "> <a class="list-group-item tags-1094" href="#">175 л</a> <a class="list-group-item tags-1094" href="#">200 л</a> <a class="list-group-item tags-1094" href="#">220 л</a> <a class="list-group-item tags-1094" href="#">230 л</a> <a class="list-group-item tags-1094" href="#">240 л</a> <a class="list-group-item tags-1094" href="#">250 л</a> <a class="list-group-item tags-1094" href="#">260 л</a> <a class="list-group-item tags-1094" href="#">280 л</a> <a class="list-group-item tags-1094" href="#">285 л</a> <a class="list-group-item tags-1094" href="#">290 л</a> <a class="list-group-item tags-1094" href="#">270 л</a> <a class="list-group-item tags-1094" href="#">330 л</a> <a class="list-group-item tags-1094" href="#">335 л</a> <a class="list-group-item tags-1094" href="#">375 л</a> <a class="list-group-item tags-1094" href="#">380 л</a> <a class="list-group-item tags-1094" href="#">460 л</a> <a class="list-group-item tags-1094" href="#">540 л</a> <a class="list-group-item tags-1094" href="#">600 л</a> <a class="list-group-item tags-1094" href="#">100 л</a> <a class="list-group-item tags-1094" href="#">180 л</a> <a class="list-group-item tags-1094" href="#">300 л</a> <a class="list-group-item tags-1094" href="#">390 л</a> <a class="list-group-item tags-1094" href="#">420 л</a> <a class="list-group-item tags-1094" href="#">450 л</a> <a class="list-group-item tags-1094" href="#">190 л</a> <a class="list-group-item tags-1094" href="#">158 л</a> <a class="list-group-item tags-1094" href="#">185 л</a> <a class="list-group-item tags-1094" href="#">320 л</a> <a class="list-group-item tags-1094" href="#">210 л</a> <a class="list-group-item tags-1094" href="#">235 л</a> <a class="list-group-item tags-1094" href="#/">215 л</a> <a class="list-group-item tags-1094" href="#">265 л</a> <a class="list-group-item tags-1094" href="#">195 л</a> <a class="list-group-item tags-1094" href="#">225 л</a> <a class="list-group-item tags-1094" href="#">255 л</a> <a class="list-group-item tags-1094" href="#">165 л</a> <a class="list-group-item tags-1094" href="#">400 л</a> <a class="list-group-item tags-1094" href="#">350 л</a> <a class="list-group-item tags-1094" href="#">650 л</a> <a class="list-group-item tags-1094" href="#">475 л</a> <a class="list-group-item tags-1094" href="#">550 л</a> <a class="list-group-item tags-1094" href="#">340 л</a> <a class="list-group-item tags-1094" href="#">415 л</a> <a class="list-group-item tags-1094" href="#">160 л</a> <a class="list-group-item tags-1094" href="#">310 л</a> <a class="list-group-item tags-1094" href="#">245 л</a> <a class="list-group-item tags-1094" href="#">440 л</a> <a class="list-group-item tags-1094" href="#">500 л</a> <a class="list-group-item tags-1094" href="#">150 л</a> <a class="list-group-item tags-1094" href="#">170 л</a> <a class="list-group-item tags-1094" href="#">61 л</a> <a class="list-group-item tags-1094" href="#">140 л</a> <a class="list-group-item tags-1094" href="#">690 л</a> <a class="list-group-item tags-1094" href="#">520 л</a> <a class="list-group-item tags-1094" href="#">345 л</a> <a class="list-group-item tags-1094" href="#">360 л</a> <a class="list-group-item tags-1094" href="#">295 л</a> <a class="list-group-item tags-1094" href="#">205 л</a> <a class="list-group-item tags-1094" href="#">315 л</a> <a class="list-group-item tags-1094" href="#">275 л</a> <a class="list-group-item tags-1094" href="#">370 л</a> <a class="list-group-item tags-1094" href="#">365 л</a> <a class="list-group-item tags-1094" href="#">130 л</a> <a class="list-group-item tags-1094" href="#">95 л</a> <a class="list-group-item tags-1094" href="#">177 л</a> <a class="list-group-item tags-1094" href="#">203 л</a> <a class="list-group-item tags-1094" href="#">236 л</a> <a class="list-group-item tags-1094" href="#">430 л</a> <a class="list-group-item tags-1094" href="#">339 л</a> <a class="list-group-item tags-1094" href="#">90 л</a> <a class="list-group-item tags-1094" href="#">135 л</a> <a class="list-group-item tags-1094" href="#">218 л</a> <a class="list-group-item tags-1094" href="#">145 л</a> <a class="list-group-item tags-1094" href="#">155 л</a> <a class="list-group-item tags-1094" href="#">410 л</a> <a class="list-group-item tags-1094" href="#">166 л</a> <a class="list-group-item tags-1094" href="#">139 л</a> <a class="list-group-item tags-1094" href="#">128 л</a> <a class="list-group-item tags-1094" href="#">120 л</a> <a class="list-group-item tags-1094" href="#">244 л</a> <a class="list-group-item tags-1094" href="#">480 л</a> <a class="list-group-item tags-1094" href="#">495 л</a> </div>
+              <a class="list-group-item" data-toggle="collapse" data-target=".tags-1095" >Высота <span class="caret"></span></a>
+              <div class="collapse tags-1095 "> <a class="list-group-item tags-1095" href="#">68 см</a> <a class="list-group-item tags-1095" href="#">65.5 см</a> <a class="list-group-item tags-1095" href="#">66 см</a> <a class="list-group-item tags-1095" href="#">67 см</a> <a class="list-group-item tags-1095" href="#">68.5 см</a> <a class="list-group-item tags-1095" href="#">69 см</a> <a class="list-group-item tags-1095" href="#">70 см</a> <a class="list-group-item tags-1095" href="#">79 см</a> <a class="list-group-item tags-1095" href="#">71 см</a> <a class="list-group-item tags-1095" href="#">56 см</a> <a class="list-group-item tags-1095" href="#">58 см</a> <a class="list-group-item tags-1095" href="#">60 см</a> <a class="list-group-item tags-1095" href="#">61 см</a> <a class="list-group-item tags-1095" href="#">63 см</a> <a class="list-group-item tags-1095" href="#">64 см</a> <a class="list-group-item tags-1095" href="#">65 см</a> <a class="list-group-item tags-1095" href="#">75 см</a> <a class="list-group-item tags-1095" href="#">72 см</a> <a class="list-group-item tags-1095" href="#">46 см</a> <a class="list-group-item tags-1095" href="#">46.5 см</a> <a class="list-group-item tags-1095" href="#">57 см</a> <a class="list-group-item tags-1095" href="#">45.5 см</a> <a class="list-group-item tags-1095" href="#">45 см</a> <a class="list-group-item tags-1095" href="#">44 см</a> <a class="list-group-item tags-1095" href="#">44.5 см</a> <a class="list-group-item tags-1095" href="#">45.9 см</a> <a class="list-group-item tags-1095" href="#">47 см</a> <a class="list-group-item tags-1095" href="#">47.5 см</a> <a class="list-group-item tags-1095" href="#">42 см</a> <a class="list-group-item tags-1095" href="#">50 см</a> <a class="list-group-item tags-1095" href="#">43 см</a> <a class="list-group-item tags-1095" href="#">49 см</a> <a class="list-group-item tags-1095" href="#">48 см</a> <a class="list-group-item tags-1095" href="#">59 см</a> <a class="list-group-item tags-1095" href="#">67.5 см</a> <a class="list-group-item tags-1095" href="#">77 см</a> <a class="list-group-item tags-1095" href="#">73 см</a> <a class="list-group-item tags-1095" href="#">76 см</a> <a class="list-group-item tags-1095" href="#">80 см</a> <a class="list-group-item tags-1095" href="#">82 см</a> <a class="list-group-item tags-1095" href="#">52 см</a> <a class="list-group-item tags-1095" href="#">48.5 см</a> <a class="list-group-item tags-1095" href="#">53 см</a> <a class="list-group-item tags-1095" href="#">62 см</a> <a class="list-group-item tags-1095" href="#">74 см</a> <a class="list-group-item tags-1095" href="#">58.5 см</a> <a class="list-group-item tags-1095" href="#">225 см</a> <a class="list-group-item tags-1095" href="#">51 см</a> <a class="list-group-item tags-1095" href="#">40 см</a> <a class="list-group-item tags-1095" href="#">55 см</a> <a class="list-group-item tags-1095" href="#">74.5 см</a> <a class="list-group-item tags-1095" href="#">43.5 см</a> <a class="list-group-item tags-1095" href="#">42.5 см</a> <a class="list-group-item tags-1095" href="#">49.5 см</a> <a class="list-group-item tags-1095" href="#">54 см</a> <a class="list-group-item tags-1095" href="#">84 см</a> <a class="list-group-item tags-1095" href="#">78 см</a> <a class="list-group-item tags-1095" href="#">62.5 см</a> <a class="list-group-item tags-1095" href="#">87 см</a> <a class="list-group-item tags-1095" href="#">83 см</a> <a class="list-group-item tags-1095" href="#">83.5 см</a> <a class="list-group-item tags-1095" href="#">220 см</a> <a class="list-group-item tags-1095" href="#">86 см</a> <a class="list-group-item tags-1095" href="#">85 см</a> <a class="list-group-item tags-1095" href="#">90 см</a> </div>
+              <a class="list-group-item" data-toggle="collapse" data-target=".tags-1096" >Ширина <span class="caret"></span></a>
+              <div class="collapse tags-1096 "> <a class="list-group-item tags-1096" href="#">70 см</a> <a class="list-group-item tags-1096" href="#">74 см</a> <a class="list-group-item tags-1096" href="#">77 см</a> <a class="list-group-item tags-1096" href="#">78 см</a> <a class="list-group-item tags-1096" href="#">84 см</a> <a class="list-group-item tags-1096" href="#">85 см</a> <a class="list-group-item tags-1096" href="#">95 см</a> <a class="list-group-item tags-1096" href="#">100 см</a> <a class="list-group-item tags-1096" href="#">105 см</a> <a class="list-group-item tags-1096" href="#">120 см</a> <a class="list-group-item tags-1096" href="#">145 см</a> <a class="list-group-item tags-1096" href="#">148 см</a> <a class="list-group-item tags-1096" href="#">149 см</a> <a class="list-group-item tags-1096" href="#">168 см</a> <a class="list-group-item tags-1096" href="#">70.5 см</a> <a class="list-group-item tags-1096" href="#">75 см</a> <a class="list-group-item tags-1096" href="#">89 см</a> <a class="list-group-item tags-1096" href="#">96 см</a> <a class="list-group-item tags-1096" href="#">103 см</a> <a class="list-group-item tags-1096" href="#">115 см</a> <a class="list-group-item tags-1096" href="#">125 см</a> <a class="list-group-item tags-1096" href="#">130 см</a> <a class="list-group-item tags-1096" href="#">140 см</a> <a class="list-group-item tags-1096" href="#">150 см</a> <a class="list-group-item tags-1096" href="#">110 см</a> <a class="list-group-item tags-1096" href="#">135 см</a> <a class="list-group-item tags-1096" href="#">80 см</a> <a class="list-group-item tags-1096" href="#">102 см</a> <a class="list-group-item tags-1096" href="#">90 см</a> <a class="list-group-item tags-1096" href="#">137 см</a> <a class="list-group-item tags-1096" href="#">88.5 см</a> <a class="list-group-item tags-1096" href="#">146 см</a> <a class="list-group-item tags-1096" href="#">99.5 см</a> <a class="list-group-item tags-1096" href="#">158.5 см</a> <a class="list-group-item tags-1096" href="#">157.7 см</a> <a class="list-group-item tags-1096" href="#">81 см</a> <a class="list-group-item tags-1096" href="#">92 см</a> <a class="list-group-item tags-1096" href="#">165 см</a> <a class="list-group-item tags-1096" href="#">160 см</a> <a class="list-group-item tags-1096" href="#">69 см</a> <a class="list-group-item tags-1096" href="#">155 см</a> <a class="list-group-item tags-1096" href="#">108 см</a> <a class="list-group-item tags-1096" href="#">148.5 см</a> <a class="list-group-item tags-1096" href="#">152 см</a> <a class="list-group-item tags-1096" href="#">134 см</a> <a class="list-group-item tags-1096" href="#">97 см</a> <a class="list-group-item tags-1096" href="#">180 см</a> <a class="list-group-item tags-1096" href="#">119 см</a> <a class="list-group-item tags-1096" href="#">143 см</a> <a class="list-group-item tags-1096" href="#">138.5 см</a> <a class="list-group-item tags-1096" href="#">164 см</a> <a class="list-group-item tags-1096" href="#">86 см</a> <a class="list-group-item tags-1096" href="#">161 см</a> <a class="list-group-item tags-1096" href="#">91 см</a> <a class="list-group-item tags-1096" href="#">186 см</a> <a class="list-group-item tags-1096" href="#">177 см</a> <a class="list-group-item tags-1096" href="#">94 см</a> <a class="list-group-item tags-1096" href="#">87 см</a> <a class="list-group-item tags-1096" href="#">81.5 см</a> <a class="list-group-item tags-1096" href="#/">82 см</a> <a class="list-group-item tags-1096" href="#">174 см</a> <a class="list-group-item tags-1096" href="#">79 см</a> <a class="list-group-item tags-1096" href="#">111 см</a> <a class="list-group-item tags-1096" href="#">153 см</a> <a class="list-group-item tags-1096" href="#">106 см</a> <a class="list-group-item tags-1096" href="#">118 см</a> <a class="list-group-item tags-1096" href="#">151 см</a> <a class="list-group-item tags-1096" href="#">91.5 см</a> <a class="list-group-item tags-1096" href="#">210 см</a> <a class="list-group-item tags-1096" href="#">183 см</a> <a class="list-group-item tags-1096" href="#">193 см</a> <a class="list-group-item tags-1096" href="#">185 см</a> <a class="list-group-item tags-1096" href="#">190 см</a> <a class="list-group-item tags-1096" href="#">133 см</a> </div>
+              <a class="list-group-item" data-toggle="collapse" data-target=".tags-1097" >Длина <span class="caret"></span></a>
+              <div class="collapse tags-1097 "> <a class="list-group-item tags-1097" href="#">145 см</a> <a class="list-group-item tags-1097" href="#">148 см</a> <a class="list-group-item tags-1097" href="#">149 см</a> <a class="list-group-item tags-1097" href="#">150 см</a> <a class="list-group-item tags-1097" href="#">160 см</a> <a class="list-group-item tags-1097" href="#">165 см</a> <a class="list-group-item tags-1097" href="#/">168 см</a> <a class="list-group-item tags-1097" href="#">170 см</a> <a class="list-group-item tags-1097" href="#">180 см</a> <a class="list-group-item tags-1097" href="#">185 см</a> <a class="list-group-item tags-1097" href="#">190 см</a> <a class="list-group-item tags-1097" href="#">205 см</a> <a class="list-group-item tags-1097" href="#">130 см</a> <a class="list-group-item tags-1097" href="#">140 см</a> <a class="list-group-item tags-1097" href="#">157 см</a> <a class="list-group-item tags-1097" href="#">169 см</a> <a class="list-group-item tags-1097" href="#">189 см</a> <a class="list-group-item tags-1097" href="#">175 см</a> <a class="list-group-item tags-1097" href="#">185.5 см</a> <a class="list-group-item tags-1097" href="#">164 см</a> <a class="list-group-item tags-1097" href="#">149.5 см</a> <a class="list-group-item tags-1097" href="#">171 см</a> <a class="list-group-item tags-1097" href="#">209 см</a> <a class="list-group-item tags-1097" href="#">189.5 см</a> <a class="list-group-item tags-1097" href="#">179 см</a> <a class="list-group-item tags-1097" href="#">169.5 см</a> <a class="list-group-item tags-1097" href="#">120 см</a> <a class="list-group-item tags-1097" href="#">105 см</a> <a class="list-group-item tags-1097" href="#">135 см</a> <a class="list-group-item tags-1097" href="#">155 см</a> <a class="list-group-item tags-1097" href="#">158 см</a> <a class="list-group-item tags-1097" href="#">148.5 см</a> <a class="list-group-item tags-1097" href="#">152 см</a> <a class="list-group-item tags-1097" href="#">134 см</a> <a class="list-group-item tags-1097" href="#">182 см</a> <a class="list-group-item tags-1097" href="#">210 см</a> <a class="list-group-item tags-1097" href="#">146 см</a> <a class="list-group-item tags-1097" href="#">143 см</a> <a class="list-group-item tags-1097" href="#">138.5 см</a> <a class="list-group-item tags-1097" href="#">153 см</a> <a class="list-group-item tags-1097" href="#">161 см</a> <a class="list-group-item tags-1097" href="#">194 см</a> <a class="list-group-item tags-1097" href="#">187 см</a> <a class="list-group-item tags-1097" href="#">186 см</a> <a class="list-group-item tags-1097" href="#">177 см</a> <a class="list-group-item tags-1097" href="#">188 см</a> <a class="list-group-item tags-1097" href="#">172 см</a> <a class="list-group-item tags-1097" href="#">172 см</a> <a class="list-group-item tags-1097" href="#">174 см</a> <a class="list-group-item tags-1097" href="#">215 см</a> <a class="list-group-item tags-1097" href="#">181 см</a> <a class="list-group-item tags-1097" href="#">173 см</a> <a class="list-group-item tags-1097" href="#">186.5 см</a> <a class="list-group-item tags-1097" href="#">202 см</a> <a class="list-group-item tags-1097" href="#">151 см</a> <a class="list-group-item tags-1097" href="#">159.5 см</a> <a class="list-group-item tags-1097" href="#">185 см</a> <a class="list-group-item tags-1097" href="#">175 см</a> <a class="list-group-item tags-1097" href="#">162 см</a> <a class="list-group-item tags-1097" href="#">176 см</a> <a class="list-group-item tags-1097" href="#">159 см</a> </div>
+              <a class="list-group-item" data-toggle="collapse" data-target=".tags-1091" >Количество форсунок <span class="caret"></span></a>
+              <div class="collapse tags-1091 "> <a class="list-group-item tags-1091" href="#">4 форсунок</a> <a class="list-group-item tags-1091" href="#">5 форсунок</a> <a class="list-group-item tags-1091" href="#">6 форсунок</a> <a class="list-group-item tags-1091" href="#">8 форсунок</a> <a class="list-group-item tags-1091" href="#">9 форсунок</a> <a class="list-group-item tags-1091" href="#">11 форсунок</a> <a class="list-group-item tags-1091" href="#">12 форсунок</a> <a class="list-group-item tags-1091" href="#">32 форсунок</a> </div>
+              <a class="list-group-item" data-toggle="collapse" data-target=".tags-1098" >По количеству человек <span class="caret"></span></a>
+              <div class="collapse tags-1098 "> <a class="list-group-item tags-1098" href="#">на 1 человека</a> <a class="list-group-item tags-1098" href="#">на 2 человека</a> <a class="list-group-item tags-1098" href="#">на 4 человека</a> <a class="list-group-item tags-1098" href="#">на 3 человека</a> </div>
+              <a class="list-group-item" data-toggle="collapse" data-target=".tags-1099" >Слив/перелив <span class="caret"></span></a>
+              <div class="collapse tags-1099 "> <a class="list-group-item tags-1099" href="#">с механическим сливом / переливом</a> <a class="list-group-item tags-1099" href="#">с полуавтоматическим сливом / переливом</a> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="empty"></div>
+</div>
+<footer>
+  <div id="footer">
+    <div class="container">
+      <div class="row">
+        <div>
+          <div class="col-md-3 col-sm-3"> <span class="bold">Наши контакты:</span><br>
+            <span class="phone ya-phone call_phone_1"><a href="tel:+84956629907">8 (495) 662-99-07</a></span><br>
+            <br>
+            <span>Звоните с 10.00 до 19.00!</span>
+            <p><a href="mailto:info@santehnika-24.ru"><span>info@santehnika-24.ru</span></a></p>
+            <p>2016 &copy;, <span>Интернет-магазин Сантехника 24</span><br>
+              - <a href="#">мебель и сантехника
+              
+              для ванных комнат</a></p>
+          </div>
+          <div class="col-md-6 col-sm-4"> <span class="bold">Адреса наших магазинов:</span>
+            <div>
+              <p><span> г.Москва,Тихорецкий б-р,д.1 ТЦ Москва,ряд Б,павильон Б-50</span></p>
+              <br>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-5"> <span class="bold">Поиск по коду товара</span>
+            <form class="search-code">
+              <div class="input-group">
+                <input type="text" class="form-control" name="code" placeholder="код товара">
+                <span class="input-group-btn">
+                <button class="btn btn-default" type="button">Найти!</button>
+                </span> </div>
+            </form>
+            <br>
+            <div class="payment_methods"> <img width="50" src="images/visa_logo.png" alt=""> <img width="50" src="images/mastercard_logo.png" alt=""> <img height="25" src="images/sberbank_logo.png" alt=""> </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="list-inline visible-lg visible-md clearfix">
+            <li><a href="about-magazine.html">О магазине</a></li>
+            <li><a href="delivery.html">Доставка и оплата</a></li>
+            <!--                <li><a href="#">Прайс-лист</a></li>-->
+            <li><a href="discounts.html">Скидки</a></li>
+            <!-- <li><a href="#">Акции</a></li> -->
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="for-objects.html">Для объектов</a></li>
+            <li><a href="about-us-comments.html">Отзывы о нас</a></li>
+            <li><a href="articles.html">Статьи</a></li>
+            <li><a href="guarantee.html">Гарантия</a></li>
+            <!--    <li><a href="#">Новости</a></li> -->
+            <li><a href="sitemap.html">Карта сайта</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="js/jquery.min.js"></script> 
+  <script src="js/components.js"></script> 
+  <script src="js/SmoothScroll.js"></script> 
+  <script type="text/javascript" src="js/se.js"></script> 
+  <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script> 
+  <script type="text/javascript" src="js/jquery.cookie.min.js"></script> 
+  <script type="text/javascript" src="js/jquery.fancybox.min.js"></script> 
+  <script type="text/javascript" src="js/jquery.fancybox-buttons.js"></script> 
+  <script type="text/javascript" src="js/jquery.fancybox-thumbs.js"></script> 
+  <script type="text/javascript" src="js/bootstrap.min.js"></script> 
+  <script type="text/javascript" src="js/custom.js"></script> 
+  <script type="text/javascript" src="js/cart.js"></script> 
+  <script type="text/javascript" src="js/scripts.js"></script> 
+</footer>
+<div id="scrollup"> <img alt="Прокрутить вверх" src="images/backtotop.png">
+  <div class="little-cart"> <a class="btn btn-default btn-lg dropdown-toggle" href="cart.html" rel="nofollow"> <span class="glyphicon glyphicon-shopping-cart"></span> <span class="number-in-cart">1</span> </a> </div>
+</div>
+</body>
+</html>

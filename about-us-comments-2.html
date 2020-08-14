@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>AboutUsComments-2</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/png">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/thumbs.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/media.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css" media="screen">
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox-buttons.css" media="screen">
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox-thumbs.css"  media="screen">
+</head>
+
+<body>
+<div class="wrapper">
+  <header>
+    <div class="top-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6 col-sm-3 col-md-2" id="logo"> <a href="index.html" title="Сантехника 24 – мебель и сантехника для ванных комнат"><img src="images/logo.gif" alt="Сантехника 24 – мебель и сантехника для ванных комнат"></a> </div>
+          <div class="col-xs-6 col-sm-2 col-md-4" id="cart"> <a class="btn btn-default btn-lg dropdown-toggle" href="cart.html" rel="nofollow"> <span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;<small class="hidden-xs"> Заргузка...</small> </a> </div>
+          <div class="col-xs-12 col-sm-7 col-md-6 clearfix" id="bigphone">
+            <div class="pull-right">
+              <div id="wh" style="float:left; margin-top:0">Звоните!<br>
+                с 10:00 до 19:00</div>
+              <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>&nbsp; <span class="geo_msk"> <a href="tel:+84956629907" class="phone">8 (495) 662-99-07</a><br>
+              <a id="callback" data-toggle="modal" data-target="#callback-form" class="hidden-xs">Заказать обратный звонок</a> </span> <span class="geo_region"> <a href="tel:+88005558563" class="phone">8 (800) 555-85-63</a><i class="i-block">Звонок бесплатный!</i> </span> </div>
+          </div>
+        </div>
+      <!--POPUP CART-->
+        <div class="modal fade" id="cart-modal" tabindex="-1" role="dialog" aria-labelledby="cartlabel" aria-hidden="true" style="display: none;">
+          <div class="modal-dialog">
+            <div class="modal-content mobile-modal-padding">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <p class="modal-title h3" id="cartlabel">Ваша корзина</p>
+              </div>
+              <div class="modal-body modal-with-overflow">
+                <table class="table cart">
+                  <thead>
+                    <tr>
+                      <th>Изобр.</th>
+                      <th>Название товара</th>
+                      <th>Кол-во</th>
+                      <th>Стоимость</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="item-25450 item">
+                      <td><div class="thumbnail"><img src="images/img-new-products/185466_thumb.jpg" alt="Sunrise раковина+пьедестал"></div></td>
+                      <td><a href="#">Vitra Sunrise раковина+пьедестал</a></td>
+                      <td class="count"><div class="input-group"> <span class="input-group-btn">
+                          <button class="btn btn-default minus" type="button">-</button>
+                          </span>
+                          <input type="text" class="form-control" name="count" value="1" data-item_id="25450" data-opt_id="">
+                          <span class="input-group-btn">
+                          <button class="btn btn-default plus" type="button">+</button>
+                          </span> </div></td>
+                      <td class="sum price" data-price="3500">3500&nbsp;<span class="glyphicon glyphicon-ruble"></span></td>
+                      <td><button type="button" class="close remove" data-dismiss="alert" aria-hidden="true">×</button></td>
+                    </tr>
+                  </tbody>
+                  <tfoot class="summary">
+                    <tr>
+                      <td colspan="2">Итого:</td>
+                      <td><span class="count">1</span>&nbsp;шт</td>
+                      <td colspan="2" class="price"><span class="sum">3500</span>&nbsp;<span class="glyphicon glyphicon-ruble"></span></td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                <a class="btn-primary btn" href="cart.html">Оформить заказ</a> </div>
+            </div>
+          </div>
+        </div>
+        
+        <!--POPUP CART END--> 
+        
+        <a class="btn btn-primary visible-xs" href="#" id="fullview">Полная версия</a> </div>
+    </div>
+  </header>
+  <div class="navbar navbar-default navbar-static-top top-menu" role="navigation">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="navbar-header clearfix">
+            <button type="button" class="navbar-toggle btn-default" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            <span class="visible-xs-block navbar-brand">Меню и поиск</span> </div>
+          <div class="navbar-collapse collapse clearfix">
+            <ul class="nav navbar-nav">
+              <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">О магазине<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="about-magazine.html">О магазине</a></li>
+                  <li><a href="about-us-comments.html">Отзывы о нас</a></li>
+                  <li><a href="articles.html">Статьи</a></li>
+                </ul>
+              </li>
+              <li><a href="delivery.html">Доставка</a></li>
+              <li><a href="payment.html">Оплата</a></li>
+              <li><a href="reciept.html" >Получение и возврат товара</a></li>
+              <li><a href="guarantee.html">Гарантия</a></li>
+              <li><a href="contacts.html" >Контакты</a></li>
+            </ul>
+            <form class="navbar-form navbar-right">
+              <div class="input-group">
+                <input type="text" class="form-control" name="words" placeholder="я ищу сантехнику ..." value="">
+                <span class="input-group-btn">
+                <button class="btn btn-default" type="button">Найти!</button>
+                </span> </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-3 col-lg-2">
+        <nav class="nav list-group left-menu">
+          <div class="list-header list-group-item">
+            <button type="button" class="navbar-toggle visible-xs" data-toggle="collapse" data-target=".left-menu-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            <a href="catalogue.html">Каталог</a> </div>
+          <div class="left-menu-collapse collapse-xs collapse">
+            <ul class="left-menu-list clearfix">
+              <li><a href="#" class="list-group-item list-cat">Мебель для ванной</a><a class="c" data-toggle="collapse" data-target="#cat-898"><i class="caret"></i></a>
+                <ul id="cat-898" class="slidedown-menu collapse">
+                  <li><a href="#" class="list-group-item list-subcat">Комплекты мебели</a></li>
+                  <li><a href="#" class="list-group-item list-subcat">Напольные тумбы</a></li>
+                  <li><a href="#" class="list-group-item list-subcat">Подвесные тумбы</a></li>
+                  <li><a href="#" class="list-group-item list-subcat">Шкафы и пеналы</a></li>
+                  <li><a href="#" class="list-group-item list-subcat">Навесные шкафы</a></li>
+                  <li><a href="#" class="list-group-item list-subcat">Зеркальные шкафы</a></li>
+                  <li><a href="#" class="list-group-item list-subcat">Зеркала</a></li>
+                  <li><a href="#" class="list-group-item list-subcat">Столешницы</a></li>
+                </ul>
+              </li>
+              <li> <a href="#" class="list-group-item list-cat">Акриловые ванны</a> <a class="c" data-toggle="collapse" data-target="#cat-920"><i class="caret"></i></a>
+                <ul id="cat-920" class="slidedown-menu collapse">
+                  <li><a href="#" class="list-group-item list-subcat">Прямоугольные ванны</a></li>
+                  <li><a href="#" class="list-group-item list-subcat">Овальные ванны</a></li>
+                  <li><a href="#" class="list-group-item list-subcat">Квадратные ванны</a></li>
+                  <li><a href="#" class="list-group-item list-subcat">Круглые ванны</a></li>
+                  <li><a href="#" class="list-group-item list-subcat">Угловые ванны</a></li>
+                  <li><a href="#" class="list-group-item list-subcat">Многогранные ванны</a></li>
+                  <li><a href="#" class="list-group-item list-subcat">Сливы-переливы</a></li>
+                </ul>
+              </li>
+              <li> <a href="#" class="list-group-item list-cat">Чугунные ванны</a> <a class="c" data-toggle="collapse" data-target="#cat-931"><i class="caret"></i></a>
+                <ul id="cat-931" class="slidedown-menu collapse">
+                  <li><a href="#" class="list-group-item list-subcat">Прямоугольные ванны</a></li>
+                  <li><a href="#" class="list-group-item list-subcat">Овальные ванны</a></li>
+                  <li><a href="#" class="list-group-item list-subcat">Отдельностоящие ванны</a></li>
+                  <li><a href="#" class="list-group-item list-subcat">Сливы-переливы</a></li>
+                </ul>
+              </li>
+              <li> <a href="#" class="list-group-item list-cat border-none">Стальные ванны</a> </li>
+              <li> <a href="#" class="list-group-item list-cat">Ванны из литьевого мрамора</a> <a class="c" data-toggle="collapse" data-target="#cat-930"><i class="caret"></i></a>
+                <ul id="cat-930" class="slidedown-menu collapse">
+                  <li><a href="#" class="list-group-item list-subcat">Прямоугольные ванны</a></li>
+                  <li><a href="#" class="list-group-item list-subcat">Овальные ванны</a></li>
+                  <li><a href="#" class="list-group-item list-subcat">Круглые ванны</a></li>
+                  <li><a href="#" class="list-group-item list-subcat">Отдельностоящие ванны</a></li>
+                  <li><a href="#" class="list-group-item list-subcat">Угловые ванны</a></li>
+                  <li><a href="#" class="list-group-item list-subcat">Асимметричные ванны</a></li>
+                  <li><a href="#" class="list-group-item list-subcat">Сливы-переливы</a></li>
+                </ul>
+              </li>
+              <li> <a href="#" class="list-group-item list-cat">Смесители</a> <a class="c" data-toggle="collapse" data-target="#cat-911"><i class="caret"></i></a>
+                <ul id="cat-911" class="slidedown-menu collapse">
+                  <li><a href="#" class="list-group-item list-subcat">для раковины</a></li>
+                  <li><a href="#" class="list-group-item list-subcat">для кухни</a></li>
+                  <li><a href="#" class="list-group-item list-subcat">для ванны и душа</a></li>
+                  <li><a href="#" class="list-group-item list-subcat">для душа</a></li>
+                  <li><a href="#" class="list-group-item list-subcat">на борт ванны</a></li>
+                  <li><a href="#" class="list-group-item list-subcat">для биде</a></li>
+                  <li><a href="#" class="list-group-item list-subcat">специальные смесители</a></li>
+                  <li><a href="#" class="list-group-item list-subcat">Комплектующие для смесителей</a></li>
+                </ul>
+              </li>
+              <li> <a href="#" class="list-group-item list-cat">Душ</a> <a class="c" data-toggle="collapse" data-target="#cat-948"><i class="caret"></i></a>
+                <ul id="cat-948" class="slidedown-menu collapse">
+                  <li><a href="#" class="list-group-item list-subcat">Душевые стойки</a></li>
+                  <li><a href="#" class="list-group-item list-subcat">Душевые панели</a></li>
+                  <li><a href="#" class="list-group-item list-subcat">Душевые гарнитуры</a></li>
+                  <li><a href="#" class="list-group-item list-subcat">Душевые лейки</a></li>
+                  <li><a href="#" class="list-group-item list-subcat">Верхний душ</a></li>
+                  <li><a href="#" class="list-group-item list-subcat">Гигиенические души</a></li>
+                  <li><a href="#" class="list-group-item list-subcat">Душевые шланги</a></li>
+                  <li><a href="#" class="list-group-item list-subcat">Держатели для душа</a></li>
+                </ul>
+              </li>
+              <li> <a href="#" class="list-group-item list-cat">Душевые кабины</a> <a class="c" data-toggle="collapse" data-target="#cat-935"><i class="caret"></i></a>
+                <ul id="cat-935" class="slidedown-menu collapse">
+                  <li><a href="#" class="list-group-item list-subcat">С баней</a></li>
+                  <li><a href="#" class="list-group-item list-subcat">С  крышей</a></li>
+                  <li><a href="#" class="list-group-item list-subcat">Без крыши</a></li>
+                  <li><a href="#" class="list-group-item list-subcat">С гидромассажем</a></li>
+                  <li><a href="#" class="list-group-item list-subcat">Без бани</a></li>
+                  <li><a href="#" class="list-group-item list-subcat">Сауны</a></li>
+                </ul>
+              </li>
+              <li> <a href="#" class="list-group-item list-cat border-none">Душевые боксы</a> </li>
+              <li> <a href="#" class="list-group-item list-cat border-none">Душевые ограждения</a> </li>
+              <li> <a class="c" data-toggle="collapse" data-target="#cat-946"><i class="caret"></i></a>
+                <ul id="cat-946" class="slidedown-menu collapse">
+                  <li><a href="/dushevie-dveri/" class="list-group-item list-subcat">Душевые двери</a> </li>
+                  <li><a href="/shtorki-dlya-vannoy/" class="list-group-item list-subcat">Шторки для ванной</a> </li>
+                  <li><a href="/dushevie-ugli/" class="list-group-item list-subcat">Душевые углы</a> </li>
+                </ul>
+              </li>
+              <li> <a href="#" class="list-group-item list-cat border-none">Душевые поддоны</a> </li>
+              <li> <a href="#" class="list-group-item list-cat">Унитазы</a> <a class="c" data-toggle="collapse" data-target="#cat-960"><i class="caret"></i></a>
+                <ul id="cat-960" class="slidedown-menu collapse">
+                  <li><a href="#" class="list-group-item list-subcat">Напольные </a> </li>
+                  <li><a href="#" class="list-group-item list-subcat">Подвесные</a> </li>
+                  <li><a href="#" class="list-group-item list-subcat">Приставные </a> </li>
+                  <li><a href="#" class="list-group-item list-subcat">Детские</a> </li>
+                  <li><a href="#" class="list-group-item list-subcat">Чаши Генуя</a> </li>
+                </ul>
+              </li>
+              <li> <a href="#" class="list-group-item list-cat">Раковины</a> <a class="c" data-toggle="collapse" data-target="#cat-953"><i class="caret"></i></a>
+                <ul id="cat-953" class="slidedown-menu collapse">
+                  <li><a href="#" class="list-group-item list-subcat">Накладные</a> </li>
+                  <li><a href="#" class="list-group-item list-subcat">Напольные</a> </li>
+                  <li><a href="#" class="list-group-item list-subcat">Угловые</a> </li>
+                  <li><a href="#" class="list-group-item list-subcat">Подвесные</a> </li>
+                  <li><a href="#" class="list-group-item list-subcat">Встраиваемые</a> </li>
+                  <li><a href="#" class="list-group-item list-subcat">Сифоны для раковин</a> </li>
+                  <li><a href="#" class="list-group-item list-subcat">Донные клапаны</a> </li>
+                </ul>
+              </li>
+              <li> <a href="#" class="list-group-item list-cat">Биде</a> <a class="c" data-toggle="collapse" data-target="#cat-965"><i class="caret"></i></a>
+                <ul id="cat-965" class="slidedown-menu collapse">
+                  <li><a href="#" class="list-group-item list-subcat">Напольные</a></li>
+                  <li><a href="#" class="list-group-item list-subcat">Подвесные</a></li>
+                  <li><a href="#" class="list-group-item list-subcat">Сифоны для биде</a></li>
+                </ul>
+              </li>
+              <li> <a href="#" class="list-group-item list-cat border-none">Писсуары</a> </li>
+              <li> <a href="#" class="list-group-item list-cat">Полотенцесушители</a> <a class="c" data-toggle="collapse" data-target="#cat-971"><i class="caret"></i></a>
+                <ul id="cat-971" class="slidedown-menu collapse">
+                  <li><a href="#" class="list-group-item list-subcat">Водяные</a></li>
+                  <li><a href="#" class="list-group-item list-subcat">Электрические</a></li>
+                  <li><a href="#" class="list-group-item list-subcat">Комплектующие</a></li>
+                </ul>
+              </li>
+              <li> <a href="#" class="list-group-item list-cat">Системы инсталляции</a> <a class="c" data-toggle="collapse" data-target="#cat-969"><i class="caret"></i></a>
+                <ul id="cat-969" class="slidedown-menu collapse">
+                  <li><a href="#" class="list-group-item list-subcat">Инсталляции для унитаза</a></li>
+                  <li> <a href="#" class="list-group-item list-subcat">Инсталляции для биде</a></li>
+                  <li><a href="#" class="list-group-item list-subcat">Инсталляции для писсуаров</a></li>
+                  <li><a href="#" class="list-group-item list-subcat">Инсталляции для раковин</a></li>
+                  <li><a href="#" class="list-group-item list-subcat">Смывные клавиши</a></li>
+                  <li><a href="#" class="list-group-item list-subcat">Смывные бачки</a></li>
+                  <li><a href="#" class="list-group-item list-subcat">Комплектующие</a></li>
+                  <li><a href="#" class="list-group-item list-subcat">Устройства управления смывом</a></li>
+                </ul>
+              </li>
+              <li> <a href="#" class="list-group-item list-cat border-none">Аксессуары</a> </li>
+              <li> <a href="#" class="list-group-item list-cat border-none">Мини бассейны</a> </li>
+              <li> <a href="#" class="list-group-item list-cat">Комплектующие</a> <a class="c" data-toggle="collapse" data-target="#cat-980"><i class="caret"></i></a>
+                <ul id="cat-980" class="slidedown-menu collapse">
+                  <li><a href="#" class="list-group-item list-subcat">Сифоны для биде</a> </li>
+                  <li><a href="#" class="list-group-item list-subcat">Сифоны для раковин</a> </li>
+                  <li><a href="#" class="list-group-item list-subcat">Шланги</a> </li>
+                  <li><a href="#" class="list-group-item list-subcat">Держатели для душа</a> </li>
+                  <li><a href="#" class="list-group-item list-subcat">Колонны</a> </li>
+                  <li><a href="#" class="list-group-item list-subcat">Штуцеры</a> </li>
+                  <li><a href="#" class="list-group-item list-subcat">Удлинители</a> </li>
+                  <li><a href="#" class="list-group-item list-subcat">Для смесителей</a> </li>
+                  <li><a href="#" class="list-group-item list-subcat">Донные клапаны</a> </li>
+                  <li><a href="#" class="list-group-item list-subcat">Сливы-переливы</a> </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="col-md-9 col-lg-10 col-sm-12 comments-page">
+        <ol class="breadcrumb">
+          <li><a href="index.html">Сантехника 24</a></li>
+          <li><a href="about-magazine.html">О магазине</a></li>
+          <li class="active">Отзывы о нас</li>
+        </ol>
+        <h1>Отзывы о нас</h1>
+        <button data-toggle="modal" data-target="#review-form" class="btn btn-default pull-right">Оставить отзыв</button>
+        
+        <!--POPUP-->
+        <div class="modal fade" id="review-form" tabindex="-1" role="dialog"  aria-hidden="true" style="display: none;">
+          <form method="post" class="form-horizontal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                  <p class="modal-title h3" id="callback-label">Написать новый отзыв</p>
+                </div>
+                <div class="modal-body">
+                  <input name="prod_id" value="0" type="hidden">
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Ваше имя:</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" name="name" placeholder="" value="">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Ваша оценка:</label>
+                    <div class="col-sm-9">
+                      <select name="rating" class="form-control">
+                        <option value="5">5 баллов: Отлично</option>
+                        <option value="4">4 балла: Хорошо</option>
+                        <option value="3">3 балла: Так себе</option>
+                        <option value="2">2 балла: Плохо</option>
+                        <option value="1">1 балл: Ужасно</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Комментарии:</label>
+                    <div class="col-sm-9">
+                      <textarea class="form-control" name="comments"></textarea>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-9"> Все отзывы публикуются после проверки, пожалуйста воздержитесь от ненормативной лексики </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <input type="submit" value="Оставить отзыв!" class="btn btn-primary">
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        
+        <!--POPUP END-->
+        
+        <ul class="pagination clearfix">
+          <li class="disabled"><a>&laquo;</a></li>
+          <li class="" ><a  href="about-us-comments.html">1</a></li>
+          <li class="active"><a href="about-us-comments-2.html">2</a></li>
+          <li><a href="about-us-comments-3.html">3</a></li>
+          <li><a data-href="jqwlbH1FwLx4eNtSeQ5yiQ==" id="pages_next" rel="nofollow">&raquo;</a></li>
+        </ul>
+        <ul class="list-group about-comments clearfix">
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-md-4 col-sm-4 col-lg-3">
+                <div class="image-box"> <img src="images/logo.gif" alt=""> </div>
+              </div>
+              <div class="col-md-8 col-sm-8 col-lg-9">
+                <div class="rating pull-right"> <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> </div>
+                <p class="bold">Отзыв о магазине satnehnika-24.ru</p>
+                <div class="author">Астгик, 27.04.2014</div>
+                <div class="comments"><b>Комментарии:</b> Качественный товар, доставка товара вовремя Три дня назад заказали душевую кабину , цены в интернете совпадают с реальными ценами, доставку произвели вовремя. Очень довольна обслуживанием.</div>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row clearfix">
+              <div class="col-md-4 col-sm-4 col-lg-3">
+                <div class="image-box"> <img src="images/logo.gif" alt=""> </div>
+              </div>
+              <div class="col-md-8 col-sm-8 col-lg-9">
+                <div class="rating pull-right"> <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> </div>
+                <p class="bold">Отзыв о магазине satnehnika-24.ru</p>
+                <div class="author">Не указан, 25.04.2014</div>
+                <div class="comments"><b>Комментарии:</b> Идеальное обслуживание, ни секунды зря не потрачено. Очень рекомендовали(разумеется под мой бюджет) ванну Roca Continental 170x70 с ножками. Оформил доставку,т.к. не имел возможности забрать самому. Хочется отметить,что доставка не опоздала,и доехала ванна без царапин. Для людей,которые "живут" ремонтом,это идеальный вариант.</div>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-md-4 col-sm-4 col-lg-3">
+                <div class="image-box"> <img src="images/logo.gif" alt="" > </div>
+              </div>
+              <div class="col-md-8 col-sm-8 col-lg-9">
+                <div class="rating pull-right"> <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> </div>
+                <p class="bold">Отзыв о магазине satnehnika-24.ru</p>
+                <div class="author">Верник Роман, 23.04.2014</div>
+                <div class="comments"><b>Комментарии:</b> Делал в ванной ремонт,всю сантехнику купил здесь. Магазин посоветовал друг. Сервис на высоком уровне,очень доступно все объясняют,в качестве сомневаться не приходится. После покупки,просматривая другие магазины,посчитал,что сэкономил 2200р.</div>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-md-4 col-sm-4 col-lg-3">
+                <div class="image-box"> <img src="images/logo.gif" alt=""> </div>
+              </div>
+              <div class="col-md-8 col-sm-8 col-lg-9">
+                <div class="rating pull-right"> <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> </div>
+                <p class="bold">Отзыв о магазине satnehnika-24.ru</p>
+                <div class="author">Жильников Валерий, 20.04.2014</div>
+                <div class="comments"><b>Комментарии:</b> Доставили мною выбранную ванну (Roca Continental  150х70) точно в обговоренное время,заранее позвонив. Так же помогли поднять в дом и установить. Никак не нарадуюсь,покупка превзошла все мои ожидания. Качество видно сразу.Ребята свое дело знают,серьезный магазин. Всем рекомендую!</div>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-md-4 col-sm-4 col-lg-3">
+                <div class="image-box"> <img src="images/logo.gif" alt="" > </div>
+              </div>
+              <div class="col-md-8 col-sm-8 col-lg-9">
+                <div class="rating pull-right"> <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> </div>
+                <p class="bold">Отзыв о магазине satnehnika-24.ru</p>
+                <div class="author">Шагалл Марк, 17.04.2014</div>
+                <div class="comments"><b>Комментарии:</b> Магазин просто щикарный. Обслуживание на высшем уровне. На все вопросы следует четкий и внятный ответ. С выбором очень помогли. Думаю,это не последняя наша встреча!</div>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-md-4 col-sm-4 col-lg-3">
+                <div class="image-box"> <img src="images/logo.gif" alt=""> </div>
+              </div>
+              <div class="col-md-8 col-sm-8 col-lg-9">
+                <div class="rating pull-right"> <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> </div>
+                <p class="bold">Отзыв о магазине satnehnika-24.ru</p>
+                <div class="author">томчук настя, 28.01.2014</div>
+                <div class="comments"><b>Комментарии:</b> большой выбордля новой квартиры нужно было закупать сантехнику. Посоветовали данный магазин знакомые, которые делали тут покупки не один раз. Поразил большой выбор всего и наличие полноценных фото, на которых все отчетливо можно посмотреть. Цены тоже не завышены, что конечно же радует. Заказ был у нас с мужем большой, но не смотря на это, привезли все уже прямо на дом через 4 дня. Покупкой очень довольна.</div>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-md-4 col-sm-4 col-lg-3">
+                <div class="image-box"> <img src="images/logo.gif" alt="satnehnika-24.ru"> </div>
+              </div>
+              <div class="col-md-8 col-sm-8 col-lg-9">
+                <div class="rating pull-right"> <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> </div>
+                <p class="bold">Отзыв о магазине satnehnika-24.ru</p>
+                <div class="author">Зубик Николай, 28.01.2014</div>
+                <div class="comments"><b>Комментарии:</b> возможность бесплатной доставкиделал большой заказ для оборудования ванной комнаты. Понравилось то, что есть в наличии сразу все в одном месте: специальная мебель, сама ванна, смесители и пр. Все это к тому же стоит не так уж дорого, по сравнению с другими интернет магазинами или обычным рынком (специально ходил приценивался). Большой плюс – это бесплатная доставка, предоставлена была как бонус от магазина, что конечно же очень приятно.</div>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-md-4 col-sm-4 col-lg-3">
+                <div class="image-box"> <img src="images/logo.gif" alt=""> </div>
+              </div>
+              <div class="col-md-8 col-sm-8 col-lg-9">
+                <div class="rating pull-right"> <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> </div>
+                <p class="bold">Отзыв о магазине satnehnika-24.ru</p>
+                <div class="author">Каримов Тимур, 20.01.2014</div>
+                <div class="comments"><b>Комментарии:</b> Доволен! Радости дома супер. Доставили ванну, отправили на следущий день специалиста установил, объяснил даже инструкцию читать не надо! И гарантия понравилась. Спосибо ребята!!!</div>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-md-4 col-sm-4 col-lg-3">
+                <div class="image-box"> <img src="images/logo.gif" alt=""> </div>
+              </div>
+              <div class="col-md-8 col-sm-8 col-lg-9">
+                <div class="rating pull-right"> <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> </div>
+                <p class="bold">Отзыв о магазине satnehnika-24.ru</p>
+                <div class="author">Иванов Игорь, 12.12.2013</div>
+                <div class="comments"><b>Комментарии:</b> Оперативность,ответственность.Заказ №20131210-3875 доставили вовремя,спасибо за быструю доставку, буду заказывать еще. Отдельное спасибо водителю за терпение.</div>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-md-4 col-sm-4 col-lg-3">
+                <div class="image-box"> <img src="images/logo.gif" alt=""> </div>
+              </div>
+              <div class="col-md-8 col-sm-8 col-lg-9">
+                <div class="rating pull-right"> <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> </div>
+                <p class="bold">Отзыв о магазине satnehnika-24.ru</p>
+                <div class="author">Mkoyan Tigran, 09.12.2013</div>
+                <div class="comments"><b>Комментарии:</b> Работают оперативноЗаказал мебель в ванну. Заказ 20131207-3651. Привезли во время. Открыли упаковку,все показали. Хочу сказать большое спасибо сотрудницам интернет-магазина,за профессионализм, вежливость и добросовестность.</div>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-md-4 col-sm-4 col-lg-3">
+                <div class="image-box"> <img src="images/logo.gif" alt=""> </div>
+              </div>
+              <div class="col-md-8 col-sm-8 col-lg-9">
+                <div class="rating pull-right"> <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> </div>
+                <p class="bold">Отзыв о магазине satnehnika-24.ru</p>
+                <div class="author">Горбань Ирина, 02.12.2013</div>
+                <div class="comments"><b>Комментарии:</b> оперативно, качественно, цены очень даже отличныеДобрый день! Долго искала ванну из наличия в Москве.  Сама по себе ванна не дешевая, фирма Balteco. Ни один магазин найти не смог. После того как мне соседка посоветовала интернет-магазин сантехника-24, я сделала заказ на сайте. мало того,что сразу же созвонились, так еще на следующий день привезли ванну. Стоимость ванны 219000р., привезли,даже предоплату не требовали. Ванна полностью соответствовала моему заказу. Спасибо большое! Про Ваш сайт скоро будут знать все наши соседи.</div>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-md-4 col-sm-4 col-lg-3">
+                <div class="image-box"> <img src="images/logo.gif" alt=""> </div>
+              </div>
+              <div class="col-md-8 col-sm-8 col-lg-9">
+                <div class="rating pull-right"> <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> </div>
+                <p class="bold">Отзыв о магазине satnehnika-24.ru</p>
+                <div class="author">? ТИМУР БАЙСУЛТАНОВ ?, 02.11.2013</div>
+                <div class="comments"><b>Комментарии:</b> Впечатляющий выбор душевых кабин.Душевую кабину elba забирал самостоятельно с каширского шоссе. Приехал перед самым закрытием склада, но проблем не возникло.</div>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-md-4 col-sm-4 col-lg-3">
+                <div class="image-box"> <img src="images/logo.gif" alt=""> </div>
+              </div>
+              <div class="col-md-8 col-sm-8 col-lg-9">
+                <div class="rating pull-right"> <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> </div>
+                <p class="bold">Отзыв о магазине satnehnika-24.ru</p>
+                <div class="author">Не указан, 28.10.2013</div>
+                <div class="comments"><b>Комментарии:</b> Вежливый и внимательный персонал, хороший выбор товара. Доставка во время!Покупала ванную фирмы RAVAK 26 октября 2013 года, менеджер Ольга очень быстро отреагировала, уточнила наличие и оформила заказ. В назначенный день служба доставки привезла товар. Очень хороший магазин. Рекомендую всем!</div>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-md-4 col-sm-4 col-lg-3">
+                <div class="image-box"> <img src="images/logo.gif" alt=""> </div>
+              </div>
+              <div class="col-md-8 col-sm-8 col-lg-9">
+                <div class="rating pull-right"> <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> </div>
+                <p class="bold">Отзыв о магазине satnehnika-24.ru</p>
+                <div class="author">Ольга Ходяева, 26.10.2013</div>
+                <div class="comments"><b>Комментарии:</b> Отличный выбор сантехники. Приобретала здесь ванну в венецианском стиле со смесителем. Менеджер быстро среагировала на мой заказ, перезвонила и уточнила все данные. Договорились о доставке на следующий день. Курьер приехал без опозданий, хотя живу я в Подмосковье. Все было отлично упаковано и товар остался в целости и сохранности. Расплатилась с курьером после того как все тщательно проверила. Выражаю благодарность всему персоналу магазина. Отличная работа.</div>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-md-4 col-sm-4 col-lg-3">
+                <div class="image-box"> <img src="images/logo.gif" alt=""> </div>
+              </div>
+              <div class="col-md-8 col-sm-8 col-lg-9">
+                <div class="rating pull-right"> <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> </div>
+                <p class="bold">Отзыв о магазине satnehnika-24.ru</p>
+                <div class="author">Бирюков Григорий, 20.10.2013</div>
+                <div class="comments"><b>Комментарии:</b> Большой выбор акриловых ванн. Позвонил, попросил помощь в выборе под мой размер ванной комнаты. Предложили несколько вариантов, выбор сделал быстро, доставили своевременно.</div>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-md-4 col-sm-4 col-lg-3">
+                <div class="image-box"> <img src="images/logo.gif" alt=""> </div>
+              </div>
+              <div class="col-md-8 col-sm-8 col-lg-9">
+                <div class="rating pull-right"> <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> </div>
+                <p class="bold">Отзыв о магазине satnehnika-24.ru</p>
+                <div class="author">Грачев Вячеслав, 18.10.2013</div>
+                <div class="comments"><b>Комментарии:</b> Неплохой выбор мебели для ванной, качество на уровне, цены очень выгодные. Приобретали комплект мебели Астра 75 2-Н, заказывали с доставкой на Ватутина, 18к2. Менеджер перезвонил практически сразу, подобрал удобное время доставки.</div>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-md-4 col-sm-4 col-lg-3">
+                <div class="image-box"> <img src="images/logo.gif" alt=""> </div>
+              </div>
+              <div class="col-md-8 col-sm-8 col-lg-9">
+                <div class="rating pull-right"> <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> </div>
+                <p class="bold">Отзыв о магазине satnehnika-24.ru</p>
+                <div class="author">Не указан, 17.10.2013</div>
+                <div class="comments"><b>Комментарии:</b> Мы тут с женой много чего заказывали и сейчас вот хотим благодарность выразить. Смесители, поддон в душевую, унитаз и раковины, все куплено здесь. Забирать все ездили сами, там по Каширке очень удобно заезжать. Гарантии на все дают и чек, конечно. Серьезный, надежный магазин.</div>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-md-4 col-sm-4 col-lg-3">
+                <div class="image-box"> <img src="images/logo.gif" alt=""> </div>
+              </div>
+              <div class="col-md-8 col-sm-8 col-lg-9">
+                <div class="rating pull-right"> <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> </div>
+                <p class="bold">Отзыв о магазине satnehnika-24.ru</p>
+                <div class="author">mem-v, 16.10.2013</div>
+                <div class="comments"><b>Комментарии:</b> Доставили быстро, и сами звонили.С  доставкой проблем не было!!!!Хочу выразить благодарность менеждеру Анне ,за активное участие и оперативность ! Большое спасибо !</div>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-md-4 col-sm-4 col-lg-3">
+                <div class="image-box"> <img src="images/logo.gif" alt=""> </div>
+              </div>
+              <div class="col-md-8 col-sm-8 col-lg-9">
+                <div class="rating pull-right"> <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> </div>
+                <p class="bold">Отзыв о магазине satnehnika-24.ru</p>
+                <div class="author">Мк Ли, 16.10.2013</div>
+                <div class="comments"><b>Комментарии:</b> профессиональное обслуживаниеВ магазине помогли подобрать ванну и к нему все комплектующие по приемлемым ценам. спасибо, что не стали накручивать на  более дорогие модели.  Доставку сделали на сл. день в назначенное время , прямо до ванной.  всем довольна))</div>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-md-4 col-sm-4 col-lg-3">
+                <div class="image-box"> <img src="images/logo.gif" alt=""> </div>
+              </div>
+              <div class="col-md-8 col-sm-8 col-lg-9">
+                <div class="rating pull-right"> <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> </div>
+                <p class="bold">Отзыв о магазине satnehnika-24.ru</p>
+                <div class="author">Яшкин Александр, 13.10.2013</div>
+                <div class="comments"><b>Комментарии:</b> Магазин хороший. Проблем ни с оформлением заказа на смесители, ни с доставкой не возникло. Удивительно, но доставка прошла через день и даже с предварительным звонком – все как надо сделали!</div>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-md-4 col-sm-4 col-lg-3">
+                <div class="image-box"> <img src="images/logo.gif" alt=""> </div>
+              </div>
+              <div class="col-md-8 col-sm-8 col-lg-9">
+                <div class="rating pull-right"> <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> </div>
+                <p class="bold">Отзыв о магазине satnehnika-24.ru</p>
+                <div class="author">Рушалин Семен, 13.10.2013</div>
+                <div class="comments"><b>Комментарии:</b> Решил сам сделать что-то вроде душа, нашел здесь отличный вариант душевого уголка акватек (производитель Россия, но очень качественно выполнено). Условия доставки были соблюдены!</div>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-md-4 col-sm-4 col-lg-3">
+                <div class="image-box"> <img src="images/logo.gif" alt=""> </div>
+              </div>
+              <div class="col-md-8 col-sm-8 col-lg-9">
+                <div class="rating pull-right"> <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> </div>
+                <p class="bold">Отзыв о магазине satnehnika-24.ru</p>
+                <div class="author">Живанов Алексей, 11.10.2013</div>
+                <div class="comments"><b>Комментарии:</b> Нашел замечательный и стильный ручной душик, даже производитель грое – немецкое качество, как говорится. По сути, магазину за работу можно смело поставить отлично. Менеджер оформил заказ оперативно, доставка прошла во вторник, ровно в пять часов.</div>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-md-4 col-sm-4 col-lg-3">
+                <div class="image-box"> <img src="images/logo.gif" alt=""> </div>
+              </div>
+              <div class="col-md-8 col-sm-8 col-lg-9">
+                <div class="rating pull-right"> <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> </div>
+                <p class="bold">Отзыв о магазине satnehnika-24.ru</p>
+                <div class="author">Rezirov Sergey, 08.10.2013</div>
+                <div class="comments"><b>Комментарии:</b> достаточно быстрое и вежливое реагирование на заказ и вообще работа с клиентамиСделал заказ в Ростовскую область 1-го октября, думал что идти будет долго, но 5-го числа все получил в идеальном состоянии. Вообще цены намного ниже нежели в любых наших местных магазинах, не говоря уже о том что местных сайтов попросту нет, поэтому и посоветовали поискать Сантехнику24. Консультанты видно очень опытные, сами позаботились о транспортной компании и в целом о доставке.</div>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-md-4 col-sm-4 col-lg-3">
+                <div class="image-box"> <img src="images/logo.gif" alt=""> </div>
+              </div>
+              <div class="col-md-8 col-sm-8 col-lg-9">
+                <div class="rating pull-right"> <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> </div>
+                <p class="bold">Отзыв о магазине satnehnika-24.ru</p>
+                <div class="author">Каримов Тимур, 07.10.2013</div>
+                <div class="comments"><b>Комментарии:</b> ОтличноУдобно, комфортно, приемлемо, профессионально. Если-бы можно было поставить 100 звезд не поленился бы  поставил бы. Магазин супер, хороший удобно.</div>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-md-4 col-sm-4 col-lg-3">
+                <div class="image-box"> <img src="images/logo.gif" alt=""> </div>
+              </div>
+              <div class="col-md-8 col-sm-8 col-lg-9">
+                <div class="rating pull-right"> <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> </div>
+                <p class="bold">Отзыв о магазине satnehnika-24.ru</p>
+                <div class="author">Молаев Роман, 07.10.2013</div>
+                <div class="comments"><b>Комментарии:</b> Магазин получает от меня наивысшую оценку, поскольку качество обслуживания и товара тут на высочайшем уровне! Заказывал ванну Jacob Delafon Soissons, ее доставили в назначенное время. Привезли аккуратно, на ванне отсутствуют какие-либо повреждения. Качество изделия отличное, документы все имеются. Цена и параметры соответствуют описанию на сайте. Короче говоря, никаких несостыковок или обмана.</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <ul class="pagination clearfix">
+          <li class="disabled"><a>&laquo;</a></li>
+          <li><a href="about-us-comments.html">1</a></li>
+          <li class="active"><a href="about-us-comments-2.html">2</a></li>
+          <li><a href="about-us-comments-3.html">3</a></li>
+          <li><a data-href="jqwlbH1FwLx4eNtSeQ5yiQ==" id="pages_next" rel="nofollow">&raquo;</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="empty"></div>
+</div>
+<footer>
+  <div id="footer">
+    <div class="container">
+      <div class="row">
+        <div>
+          <div class="col-md-3 col-sm-3"> <span class="bold">Наши контакты:</span><br>
+            <span class="phone ya-phone call_phone_1"><a href="tel:+84956629907">8 (495) 662-99-07</a></span><br>
+            <br>
+            <span>Звоните с 10.00 до 19.00!</span>
+            <p><a href="mailto:info@santehnika-24.ru"><span>info@santehnika-24.ru</span></a></p>
+            <p>2016 &copy;, <span>Интернет-магазин Сантехника 24</span><br>
+              - <a href="#">мебель и сантехника
+              
+              для ванных комнат</a></p>
+          </div>
+          <div class="col-md-6 col-sm-4"> <span class="bold">Адреса наших магазинов:</span>
+            <div>
+              <p><span> г.Москва,Тихорецкий б-р,д.1 ТЦ Москва,ряд Б,павильон Б-50</span></p>
+              <br>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-5"> <span class="bold">Поиск по коду товара</span>
+            <form class="search-code">
+              <div class="input-group">
+                <input type="text" class="form-control" name="code" placeholder="код товара">
+                <span class="input-group-btn">
+                <button class="btn btn-default" type="button">Найти!</button>
+                </span> </div>
+            </form>
+            <br>
+            <div class="payment_methods"> <img width="50" src="images/visa_logo.png" alt=""> <img width="50" src="images/mastercard_logo.png" alt=""> <img height="25" src="images/sberbank_logo.png" alt=""> </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="list-inline visible-lg visible-md clearfix">
+            <li><a href="about-magazine.html">О магазине</a></li>
+            <li><a href="delivery.html">Доставка и оплата</a></li>
+            <!--                <li><a href="#">Прайс-лист</a></li>-->
+            <li><a href="discounts.html">Скидки</a></li>
+            <!-- <li><a href="#">Акции</a></li> -->
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="for-objects.html">Для объектов</a></li>
+            <li><a href="about-us-comments.html">Отзывы о нас</a></li>
+            <li><a href="articles.html">Статьи</a></li>
+            <li><a href="guarantee.html">Гарантия</a></li>
+            <!--    <li><a href="#">Новости</a></li> -->
+            <li><a href="sitemap.html">Карта сайта</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="js/jquery.min.js"></script> 
+  <script src="js/components.js"></script> 
+  <script src="js/SmoothScroll.js"></script> 
+  <script type="text/javascript" src="js/se.js"></script> 
+  <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script> 
+  <script type="text/javascript" src="js/jquery.cookie.min.js"></script> 
+  <script type="text/javascript" src="js/jquery.fancybox.min.js"></script> 
+  <script type="text/javascript" src="js/jquery.fancybox-buttons.js"></script> 
+  <script type="text/javascript" src="js/jquery.fancybox-thumbs.js"></script> 
+  <script type="text/javascript" src="js/bootstrap.min.js"></script> 
+  <script type="text/javascript" src="js/custom.js"></script> 
+  <script type="text/javascript" src="js/cart.js"></script> 
+  <script type="text/javascript" src="js/scripts.js"></script> 
+</footer>
+<div id="scrollup"> <img alt="Прокрутить вверх" src="images/backtotop.png">
+  <div class="little-cart"> <a class="btn btn-default btn-lg dropdown-toggle" href="cart.html" rel="nofollow"> <span class="glyphicon glyphicon-shopping-cart"></span> </a> </div>
+</div>
+</body>
+</html>

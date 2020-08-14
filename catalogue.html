@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Catalagoue</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/png">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/thumbs.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/media.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css" media="screen">
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox-buttons.css" media="screen">
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox-thumbs.css"  media="screen">
+</head>
+
+<body>
+<div class="wrapper">
+  <header>
+    <div class="top-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6 col-sm-3 col-md-2" id="logo"> <a href="index.html" title="Сантехника 24 – мебель и сантехника для ванных комнат"><img src="images/logo.gif" alt="Сантехника 24 – мебель и сантехника для ванных комнат"></a> </div>
+          <div class="col-xs-6 col-sm-2 col-md-4" id="cart"> <a class="btn btn-default btn-lg dropdown-toggle" href="cart.html"  rel="nofollow"> <span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;<small class="hidden-xs"> Заргузка...</small> </a> </div>
+          <div class="col-xs-12 col-sm-7 col-md-6 clearfix" id="bigphone">
+            <div class="pull-right">
+              <div id="wh" style="float:left; margin-top:0">Звоните!<br>
+                с 10:00 до 19:00</div>
+              <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>&nbsp; <span class="geo_msk"> <a href="tel:+84956629907" class="phone">8 (495) 662-99-07</a><br>
+              <a id="callback" data-toggle="modal" data-target="#callback-form" class="hidden-xs">Заказать обратный звонок</a> </span> <span class="geo_region"> <a href="tel:+88005558563" class="phone">8 (800) 555-85-63</a><i class="i-block">Звонок бесплатный!</i> </span> </div>
+          </div>
+        </div>
+        
+      <!--POPUP CART-->
+        <div class="modal fade" id="cart-modal" tabindex="-1" role="dialog" aria-labelledby="cartlabel" aria-hidden="true" style="display: none;">
+          <div class="modal-dialog">
+            <div class="modal-content mobile-modal-padding">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <p class="modal-title h3" id="cartlabel">Ваша корзина</p>
+              </div>
+              <div class="modal-body modal-with-overflow">
+                <table class="table cart">
+                  <thead>
+                    <tr>
+                      <th>Изобр.</th>
+                      <th>Название товара</th>
+                      <th>Кол-во</th>
+                      <th>Стоимость</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="item-25450 item">
+                      <td><div class="thumbnail"><img src="images/img-new-products/185466_thumb.jpg" alt="Sunrise раковина+пьедестал"></div></td>
+                      <td><a href="#">Vitra Sunrise раковина+пьедестал</a></td>
+                      <td class="count"><div class="input-group"> <span class="input-group-btn">
+                          <button class="btn btn-default minus" type="button">-</button>
+                          </span>
+                          <input type="text" class="form-control" name="count" value="1" data-item_id="25450" data-opt_id="">
+                          <span class="input-group-btn">
+                          <button class="btn btn-default plus" type="button">+</button>
+                          </span> </div></td>
+                      <td class="sum price" data-price="3500">3500&nbsp;<span class="glyphicon glyphicon-ruble"></span></td>
+                      <td><button type="button" class="close remove" data-dismiss="alert" aria-hidden="true">×</button></td>
+                    </tr>
+                  </tbody>
+                  <tfoot class="summary">
+                    <tr>
+                      <td colspan="2">Итого:</td>
+                      <td><span class="count">1</span>&nbsp;шт</td>
+                      <td colspan="2" class="price"><span class="sum">3500</span>&nbsp;<span class="glyphicon glyphicon-ruble"></span></td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                <a class="btn-primary btn" href="cart.html">Оформить заказ</a> </div>
+            </div>
+          </div>
+        </div>
+        
+        <!--POPUP CART END--> 
+        
+        <a class="btn btn-primary visible-xs" href="#" id="fullview">Полная версия</a> </div>
+    </div>
+  </header>
+  <div class="navbar navbar-default navbar-static-top top-menu" role="navigation">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="navbar-header clearfix">
+            <button type="button" class="navbar-toggle btn-default" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            <span class="visible-xs-block navbar-brand">Меню и поиск</span> </div>
+          <div class="navbar-collapse collapse clearfix">
+            <ul class="nav navbar-nav">
+              <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">О магазине<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="about-magazine.html">О магазине</a></li>
+                  <li><a href="about-us-comments.html">Отзывы о нас</a></li>
+                  <li><a href="articles.html">Статьи</a></li>
+                </ul>
+              </li>
+              <li><a href="delivery.html">Доставка</a></li>
+              <li><a href="payment.html">Оплата</a></li>
+              <li><a href="reciept.html" >Получение и возврат товара</a></li>
+              <li><a href="guarantee.html">Гарантия</a></li>
+              <li><a href="contacts.html" >Контакты</a></li>
+            </ul>
+            <form class="navbar-form navbar-right">
+              <div class="input-group">
+                <input type="text" class="form-control" name="words" placeholder="я ищу сантехнику ..." value="">
+                <span class="input-group-btn">
+                <button class="btn btn-default" type="button">Найти!</button>
+                </span> </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="content-box">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-lg-3">
+          <nav class="nav list-group left-menu">
+            <div  class="list-group-item list-header">
+              <button type="button" class="navbar-toggle visible-xs" data-toggle="collapse" data-target=".right-menu-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+              <a href="brands.html">Бренды</a> </div>
+            <div class="left-menu-collapse collapse-xs collapse">
+              <ul class="brands-list clearfix">
+                <li><a href="brand-page.html" class="list-group-item clearfix"><span class="brands-span">1MarKa &mdash; Россия</span><span class="badge">60</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Aessel &mdash; Россия</span><span class="badge">21</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Alligator &mdash; </span><span class="badge">260</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Alpen &mdash; Австрия</span><span class="badge">78</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Appollo &mdash; Китай</span><span class="badge">34</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Aquanet &mdash; Россия - Испания - Китай</span><span class="badge">225</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Aquastone &mdash; Россия</span><span class="badge">12</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Aquaton &mdash; Россия</span><span class="badge">98</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Aqwella &mdash; Россия</span><span class="badge">44</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Art & Max &mdash; Италия</span><span class="badge">320</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Art Ceram &mdash; Италия</span><span class="badge">72</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">ASB-Mebel &mdash; Россия</span><span class="badge">41</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Astra-Form &mdash; Россия</span><span class="badge">64</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">AXA &mdash; Италия</span><span class="badge">58</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Balteco &mdash; Эстония</span><span class="badge">343</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">BelBagno &mdash; Италия</span><span class="badge">136</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Bricklaer &mdash; Россия</span><span class="badge">18</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Catalano &mdash; Италия</span><span class="badge">153</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Cersanit &mdash; Польша</span><span class="badge">46</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Cezares &mdash; Италия</span><span class="badge">3702</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Cisa &mdash; Турция</span><span class="badge">5</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Colombo &mdash; </span><span class="badge">412</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Complimenta &mdash; Россия</span><span class="badge">8</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Dornbracht &mdash; Нидерланды</span><span class="badge">59</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Duravit &mdash; Германия</span><span class="badge">83</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Eago &mdash; Китай</span><span class="badge">48</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Emmevi &mdash; Италия</span><span class="badge">169</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Erlit &mdash; Китай</span><span class="badge">37</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Esse &mdash; Россия</span><span class="badge">20</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Excellent &mdash; Польша</span><span class="badge">94</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Flaminia &mdash; Италия</span><span class="badge">15</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Gala &mdash; Испания</span><span class="badge">35</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Ganzer &mdash; Германия</span><span class="badge">6</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Geberit &mdash; Швейцария</span><span class="badge">75</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Gemelli &mdash; Россия - Германия</span><span class="badge">64</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Gemy &mdash; Китай</span><span class="badge">32</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Giulini &mdash; Италия</span><span class="badge">207</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Godi &mdash; Китай</span><span class="badge">27</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Golf &mdash; Китай</span><span class="badge">3</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Grohe &mdash; Германия</span><span class="badge">875</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Grossman &mdash; Германия</span><span class="badge">5</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Grota &mdash; Россия</span><span class="badge">370</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Gustavsberg &mdash; Швеция</span><span class="badge">73</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Hansgrohe &mdash; Германия</span><span class="badge">321</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Harizma &mdash; Германия</span><span class="badge">152</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Hatria &mdash; Италия</span><span class="badge">276</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Ideal Standart &mdash; Германия</span><span class="badge">88</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">IDO &mdash; Финляндия</span><span class="badge">6</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Jacob Delafon &mdash; Франция</span><span class="badge">379</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Jacob Delafon (ванны чугунные) &mdash; Франция</span><span class="badge">27</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Jacuzzi &mdash; Италия</span><span class="badge">132</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Kaldewei &mdash; Германия</span><span class="badge">108</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Kerasan &mdash; Италия</span><span class="badge">142</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Kolpa-san &mdash; Словения</span><span class="badge">362</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Laufen &mdash; Швейцария</span><span class="badge">238</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Margaroli &mdash; Италия</span><span class="badge">585</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Marmo&Bagno &mdash; Италия - Россия</span><span class="badge">9</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Massimo &mdash;</span> <span class="badge">8</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Migliore &mdash; Италия</span><span class="badge">1036</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Misty &mdash; Россия</span><span class="badge">1196</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Nautico &mdash; Китай</span><span class="badge">27</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Nikles &mdash; Швейцария</span><span class="badge">17</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Nsk &mdash; Турция</span><span class="badge">4</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Olympia &mdash; Италия</span><span class="badge">87</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Opadiris &mdash; Россия</span><span class="badge">59</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Parly &mdash; Китай</span><span class="badge">21</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Pelipal &mdash; Германия</span><span class="badge">11</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Puris &mdash; Германия</span><span class="badge">160</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Radaway &mdash; Польша</span><span class="badge">1676</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Rav Slezak &mdash; Чехия</span><span class="badge">297</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Ravak &mdash; Чехия</span><span class="badge">445</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Relisan &mdash; Польша</span><span class="badge">53</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Riho &mdash; Нидерланды</span><span class="badge">430</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">River &mdash; Россия</span><span class="badge">111</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Roca &mdash; Испания</span><span class="badge">80</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">SSWW &mdash; Китай</span><span class="badge">87</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Sturm &mdash; Германия</span><span class="badge">57</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Timo &mdash; Финляндия</span><span class="badge">14</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Vagnerplast &mdash; Чехия</span><span class="badge">44</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Valentin &mdash; Франция</span><span class="badge">21</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Vayer &mdash; Швейцария</span><span class="badge">27</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Vega &mdash; Италия</span><span class="badge">9</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Verona &mdash; Россия-Италия</span><span class="badge">53</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Villeroy & Boch &mdash; Германия</span><span class="badge">1354</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Vitra &mdash; Турция</span><span class="badge">253</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Wenz &mdash; Россия</span><span class="badge">80</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Акватек &mdash; Россия</span><span class="badge">89</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Санта &mdash; Россия</span><span class="badge">15</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Универсал &mdash; Россия</span><span class="badge">4</span></a></li>
+                <li><a href="#" class="list-group-item clearfix"><span class="brands-span">Эстет &mdash; Россия</span><span class="badge">15</span></a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="col-md-9 col-lg-9">
+          <ol class="breadcrumb">
+            <li><a href="index.html">Сантехника 24</a></li>
+            <li class="active">Каталог сантехники</li>
+          </ol>
+          <h1>Каталог</h1>
+          <div class="row cats">
+            <ul class="catalog-list clearfix">
+              <li class="col-sm-4 col-xs-12 col-lg-4 col-xs-12 col-lg-4">
+                <div class="thumbnail"> <a data-href="#" rel="nofollow">
+                  <div class="image-box"> <img src="images/avon-walnut-apple-green-bathroom(2)(8).jpg" alt="Мебель для ванной"> </div>
+                  </a> <a href="#" class="btn btn-primary btn-sm center-block" role="button"> Мебель для ванной <span class="badge"></span> </a> </div>
+              </li>
+              <li class="col-sm-4 col-xs-12 col-lg-4 col-xs-12">
+                <div class="thumbnail"> <a data-href="#" rel="nofollow">
+                  <div class="image-box"> <img src="images/lovep(1).jpg" alt="Акриловые ванны"> </div>
+                  </a> <a href="#" class="btn btn-primary btn-sm center-block" role="button"> Акриловые ванны <span class="badge"></span> </a> </div>
+              </li>
+              <li class="col-sm-4 col-xs-12 col-lg-4 col-xs-12">
+                <div class="thumbnail"> <a data-href="#" rel="nofollow">
+                  <div class="image-box"> <img src="images/s24-chugun.gif" alt="Чугунные ванны"> </div>
+                  </a> <a href="#" class="btn btn-primary btn-sm center-block" role="button"> Чугунные ванны <span class="badge"></span> </a> </div>
+              </li>
+              <li class="col-sm-4 col-xs-12 col-lg-4 col-xs-12">
+                <div class="thumbnail"> <a data-href="#" rel="nofollow">
+                  <div class="image-box"> <img src="images/s24-chugun.gif" alt="Стальные ванны"> </div>
+                  </a> <a href="#" class="btn btn-primary btn-sm center-block" role="button"> Стальные ванны <span class="badge"></span> </a> </div>
+              </li>
+              <li class="col-sm-4 col-xs-12 col-lg-4 col-xs-12">
+                <div class="thumbnail"> <a data-href="#" rel="nofollow">
+                  <div class="image-box"> <img src="images/vanna_belbagno_bb804(8).jpg" alt="Ванны из литьевого мрамора"> </div>
+                  </a> <a href="#" class="btn btn-primary btn-sm center-block" role="button"> Ванны из литьевого мрамора <span class="badge"></span> </a> </div>
+              </li>
+              <li class="col-sm-4 col-xs-12 col-lg-4 col-xs-12">
+                <div class="thumbnail"> <a data-href="#" rel="nofollow">
+                  <div class="image-box"> <img src="images/img1657461378460202(2).jpg" alt="Смесители"> </div>
+                  </a> <a href="#" class="btn btn-primary btn-sm center-block" role="button"> Смесители <span class="badge"></span> </a> </div>
+              </li>
+              <li class="col-sm-4 col-xs-12 col-lg-4 col-xs-12">
+                <div class="thumbnail"> <a data-href="#" rel="nofollow">
+                  <div class="image-box"> <img src="images/grohe_euphoria_27247000(1)(1).jpg" alt="Душ"> </div>
+                  </a> <a href="#" class="btn btn-primary btn-sm center-block" role="button"> Душ <span class="badge"></span> </a> </div>
+              </li>
+              <li class="col-sm-4 col-xs-12 col-lg-4 col-xs-12">
+                <div class="thumbnail"> <a data-href="#" rel="nofollow">
+                  <div class="image-box"> <img src="images/S617(R).jpg" alt="Душевые кабины"> </div>
+                  </a> <a href="#" class="btn btn-primary btn-sm center-block" role="button"> Душевые кабины <span class="badge"></span> </a> </div>
+              </li>
+              <li class="col-sm-4 col-xs-12 col-lg-4 col-xs-12">
+                <div class="thumbnail"> <a data-href="#" rel="nofollow">
+                  <div class="image-box"> <img src="images/shower_boxe.gif" alt="Душевые боксы"> </div>
+                  </a> <a href="#" class="btn btn-primary btn-sm center-block" role="button"> Душевые боксы <span class="badge"></span> </a> </div>
+              </li>
+              <li class="col-sm-4 col-xs-12 col-lg-4 col-xs-12">
+                <div class="thumbnail"> <a data-href="#" rel="nofollow">
+                  <div class="image-box"> <img src="images/shower_fence.gif" alt="Душевые ограждения"> </div>
+                  </a> <a href="#" class="btn btn-primary btn-sm center-block" role="button"> Душевые ограждения <span class="badge"></span> </a> </div>
+              </li>
+              <li class="col-sm-4 col-xs-12 col-lg-4 col-xs-12">
+                <div class="thumbnail"> <a data-href="#" rel="nofollow">
+                  <div class="image-box"> <img src="images/shower_trays.gif" alt="Душевые поддоны"> </div>
+                  </a> <a href="#" class="btn btn-primary btn-sm center-block" role="button"> Душевые поддоны <span class="badge"></span> </a> </div>
+              </li>
+              <li class="col-sm-4 col-xs-12 col-lg-4 col-xs-12">
+                <div class="thumbnail"> <a data-href="#" rel="nofollow">
+                  <div class="image-box"> <img src="images/pans(1).gif" alt="Унитазы"> </div>
+                  </a> <a href="#" class="btn btn-primary btn-sm center-block" role="button"> Унитазы <span class="badge"></span> </a> </div>
+              </li>
+              <li class="col-sm-4 col-xs-12 col-lg-4 col-xs-12">
+                <div class="thumbnail"> <a data-href="#" rel="nofollow">
+                  <div class="image-box"> <img src="images/sink.gif" alt="Раковины"> </div>
+                  </a> <a href="#" class="btn btn-primary btn-sm center-block" role="button"> Раковины <span class="badge"></span> </a> </div>
+              </li>
+              <li class="col-sm-4 col-xs-12 col-lg-4 col-xs-12">
+                <div class="thumbnail"> <a data-href="#" rel="nofollow">
+                  <div class="image-box"> <img src="images/bidet.gif" alt="Биде"> </div>
+                  </a> <a href="#" class="btn btn-primary btn-sm center-block" role="button"> Биде <span class="badge"></span> </a> </div>
+              </li>
+              <li class="col-sm-4 col-xs-12 col-lg-4 col-xs-12">
+                <div class="thumbnail"> <a data-href="#" rel="nofollow">
+                  <div class="image-box"> <img src="images/urinal.gif" alt="Писсуары"> </div>
+                  </a> <a href="#" class="btn btn-primary btn-sm center-block" role="button"> Писсуары <span class="badge"></span> </a> </div>
+              </li>
+              <li class="col-sm-4 col-xs-12 col-lg-4 col-xs-12">
+                <div class="thumbnail"> <a data-href="#" rel="nofollow">
+                  <div class="image-box"> <img src="images/towel.gif" alt="Полотенцесушители"> </div>
+                  </a> <a href="#" class="btn btn-primary btn-sm center-block" role="button"> Полотенцесушители <span class="badge"></span> </a> </div>
+              </li>
+              <li class="col-sm-4 col-xs-12 col-lg-4 col-xs-12">
+                <div class="thumbnail"> <a data-href="#" rel="nofollow">
+                  <div class="image-box"> <img src="images/installations.gif" alt="Системы инсталляции"> </div>
+                  </a> <a href="#" class="btn btn-primary btn-sm center-block" role="button"> Системы инсталляции <span class="badge"></span> </a> </div>
+              </li>
+              <li class="col-sm-4 col-xs-12 col-lg-4 col-xs-12">
+                <div class="thumbnail"> <a data-href="#" rel="nofollow">
+                  <div class="image-box"> <img src="images/accesuares.jpg" alt="Аксессуары"> </div>
+                  </a> <a href="#" class="btn btn-primary btn-sm center-block" role="button"> Аксессуары <span class="badge"></span> </a> </div>
+              </li>
+              <li class="col-sm-4 col-xs-12 col-lg-4 col-xs-12">
+                <div class="thumbnail"> <a data-href="#" rel="nofollow">
+                  <div class="image-box"> <img src="images/mini_pool.gif" alt="Мини бассейны"> </div>
+                  </a> <a href="#" class="btn btn-primary btn-sm center-block" role="button"> Мини бассейны <span class="badge"></span> </a> </div>
+              </li>
+              <li class="col-sm-4 col-xs-12 col-lg-4 col-xs-12">
+                <div class="thumbnail"> <a data-href="#" rel="nofollow">
+                  <div class="image-box"> <img src="images/complectuuschie(1).jpg" alt="Комплектующие"> </div>
+                  </a> <a href="#" class="btn btn-primary btn-sm center-block" role="button"> Комплектующие <span class="badge"></span> </a> </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="empty"></div>
+</div>
+<footer>
+  <div id="footer">
+    <div class="container">
+      <div class="row">
+        <div>
+          <div class="col-md-3 col-sm-3"> <span class="bold">Наши контакты:</span><br>
+            <span class="phone ya-phone call_phone_1"><a href="tel:+84956629907">8 (495) 662-99-07</a></span><br>
+            <br>
+            <span>Звоните с 10.00 до 19.00!</span>
+            <p><a href="mailto:info@santehnika-24.ru"><span>info@santehnika-24.ru</span></a></p>
+            <p>2016 &copy;, <span>Интернет-магазин Сантехника 24</span><br>
+              - <a href="#">мебель и сантехника
+              
+              для ванных комнат</a></p>
+          </div>
+          <div class="col-md-6 col-sm-4"> <span class="bold">Адреса наших магазинов:</span>
+            <div>
+              <p><span> г.Москва,Тихорецкий б-р,д.1 ТЦ Москва,ряд Б,павильон Б-50</span></p>
+              <br>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-5"> <span class="bold">Поиск по коду товара</span>
+            <form class="search-code">
+              <div class="input-group">
+                <input type="text" class="form-control" name="code" placeholder="код товара">
+                <span class="input-group-btn">
+                <button class="btn btn-default" type="button">Найти!</button>
+                </span> </div>
+            </form>
+            <br>
+            <div class="payment_methods"> <img width="50" src="images/visa_logo.png" alt=""> <img width="50" src="images/mastercard_logo.png" alt=""> <img height="25" src="images/sberbank_logo.png" alt=""> </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="list-inline visible-lg visible-md clearfix">
+            <li><a href="about-magazine.html">О магазине</a></li>
+            <li><a href="delivery.html">Доставка и оплата</a></li>
+            <!--                <li><a href="#">Прайс-лист</a></li>-->
+            <li><a href="discounts.html">Скидки</a></li>
+            <!-- <li><a href="#">Акции</a></li> -->
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="for-objects.html">Для объектов</a></li>
+            <li><a href="about-us-comments.html">Отзывы о нас</a></li>
+            <li><a href="articles.html">Статьи</a></li>
+            <li><a href="guarantee.html">Гарантия</a></li>
+            <!--    <li><a href="#">Новости</a></li> -->
+            <li><a href="sitemap.html">Карта сайта</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="js/jquery.min.js"></script> 
+  <script src="js/components.js"></script> 
+  <script src="js/SmoothScroll.js"></script> 
+  <script type="text/javascript" src="js/se.js"></script> 
+  <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script> 
+  <script type="text/javascript" src="js/jquery.cookie.min.js"></script> 
+  <script type="text/javascript" src="js/jquery.fancybox.min.js"></script> 
+  <script type="text/javascript" src="js/jquery.fancybox-buttons.js"></script> 
+  <script type="text/javascript" src="js/jquery.fancybox-thumbs.js"></script> 
+  <script type="text/javascript" src="js/bootstrap.min.js"></script> 
+  <script type="text/javascript" src="js/custom.js"></script> 
+  <script type="text/javascript" src="js/cart.js"></script> 
+  <script type="text/javascript" src="js/scripts.js"></script> 
+</footer>
+<div id="scrollup"> <img alt="Прокрутить вверх" src="images/backtotop.png">
+  <div class="little-cart"> <a class="btn btn-default btn-lg dropdown-toggle" href="cart.html" rel="nofollow"> <span class="glyphicon glyphicon-shopping-cart"></span> <span class="number-in-cart">1</span> </a> </div>
+</div>
+</body>
+</html>

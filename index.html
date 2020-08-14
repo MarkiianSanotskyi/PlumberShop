@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Сантехника</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/png">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/thumbs.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/media.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css" media="screen">
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox-buttons.css" media="screen">
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox-thumbs.css"  media="screen">
+</head>
+
+<body>
+<div class="wrapper">
+  <header>
+    <div class="top-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6 col-sm-3 col-md-2" id="logo"> <a href="index.html" title="Сантехника 24 – мебель и сантехника для ванных комнат"><img src="images/logo.gif" alt="Сантехника 24 – мебель и сантехника для ванных комнат"></a> </div>
+          <div class="col-xs-6 col-sm-2 col-md-4" id="cart"> <a class="btn btn-default btn-lg dropdown-toggle" href="cart.html"  rel="nofollow"> <span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;<small class="hidden-xs"> Заргузка...</small> </a> </div>
+          <div class="col-xs-12 col-sm-7 col-md-6 clearfix" id="bigphone">
+            <div class="pull-right">
+              <div id="wh" style="float:left; margin-top:0">Звоните!<br>
+                с 10:00 до 19:00</div>
+              <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>&nbsp; <span class="geo_msk"> <a href="tel:+84956629907" class="phone">8 (495) 662-99-07</a><br>
+              <a id="callback" data-toggle="modal" data-target="#callback-form" class="hidden-xs">Заказать обратный звонок</a> </span> <span class="geo_region"> <a href="tel:+88005558563" class="phone">8 (800) 555-85-63</a><i class="i-block">Звонок бесплатный!</i> </span> </div>
+          </div>
+        </div>
+        
+        <!--POPUP CART-->
+        <div class="modal fade" id="cart-modal" tabindex="-1" role="dialog" aria-labelledby="cartlabel" aria-hidden="true" style="display: none;">
+          <div class="modal-dialog">
+            <div class="modal-content mobile-modal-padding">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <p class="modal-title h3" id="cartlabel">Ваша корзина</p>
+              </div>
+              <div class="modal-body modal-with-overflow">
+                <table class="table cart">
+                  <thead>
+                    <tr>
+                      <th>Изобр.</th>
+                      <th>Название товара</th>
+                      <th>Кол-во</th>
+                      <th>Стоимость</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="item-25450 item">
+                      <td><div class="thumbnail"><img src="images/img-new-products/185466_thumb.jpg" alt="Sunrise раковина+пьедестал"></div></td>
+                      <td><a href="#">Vitra Sunrise раковина+пьедестал</a></td>
+                      <td class="count"><div class="input-group"> <span class="input-group-btn">
+                          <button class="btn btn-default minus" type="button">-</button>
+                          </span>
+                          <input type="text" class="form-control" name="count" value="1" data-item_id="25450" data-opt_id="">
+                          <span class="input-group-btn">
+                          <button class="btn btn-default plus" type="button">+</button>
+                          </span> </div></td>
+                      <td class="sum price" data-price="3500">3500&nbsp;<span class="glyphicon glyphicon-ruble"></span></td>
+                      <td><button type="button" class="close remove" data-dismiss="alert" aria-hidden="true">×</button></td>
+                    </tr>
+                  </tbody>
+                  <tfoot class="summary">
+                    <tr>
+                      <td colspan="2">Итого:</td>
+                      <td><span class="count">1</span>&nbsp;шт</td>
+                      <td colspan="2" class="price"><span class="sum">3500</span>&nbsp;<span class="glyphicon glyphicon-ruble"></span></td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                <a class="btn-primary btn" href="cart.html">Оформить заказ</a> </div>
+            </div>
+          </div>
+        </div>
+        
+        <!--POPUP CART END--> 
+        
+        <a class="btn btn-primary visible-xs" href="#" id="fullview">Полная версия</a> </div>
+    </div>
+  </header>
+  <div class="navbar navbar-default navbar-static-top top-menu" role="navigation">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="navbar-header clearfix">
+            <button type="button" class="navbar-toggle btn-default" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            <span class="visible-xs-block navbar-brand">Меню и поиск</span> </div>
+          <div class="navbar-collapse collapse clearfix">
+            <ul class="nav navbar-nav">
+              <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">О магазине<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="about-magazine.html">О магазине</a></li>
+                  <li><a href="about-us-comments.html">Отзывы о нас</a></li>
+                  <li><a href="articles.html">Статьи</a></li>
+                </ul>
+              </li>
+              <li><a href="delivery.html">Доставка</a></li>
+              <li><a href="payment.html">Оплата</a></li>
+              <li><a href="reciept.html" >Получение и возврат товара</a></li>
+              <li><a href="guarantee.html">Гарантия</a></li>
+              <li><a href="contacts.html" >Контакты</a></li>
+            </ul>
+            <form class="navbar-form navbar-right"  action="#">
+              <div class="input-group">
+                <input type="text" class="form-control" name="words" placeholder="я ищу сантехнику ..." value="">
+                <span class="input-group-btn">
+                <button class="btn btn-default" type="button">Найти!</button>
+                </span> </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="content-box">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-3 col-lg-2">
+          <nav class="nav list-group left-menu">
+            <div class="list-header list-group-item">
+              <button type="button" class="navbar-toggle visible-xs" data-toggle="collapse" data-target=".left-menu-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+              <a href="catalogue.html">Каталог</a> </div>
+            <div class="left-menu-collapse collapse-xs collapse">
+              <ul class="left-menu-list clearfix">
+                <li><a href="#" class="list-group-item list-cat">Мебель для ванной</a><a class="c" data-toggle="collapse" data-target="#cat-898"><i class="caret"></i></a>
+                  <ul id="cat-898" class="slidedown-menu collapse">
+                    <li><a href="#" class="list-group-item list-subcat">Комплекты мебели</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Напольные тумбы</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Подвесные тумбы</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Шкафы и пеналы</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Навесные шкафы</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Зеркальные шкафы</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Зеркала</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Столешницы</a></li>
+                  </ul>
+                </li>
+                <li> <a href="#" class="list-group-item list-cat">Акриловые ванны</a> <a class="c" data-toggle="collapse" data-target="#cat-920"><i class="caret"></i></a>
+                  <ul id="cat-920" class="slidedown-menu collapse">
+                    <li><a href="#" class="list-group-item list-subcat">Прямоугольные ванны</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Овальные ванны</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Квадратные ванны</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Круглые ванны</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Угловые ванны</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Многогранные ванны</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Сливы-переливы</a></li>
+                  </ul>
+                </li>
+                <li> <a href="#" class="list-group-item list-cat">Чугунные ванны</a> <a class="c" data-toggle="collapse" data-target="#cat-931"><i class="caret"></i></a>
+                  <ul id="cat-931" class="slidedown-menu collapse">
+                    <li><a href="#" class="list-group-item list-subcat">Прямоугольные ванны</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Овальные ванны</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Отдельностоящие ванны</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Сливы-переливы</a></li>
+                  </ul>
+                </li>
+                <li> <a href="#" class="list-group-item list-cat border-none">Стальные ванны</a> </li>
+                <li> <a href="#" class="list-group-item list-cat">Ванны из литьевого мрамора</a> <a class="c" data-toggle="collapse" data-target="#cat-930"><i class="caret"></i></a>
+                  <ul id="cat-930" class="slidedown-menu collapse">
+                    <li><a href="#" class="list-group-item list-subcat">Прямоугольные ванны</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Овальные ванны</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Круглые ванны</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Отдельностоящие ванны</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Угловые ванны</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Асимметричные ванны</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Сливы-переливы</a></li>
+                  </ul>
+                </li>
+                <li> <a href="#" class="list-group-item list-cat">Смесители</a> <a class="c" data-toggle="collapse" data-target="#cat-911"><i class="caret"></i></a>
+                  <ul id="cat-911" class="slidedown-menu collapse">
+                    <li><a href="#" class="list-group-item list-subcat">для раковины</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">для кухни</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">для ванны и душа</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">для душа</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">на борт ванны</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">для биде</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">специальные смесители</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Комплектующие для смесителей</a></li>
+                  </ul>
+                </li>
+                <li> <a href="#" class="list-group-item list-cat">Душ</a> <a class="c" data-toggle="collapse" data-target="#cat-948"><i class="caret"></i></a>
+                  <ul id="cat-948" class="slidedown-menu collapse">
+                    <li><a href="#" class="list-group-item list-subcat">Душевые стойки</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Душевые панели</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Душевые гарнитуры</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Душевые лейки</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Верхний душ</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Гигиенические души</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Душевые шланги</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Держатели для душа</a></li>
+                  </ul>
+                </li>
+                <li> <a href="#" class="list-group-item list-cat">Душевые кабины</a> <a class="c" data-toggle="collapse" data-target="#cat-935"><i class="caret"></i></a>
+                  <ul id="cat-935" class="slidedown-menu collapse">
+                    <li><a href="#" class="list-group-item list-subcat">С баней</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">С  крышей</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Без крыши</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">С гидромассажем</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Без бани</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Сауны</a></li>
+                  </ul>
+                </li>
+                <li> <a href="#" class="list-group-item list-cat border-none">Душевые боксы</a> </li>
+                <li> <a href="#" class="list-group-item list-cat border-none">Душевые ограждения</a> </li>
+                <li> <a class="c" data-toggle="collapse" data-target="#cat-946"><i class="caret"></i></a>
+                  <ul id="cat-946" class="slidedown-menu collapse">
+                    <li><a href="/dushevie-dveri/" class="list-group-item list-subcat">Душевые двери</a> </li>
+                    <li><a href="/shtorki-dlya-vannoy/" class="list-group-item list-subcat">Шторки для ванной</a> </li>
+                    <li><a href="/dushevie-ugli/" class="list-group-item list-subcat">Душевые углы</a> </li>
+                  </ul>
+                </li>
+                <li> <a href="#" class="list-group-item list-cat border-none">Душевые поддоны</a> </li>
+                <li> <a href="#" class="list-group-item list-cat">Унитазы</a> <a class="c" data-toggle="collapse" data-target="#cat-960"><i class="caret"></i></a>
+                  <ul id="cat-960" class="slidedown-menu collapse">
+                    <li><a href="#" class="list-group-item list-subcat">Напольные </a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Подвесные</a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Приставные </a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Детские</a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Чаши Генуя</a> </li>
+                  </ul>
+                </li>
+                <li> <a href="#" class="list-group-item list-cat">Раковины</a> <a class="c" data-toggle="collapse" data-target="#cat-953"><i class="caret"></i></a>
+                  <ul id="cat-953" class="slidedown-menu collapse">
+                    <li><a href="#" class="list-group-item list-subcat">Накладные</a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Напольные</a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Угловые</a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Подвесные</a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Встраиваемые</a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Сифоны для раковин</a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Донные клапаны</a> </li>
+                  </ul>
+                </li>
+                <li> <a href="#" class="list-group-item list-cat">Биде</a> <a class="c" data-toggle="collapse" data-target="#cat-965"><i class="caret"></i></a>
+                  <ul id="cat-965" class="slidedown-menu collapse">
+                    <li><a href="#" class="list-group-item list-subcat">Напольные</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Подвесные</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Сифоны для биде</a></li>
+                  </ul>
+                </li>
+                <li> <a href="#" class="list-group-item list-cat border-none">Писсуары</a> </li>
+                <li> <a href="#" class="list-group-item list-cat">Полотенцесушители</a> <a class="c" data-toggle="collapse" data-target="#cat-971"><i class="caret"></i></a>
+                  <ul id="cat-971" class="slidedown-menu collapse">
+                    <li><a href="#" class="list-group-item list-subcat">Водяные</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Электрические</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Комплектующие</a></li>
+                  </ul>
+                </li>
+                <li> <a href="#" class="list-group-item list-cat">Системы инсталляции</a> <a class="c" data-toggle="collapse" data-target="#cat-969"><i class="caret"></i></a>
+                  <ul id="cat-969" class="slidedown-menu collapse">
+                    <li><a href="#" class="list-group-item list-subcat">Инсталляции для унитаза</a></li>
+                    <li> <a href="#" class="list-group-item list-subcat">Инсталляции для биде</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Инсталляции для писсуаров</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Инсталляции для раковин</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Смывные клавиши</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Смывные бачки</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Комплектующие</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Устройства управления смывом</a></li>
+                  </ul>
+                </li>
+                <li> <a href="#" class="list-group-item list-cat border-none">Аксессуары</a> </li>
+                <li> <a href="#" class="list-group-item list-cat border-none">Мини бассейны</a> </li>
+                <li> <a href="#" class="list-group-item list-cat">Комплектующие</a> <a class="c" data-toggle="collapse" data-target="#cat-980"><i class="caret"></i></a>
+                  <ul id="cat-980" class="slidedown-menu collapse">
+                    <li><a href="#" class="list-group-item list-subcat">Сифоны для биде</a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Сифоны для раковин</a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Шланги</a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Держатели для душа</a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Колонны</a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Штуцеры</a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Удлинители</a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Для смесителей</a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Донные клапаны</a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Сливы-переливы</a> </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="col-sm-12 col-md-7 col-lg-8">
+          <h1>Интернет магазин сантехники для ванной комнаты </h1>
+          <div id="carousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="item active"> <img class="img_banner"  src="images/slieder-total/1111.jpg" alt=""> </div>
+              <div class="item"> <a class="img" href="#" > <img class="img_banner"  src="images/slieder-total/na-sajt.jpg"  alt=""> </a> </div>
+              <div class="item"> <img class="img_banner"  src="images/slieder-total/s24promo.jpg" alt=""> </div>
+              <div class="item"> <img class="img_banner"  src="images/slieder-total/delivery-big.jpg" alt=""> </div>
+              <div class="item"> <a class="img" href="#" > <img class="img_banner"  src="images/slieder-total/marmobagno_1.jpg"  alt=""> </a> </div>
+              <div class="item"> <a class="img" href="#" > <img class="img_banner"  src="images/slieder-total/gems24.jpg" alt="" > </a> </div>
+              <div class="item"> <a class="img" href="#" > <img class="img_banner"  src="images/slieder-total/-10MB_s24.jpg" alt="" > </a> </div>
+              <div class="item"> <a class="img" href="#" > <img class="img_banner"  src="images/slieder-total/radaways24.jpg" alt="" > </a> </div>
+              <div class="item"> <a class="img" href="#" > <img class="img_banner"  src="images/slieder-total/green-per-rub.jpg" alt="" > </a> </div>
+              <div class="item"> <a class="img" href="#" > <img class="img_banner"  src="images/slieder-total/RAVAK_spring.jpg" alt="" > </a> </div>
+            </div>
+            <a class="left carousel-control" href="#carousel" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span class="sr-only">Назад</span> </a> <a class="right carousel-control" href="#carousel" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="sr-only">Вперед</span> </a> </div>
+          <div class="panel panel-default">
+            <div class="row we-best">
+              <div class="col-md-4 col-lg-2 col-sm-4 col-xs-6 we-best-icon" data-toggle="tooltip" data-placement="bottom" title="Выбирайте и заказывайте на сайте"> <a href="#"><span class="glyphicon glyphicon-shopping-cart"></span>
+                <p class="bold">Заказ Online</p>
+                </a> </div>
+              <div class="col-md-4 col-lg-2 col-sm-4 col-xs-6 we-best-icon" data-toggle="tooltip" data-placement="bottom" title="Мы не только принимаем заказы по телефоны, но и подробно консультируем и помогаем с выбором"> <a href="#"><span class="glyphicon glyphicon-earphone"></span>
+                <p class="bold">Консультация по телефону</p>
+                </a> </div>
+              <div class="col-md-4 col-lg-2 col-sm-4 col-xs-6 we-best-icon" data-toggle="tooltip" data-placement="bottom" title="Мы обрабатываем заказы в течение часа с момента получения в рабочее время"> <span class="glyphicon glyphicon-time"></span>
+                <p class="bold">Обработка заказа 1 час</p>
+              </div>
+              <div class="col-md-4 col-lg-2 col-sm-4 col-xs-6 we-best-icon" data-toggle="tooltip" data-placement="bottom" title="Вы можете оплатить покупку банковской картой"> <a href="#"><span class="glyphicon glyphicon-credit-card"></span>
+                <p class="bold">Принимаем карты</p>
+                </a> </div>
+              <div class="col-md-4 col-lg-2 col-sm-4 col-xs-6 we-best-icon" data-toggle="tooltip" data-placement="bottom" title="Вы можете ознакомиться с ассортиментов вживую, а также получить консультацию и оформить заказ в магазине"> <a href="#"><span class="glyphicon glyphicon-map-marker"></span>
+                <p class="bold">У нас есть магазины</p>
+                </a> </div>
+              <div class="col-md-4 col-lg-2 col-sm-4 col-xs-6 we-best-icon" data-toggle="tooltip" data-placement="bottom" title="Наши покупатели рекомендуют нас своим знакомым"> <a href="#"><span class="glyphicon glyphicon-thumbs-up"></span>
+                <p class="bold">Нас рекомендуют</p>
+                </a> </div>
+            </div>
+          </div>
+          <h4 class="title-content">Рекомендуем</h4>
+          <div class="row">
+            <ul class="special-list clearfix">
+              <li class="col-sm-4 col-xl-3 col-md-4 col-lg-4 col-xs-12 good-item">
+                <div class="thumbnail"> <span class="label label-warning">Спецпредложение!</span>
+                  <div class="img_wrap"> <a data-href="#" rel="nofollow"> <img src="images/img_new/189732_thumb.jpg" alt="Раковина Vitra Sunrise раковина+пьедестал"> </a> </div>
+                  <div class="name_wrap">
+                    <p> <a href="#">Раковина Vitra Sunrise раковина+пьедестал</a> </p>
+                  </div>
+                  <p></p>
+                  <p class="kod_tovara">Код товара: 25450</p>
+                  <p>Гарантия: 10 лет </p>
+                  <div class="price-wrap">
+                    <div class="price">3&nbsp;500 <small><span class="rur">руб</span></small></div>
+                    <button  class="btn btn-primary cart" data-id="25450"><span class="glyphicon glyphicon-shopping-cart"></span> Купить</button>
+                  </div>
+                </div>
+              </li>
+              <li class="col-sm-4 col-xl-3 col-md-4 col-lg-4 col-xs-12 good-item">
+                <div class="thumbnail"> <span class="label label-warning">Спецпредложение!</span>
+                  <div class="img_wrap"> <a data-href="#" rel="nofollow"> <img src="images/img_new/vitra_9780B003-1176.jpg" alt="Унитаз-компакт Vitra Normus 9780B003-1176"> </a> </div>
+                  <div class="name_wrap">
+                    <p> <a href="#">Унитаз-компакт Vitra Normus 9780B003-1176</a> </p>
+                  </div>
+                  <p></p>
+                  <p class="kod_tovara">Код товара: 11958</p>
+                  <p>Гарантия: 10 лет </p>
+                  <div class="price-wrap">
+                    <div class="price">4&nbsp;804 <small><span class="rur">руб</span></small></div>
+                    <button class="btn btn-primary cart" data-id="11958"><span class="glyphicon glyphicon-shopping-cart"></span> Купить</button>
+                  </div>
+                </div>
+              </li>
+              <li class="col-sm-4 col-xl-3 col-md-4 col-lg-4 col-xs-12 good-item">
+                <div class="thumbnail"> <span class="label label-warning">Спецпредложение!</span>
+                  <div class="img_wrap"> <a data-href="#" rel="nofollow"> <img src="images/img_new/189730_thumb.jpeg" alt="Унитаз напольный Vitra Arkitekt унитаз (OB)+бачок+сиденье"> </a> </div>
+                  <div class="name_wrap">
+                    <p> <a href="#">Унитаз напольный Vitra Arkitekt унитаз (OB)+бачок+сиденье</a> </p>
+                  </div>
+                  <p></p>
+                  <p class="kod_tovara">Код товара: 25449</p>
+                  <p>Гарантия: 10 лет </p>
+                  <div class="price-wrap">
+                    <div class="price">4&nbsp;830 <small><span class="rur">руб</span></small></div>
+                    <button class="btn btn-primary cart" data-id="25449"><span class="glyphicon glyphicon-shopping-cart"></span> Купить</button>
+                  </div>
+                </div>
+              </li>
+              <li class="col-sm-4 col-xl-3 col-md-4 col-lg-4 col-xs-12 good-item">
+                <div class="thumbnail"> <span class="label label-warning">Спецпредложение!</span>
+                  <div class="img_wrap"> <a data-href="#" rel="nofollow"> <img src="images/img_new/189729_thumb.jpg" alt="Раковина Vitra S50:5301+смесит.A41986EXP+ хром. сифон"> </a> </div>
+                  <div class="name_wrap">
+                    <p> <a href="#">Раковина Vitra S50:5301+смесит.A41986EXP+ хром. сифон</a> </p>
+                  </div>
+                  <p></p>
+                  <p class="kod_tovara">Код товара: 12014</p>
+                  <p>Гарантия: 10 лет </p>
+                  <div class="price-wrap">
+                    <div class="price">6&nbsp;344 <small><span class="rur">руб</span></small></div>
+                    <button  class="btn btn-primary cart" data-id="12014"><span class="glyphicon glyphicon-shopping-cart"></span> Купить</button>
+                  </div>
+                </div>
+              </li>
+              <li class="col-sm-4 col-xl-3 col-md-4 col-lg-4 col-xs-12 good-item">
+                <div class="thumbnail"> <span class="label label-warning">Спецпредложение!</span>
+                  <div class="img_wrap"> <a data-href="#" rel="nofollow"> <img src="images/img_new/Vitra_Dinamic_S_A49152EXP.jpg" alt="Комплект 3в1 Vitra Dynamic S A49152EXP"> </a> </div>
+                  <div class="name_wrap">
+                    <p> <a href="#">Комплект 3в1 Vitra Dynamic S A49152EXP</a> </p>
+                  </div>
+                  <p></p>
+                  <p class="kod_tovara">Код товара: 15386</p>
+                  <p>Гарантия: 5 лет </p>
+                  <div class="price-wrap">
+                    <div class="price">8&nbsp;410 <small><span class="rur">руб</span></small></div>
+                    <button  class="btn btn-primary cart" data-id="15386"><span class="glyphicon glyphicon-shopping-cart"></span> Купить</button>
+                  </div>
+                </div>
+              </li>
+              <li class="col-sm-4 col-xl-3 col-md-4 col-lg-4 col-xs-12 good-item">
+                <div class="thumbnail"> <span class="label label-warning">Спецпредложение!</span>
+                  <div class="img_wrap"> <a data-href="#" rel="nofollow"> <img src="images/img_new/vitra_9798B003-0227.jpg" alt="Унитаз Vitra S 50 9798B003-0227"> </a> </div>
+                  <div class="name_wrap">
+                    <p> <a href="#">Унитаз Vitra S 50 9798B003-0227</a> </p>
+                  </div>
+                  <p></p>
+                  <p class="kod_tovara">Код товара: 12009</p>
+                  <p>Гарантия: 10 лет </p>
+                  <div class="price-wrap">
+                    <div class="price">9&nbsp;718 <small><span class="rur">руб</span></small></div>
+                    <button  class="btn btn-primary cart" data-id="12009"><span class="glyphicon glyphicon-shopping-cart"></span> Купить</button>
+                  </div>
+                </div>
+              </li>
+              <li class="col-sm-4 col-xl-3 col-md-4 col-lg-4 col-xs-12 good-item">
+                <div class="thumbnail"> <span class="label label-warning">Спецпредложение!</span>
+                  <div class="img_wrap"> <a data-href="#" rel="nofollow"> <img src="images/img_new/189727_thumb.jpg" alt="Унитаз подвесной Vitra Arkitekt унит.подв.+инстал.+кн.гл.хром"> </a> </div>
+                  <div class="name_wrap">
+                    <p> <a href="#">Унитаз подвесной Vitra Arkitekt унит.подв.+инстал.+кн.гл.хром</a> </p>
+                  </div>
+                  <p></p>
+                  <p class="kod_tovara">Код товара: 25448</p>
+                  <p>Гарантия: 10 лет </p>
+                  <div class="price-wrap">
+                    <div class="price">9&nbsp;835 <small><span class="rur">руб</span></small></div>
+                    <button  class="btn btn-primary cart" data-id="25448"><span class="glyphicon glyphicon-shopping-cart"></span> Купить</button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <h4 class="title-content">Новинки</h4>
+          <div class="row">
+            <ul class="new-list clearfix">
+              <li class="col-sm-4 col-xl-3 col-md-4 col-lg-4 col-xs-12 good-item">
+                <div class="thumbnail"> <span class="label label-danger">Бесплатная доставка</span> <span class="label label-warning">Новинка!</span>
+                  <div class="img_wrap"> <a data-href="#" rel="nofollow"> <img src="images/img-new-products/185465_thumb.jpg" alt="Душевой поддон Marmo&Bagno Alfa"> </a> </div>
+                  <div class="name_wrap">
+                    <p> <a href="#">Душевой поддон Marmo&Bagno Alfa</a> </p>
+                  </div>
+                  <p></p>
+                  <p class="kod_tovara">Код товара: 21198</p>
+                  <p>Гарантия: 5 лет</p>
+                  <div class="price-wrap">
+                    <div class="price">11&nbsp;645 <small><span class="rur">руб</span></small></div>
+                    <button  class="btn btn-primary cart" data-id="21198"><span class="glyphicon glyphicon-shopping-cart"></span> Купить</button>
+                  </div>
+                </div>
+              </li>
+              <li class="col-sm-4 col-xl-3 col-md-4 col-lg-4 col-xs-12 good-item">
+                <div class="thumbnail"> <span class="label label-danger">Бесплатная доставка</span> <span class="label label-warning">Новинка!</span>
+                  <div class="img_wrap"> <a data-href="#" rel="nofollow"> <img src="images/img-new-products/185466_thumb.jpg" alt="Душевой поддон Marmo&Bagno Alfa"> </a> </div>
+                  <div class="name_wrap">
+                    <p> <a href="#">Душевой поддон Marmo&Bagno Alfa</a> </p>
+                  </div>
+                  <p></p>
+                  <p class="kod_tovara">Код товара: 21199</p>
+                  <p>Гарантия: 5 лет</p>
+                  <div class="price-wrap">
+                    <div class="price">12&nbsp;665 <small><span class="rur">руб</span></small></div>
+                    <button  class="btn btn-primary cart" data-id="21199"><span class="glyphicon glyphicon-shopping-cart"></span> Купить</button>
+                  </div>
+                </div>
+              </li>
+              <li class="col-sm-4 col-xl-3 col-md-4 col-lg-4 col-xs-12 good-item">
+                <div class="thumbnail"> <span class="label label-danger">Бесплатная доставка</span> <span class="label label-warning">Новинка!</span>
+                  <div class="img_wrap"> <a data-href="#" rel="nofollow"> <img src="images/img-new-products/188786_thumb.jpg" alt="Душевой поддон Marmo&Bagno Beta"> </a> </div>
+                  <div class="name_wrap">
+                    <p> <a href="#">Душевой поддон Marmo&Bagno Beta</a> </p>
+                  </div>
+                  <p></p>
+                  <p class="kod_tovara">Код товара: 21200</p>
+                  <p>Гарантия: 5 лет</p>
+                  <div class="price-wrap">
+                    <div class="price">13&nbsp;515 <small><span class="rur">руб</span></small></div>
+                    <button  class="btn btn-primary cart" data-id="21200"><span class="glyphicon glyphicon-shopping-cart"></span> Купить</button>
+                  </div>
+                </div>
+              </li>
+              <li class="col-sm-4 col-xl-3 col-md-4 col-lg-4 col-xs-12 good-item">
+                <div class="thumbnail"> <span class="label label-danger">Бесплатная доставка</span> <span class="label label-warning">Новинка!</span>
+                  <div class="img_wrap"> <a data-href="#" rel="nofollow"> <img src="images/img-new-products/183515_thumb.jpg" alt="Ванна из литьевого мрамора Marmo&Bagno Luchia 170x75"> </a> </div>
+                  <div class="name_wrap">
+                    <p> <a href="#">Ванна из литьевого мрамора Marmo&Bagno Luchia 170x75</a> </p>
+                  </div>
+                  <p></p>
+                  <p class="kod_tovara">Код товара: 18195</p>
+                  <p>Гарантия: 5 лет</p>
+                  <div class="price-wrap">
+                    <div class="price">25&nbsp;490 <small><span class="rur">руб</span></small></div>
+                    <button  class="btn btn-primary cart" data-id="18195"><span class="glyphicon glyphicon-shopping-cart"></span> Купить</button>
+                  </div>
+                </div>
+              </li>
+              <li class="col-sm-4 col-xl-3 col-md-4 col-lg-4 col-xs-12 good-item">
+                <div class="thumbnail"> <span class="label label-danger">Бесплатная доставка</span> <span class="label label-warning">Новинка!</span>
+                  <div class="img_wrap"> <a data-href="#" rel="nofollow"> <img src="images/img-new-products/183514_thumb.jpg" alt="Ванна из литьевого мрамора Marmo&Bagno Milano 170x75"> </a> </div>
+                  <div class="name_wrap">
+                    <p> <a href="#">Ванна из литьевого мрамора Marmo&Bagno Milano 170x75</a> </p>
+                  </div>
+                  <p></p>
+                  <p class="kod_tovara">Код товара: 18194</p>
+                  <p>Гарантия: 5 лет</p>
+                  <div class="price-wrap">
+                    <div class="price">27&nbsp;070 <small><span class="rur">руб</span></small></div>
+                    <button  class="btn btn-primary cart" data-id="18194"><span class="glyphicon glyphicon-shopping-cart"></span> Купить</button>
+                  </div>
+                </div>
+              </li>
+              <li class="col-sm-4 col-xl-3 col-md-4 col-lg-4 col-xs-12 good-item">
+                <div class="thumbnail"> <span class="label label-danger">Бесплатная доставка</span> <span class="label label-warning">Новинка!</span>
+                  <div class="img_wrap"> <a data-href="#" rel="nofollow"> <img src="images/img-new-products/185010_thumb.jpg" alt="Ванна из литьевого мрамора Marmo&Bagno Nice 180x80"> </a> </div>
+                  <div class="name_wrap">
+                    <p> <a href="#">Ванна из литьевого мрамора Marmo&Bagno Nice 180x80</a> </p>
+                  </div>
+                  <p></p>
+                  <p class="kod_tovara">Код товара: 21095</p>
+                  <p>Гарантия: 5 лет</p>
+                  <div class="price-wrap">
+                    <div class="price">28&nbsp;860 <small><span class="rur">руб</span></small></div>
+                    <button  class="btn btn-primary cart" data-id="21095"><span class="glyphicon glyphicon-shopping-cart"></span> Купить</button>
+                  </div>
+                </div>
+              </li>
+              <li class="col-sm-4 col-xl-3 col-md-4 col-lg-4 col-xs-12 good-item">
+                <div class="thumbnail"> <span class="label label-danger">Бесплатная доставка</span> <span class="label label-warning">Новинка!</span>
+                  <div class="img_wrap"> <a data-href="#" rel="nofollow"> <img src="images/img-new-products/185464_thumb.jpg" alt="Ванна из литьевого мрамора Marmo&Bagno Avrora 182x125"> </a> </div>
+                  <div class="name_wrap">
+                    <p> <a href="#">Ванна из литьевого мрамора Marmo&Bagno Avrora 182x125</a> </p>
+                  </div>
+                  <p></p>
+                  <p class="kod_tovara">Код товара: 21197</p>
+                  <p>Гарантия: 5 лет</p>
+                  <div class="price-wrap">
+                    <div class="price">39&nbsp;695 <small><span class="rur">руб</span></small></div>
+                    <button  class="btn btn-primary cart" data-id="21197"><span class="glyphicon glyphicon-shopping-cart"></span> Купить</button>
+                  </div>
+                </div>
+              </li>
+              <li class="col-sm-4 col-xl-3 col-md-4 col-lg-4 col-xs-12 good-item">
+                <div class="thumbnail"> <span class="label label-danger">Бесплатная доставка</span> <span class="label label-warning">Новинка!</span>
+                  <div class="img_wrap"> <a data-href="#" rel="nofollow"> <img src="images/img-new-products/190046_thumb.jpg" alt="Тумба под раковину ASB-Mebel Модена-85"> </a> </div>
+                  <div class="name_wrap">
+                    <p> <a href="#">Тумба под раковину ASB-Mebel Модена-85</a> </p>
+                  </div>
+                  <p></p>
+                  <p class="kod_tovara">Код товара: 25497</p>
+                  <p>Гарантия: 12 месяцев </p>
+                  <div class="price-wrap">
+                    <div class="price">27&nbsp;900 <small><span class="rur">руб</span></small></div>
+                    <button  class="btn btn-primary cart" data-id="25497"><span class="glyphicon glyphicon-shopping-cart"></span> Купить</button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <h4 class="title-content">Хиты продаж</h4>
+          <div class="row">
+            <ul class="hit-list clearfix">
+              <li class="col-sm-4 col-xl-3 col-md-4 col-lg-4 col-xs-12 good-item">
+                <div class="thumbnail"> <span class="label label-danger">Бесплатная доставка</span> <span class="label label-warning">Хит!</span>
+                  <div class="img_wrap"> <a data-href="#" rel="nofollow"> <img src="images/img-new-products/belbagno_gala_unitaz.jpg" alt="Унитаз напольный BelBagno Gala BB1078CP"> </a> </div>
+                  <div class="name_wrap">
+                    <p> <a href="#">Унитаз напольный BelBagno Gala BB1078CP</a> </p>
+                  </div>
+                  <p></p>
+                  <p class="kod_tovara">Код товара: 10841</p>
+                  <p>Гарантия: 25 лет </p>
+                  <div class="price-wrap">
+                    <div class="price">7&nbsp;010 <small><span class="rur">руб</span></small></div>
+                    <button  class="btn btn-primary cart" data-id="10841"><span class="glyphicon glyphicon-shopping-cart"></span> Купить</button>
+                  </div>
+                </div>
+              </li>
+              <li class="col-sm-4 col-xl-3 col-md-4 col-lg-4 col-xs-12 good-item">
+                <div class="thumbnail"> <span class="label label-danger">Бесплатная доставка</span> <span class="label label-warning">Хит!</span>
+                  <div class="img_wrap"> <a data-href="#" rel="nofollow"> <img src="images/img-new-products/kolpa-san_ocean(2).jpg" alt="Душевой поддон Kolpa-san OCEAN 90х90"> </a> </div>
+                  <div class="name_wrap">
+                    <p> <a href="#">Душевой поддон Kolpa-san OCEAN 90х90</a> </p>
+                  </div>
+                  <p></p>
+                  <p class="kod_tovara">Код товара: 1121</p>
+                  <p>Гарантия: 10 лет</p>
+                  <div class="price-wrap">
+                    <div class="price">14&nbsp;769 <small><span class="rur">руб</span></small></div>
+                    <button  class="btn btn-primary cart" data-id="1121"><span class="glyphicon glyphicon-shopping-cart"></span> Купить</button>
+                  </div>
+                </div>
+              </li>
+              <li class="col-sm-4 col-xl-3 col-md-4 col-lg-4 col-xs-12 good-item">
+                <div class="thumbnail"> <span class="label label-warning">Хит!</span>
+                  <div class="img_wrap"> <a data-href="#" rel="nofollow"> <img src="images/img-new-products/173401_thumb.jpg" alt="Душевой комплекс Valentin Opium 1 667500 000 00"> </a> </div>
+                  <div class="name_wrap">
+                    <p> <a href="#">Душевой комплекс Valentin Opium 1 667500 000 00</a> </p>
+                  </div>
+                  <p></p>
+                  <p class="kod_tovara">Код товара: 12574</p>
+                  <p>Гарантия: 36 месяцев </p>
+                  <div class="price-wrap">
+                    <div class="price">24&nbsp;000 <small><span class="rur">руб</span></small></div>
+                    <button  class="btn btn-primary cart" data-id="12574"><span class="glyphicon glyphicon-shopping-cart"></span> Купить</button>
+                  </div>
+                </div>
+              </li>
+              <li class="col-sm-4 col-xl-3 col-md-4 col-lg-4 col-xs-12 good-item">
+                <div class="thumbnail"> <span class="label label-danger">Бесплатная доставка</span> <span class="label label-warning">Хит!</span>
+                  <div class="img_wrap"> <a data-href="#" rel="nofollow"> <img src="images/img-new-products/kolpa-san_Q_line_TKP(2).jpg" alt="Душевое ограждение Kolpa-san Q line TKP 90 Q line TKP 90"> </a> </div>
+                  <div class="name_wrap">
+                    <p> <a href="#">Душевое ограждение Kolpa-san Q line TKP 90 Q line TKP 90</a> </p>
+                  </div>
+                  <p></p>
+                  <p class="kod_tovara">Код товара: 1136</p>
+                  <p>Гарантия: 24 месяца</p>
+                  <div class="price-wrap">
+                    <div class="price">36&nbsp;924 <small><span class="rur">руб</span></small></div>
+                    <button  class="btn btn-primary cart" data-id="1136"><span class="glyphicon glyphicon-shopping-cart"></span> Купить</button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="panel panel-default index-about">
+            <div class="panel-body clearfix">
+              <div class="thumbnail"> <img src="images/about_02.jpg" alt="#"> </div>
+              <p> Интернет магазин сантехники для ванной комнаты</p>
+              <p>В нашем интернет магазине сантехники вы можете приобрести качественную продукцию по доступным ценам. В течении долгих лет мы работаем для Вас уважаемые покупатели. В каталоге продукции мы собрали самые популярные и качественные бренды сантехнических изделий. Используя дополнительные фильтры поиска, вы быстро сможете найти товар подходящий именно вам. Для вас доступны следующие виды поиска: по бренду,коллекции, категории, артикулу изделия, помещениям, назначению, типу изделия, типу управления, типу монтажа,  по особенностям изделия. Мы с радостью поможем Вам подобрать товар.</p>
+              <h2>Покупка сантехники для ванной комнаты</h2>
+              <br>
+              <p>Рекомендуем вам купить сантехнику именно у нас, поскольку мы продаем изделия с гарантией производителя по низким ценам. <br>
+                <br>
+                В нашем интернет магазине мы собрали самые популярные бренды и качественные изделия, такие как:</p>
+              <ul class="clearfix">
+                <li class="redLink a"><a href="#">Чугунные ванны Jacob Delafon</a></li>
+                <li class="redLink a"><a href="#">Акриловые ванны Ravak</a></li>
+                <li class="redLink a"><a href="#">Акриловые ванны Kolpa-San</a></li>
+                <li class="redLink a"><a href="#">Системы инсталляции Geberit</a></li>
+              </ul>
+              <p   class="redLink a"><a href="#">Подробнее о магазине</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="clearfix visible-sm"></div>
+        <div class="col-md-2">
+          <nav class="nav list-group left-menu">
+            <div  class="list-group-item list-header">
+              <button type="button" class="navbar-toggle visible-xs" data-toggle="collapse" data-target=".right-menu-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+              <a href="brands.html">Бренды</a> </div>
+            <ul class="right-menu-collapse collapse-xs collapse right-menu clearfix">
+              <li><a href="#" class="list-group-item">1MarKa</a></li>
+              <li><a href="#" class="list-group-item">Aessel</a></li>
+              <li><a href="#" class="list-group-item">Alligator</a></li>
+              <li><a href="#" class="list-group-item">Alpen</a></li>
+              <li><a href="#" class="list-group-item">Appollo</a></li>
+              <li><a href="#" class="list-group-item">Aquanet</a></li>
+              <li><a href="#" class="list-group-item">Aquastone</a></li>
+              <li><a href="#" class="list-group-item">Aquaton</a></li>
+              <li><a href="#" class="list-group-item">Aqwella</a></li>
+              <li><a href="#" class="list-group-item">Art & Max</a></li>
+              <li><a href="#" class="list-group-item">Art Ceram</a></li>
+              <li><a href="#" class="list-group-item">ASB-Mebel</a></li>
+              <li><a href="#" class="list-group-item">Astra-Form</a></li>
+              <li><a href="#" class="list-group-item">AXA</a></li>
+              <li><a href="#" class="list-group-item">Balteco</a></li>
+              <li><a href="#" class="list-group-item">BelBagno</a></li>
+              <li><a href="#" class="list-group-item">Bricklaer</a></li>
+              <li><a href="#" class="list-group-item">Catalano</a></li>
+              <li><a href="#" class="list-group-item">Cersanit</a></li>
+              <li><a href="#" class="list-group-item">Cezares</a></li>
+              <li><a href="#" class="list-group-item">Cisa</a></li>
+              <li><a href="#" class="list-group-item">Colombo</a></li>
+              <li><a href="#" class="list-group-item">Complimenta</a></li>
+              <li><a href="#" class="list-group-item">Dornbracht</a></li>
+              <li><a href="#" class="list-group-item">Duravit</a></li>
+              <li><a href="#" class="list-group-item">Eago</a></li>
+              <li><a href="#" class="list-group-item">Emmevi</a></li>
+              <li><a href="#" class="list-group-item">Erlit</a></li>
+              <li><a href="#" class="list-group-item">Esse</a></li>
+              <li><a href="#" class="list-group-item">Excellent</a></li>
+              <li><a href="#" class="list-group-item">Flaminia</a></li>
+              <li><a href="#" class="list-group-item">Gala</a></li>
+              <li><a href="#" class="list-group-item">Ganzer</a></li>
+              <li><a href="#" class="list-group-item">Geberit</a></li>
+              <li><a href="#" class="list-group-item">Gemelli</a></li>
+              <li><a href="#" class="list-group-item">Gemy</a></li>
+              <li><a href="#" class="list-group-item">Giulini</a></li>
+              <li><a href="#" class="list-group-item">Godi</a></li>
+              <li><a href="#" class="list-group-item">Golf</a></li>
+              <li><a href="#" class="list-group-item">Grohe</a></li>
+              <li><a href="#" class="list-group-item">Grossman</a></li>
+              <li><a href="#" class="list-group-item">Grota</a></li>
+              <li><a href="#" class="list-group-item">Gustavsberg</a></li>
+              <li><a href="#" class="list-group-item">Hansgrohe</a></li>
+              <li><a href="#" class="list-group-item">Harizma</a></li>
+              <li><a href="#" class="list-group-item">Hatria</a></li>
+              <li><a href="#" class="list-group-item">Ideal Standart</a></li>
+              <li><a href="#" class="list-group-item">Jacob Delafon</a></li>
+              <li><a href="#" class="list-group-item">Jacob Delafon (ванны чугунные)</a></li>
+              <li><a href="#" class="list-group-item">Jacuzzi</a></li>
+              <li><a href="#" class="list-group-item">Kaldewei</a></li>
+              <li><a href="#" class="list-group-item">Kerasan</a></li>
+              <li><a href="#" class="list-group-item">Kolpa-san</a></li>
+              <li><a href="#" class="list-group-item">Laufen</a></li>
+              <li><a href="#" class="list-group-item">Margaroli</a></li>
+              <li><a href="#" class="list-group-item">Marmo&Bagno</a></li>
+              <li><a href="#" class="list-group-item">Massimo</a></li>
+              <li><a href="#" class="list-group-item">Migliore</a></li>
+              <li><a href="#" class="list-group-item">Misty</a></li>
+              <li><a href="#" class="list-group-item">Nautico</a></li>
+              <li><a href="#" class="list-group-item">Nikles</a></li>
+              <li><a href="#" class="list-group-item">Nsk</a></li>
+              <li><a href="#" class="list-group-item">Olympia</a></li>
+              <li><a href="#" class="list-group-item">Opadiris</a></li>
+              <li><a href="#" class="list-group-item">Parly</a></li>
+              <li><a href="#" class="list-group-item">Pelipal</a></li>
+              <li><a href="#" class="list-group-item">Puris</a></li>
+              <li><a href="#" class="list-group-item">Radaway</a></li>
+              <li><a href="#" class="list-group-item">Rav Slezak</a></li>
+              <li><a href="#" class="list-group-item">Ravak</a></li>
+              <li><a href="#" class="list-group-item">Relisan</a></li>
+              <li><a href="#" class="list-group-item">Riho</a></li>
+              <li><a href="#" class="list-group-item">River</a></li>
+              <li><a href="#" class="list-group-item">Roca</a></li>
+              <li><a href="#" class="list-group-item">SSWW</a></li>
+              <li><a href="#" class="list-group-item">Sturm</a></li>
+              <li><a href="#" class="list-group-item">Timo</a></li>
+              <li><a href="#" class="list-group-item">Valentin</a></li>
+              <li><a href="#" class="list-group-item">Vayer</a></li>
+              <li><a href="#" class="list-group-item">Vega</a></li>
+              <li><a href="#" class="list-group-item">Verona</a></li>
+              <li><a href="#" class="list-group-item">Villeroy & Boch</a></li>
+              <li><a href="#" class="list-group-item">Vitra</a></li>
+              <li><a href="#" class="list-group-item">Wenz</a></li>
+              <li><a href="#" class="list-group-item">Акватек</a></li>
+              <li><a href="#" class="list-group-item">Санта</a></li>
+              <li><a href="#" class="list-group-item">Универсал</a></li>
+              <li><a href="#" class="list-group-item">Эстет</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="empty"></div>
+</div>
+<footer>
+  <div id="footer">
+    <div class="container">
+      <div class="row">
+        <div>
+          <div class="col-md-3 col-sm-3"> <span class="bold">Наши контакты:</span><br>
+            <span class="phone ya-phone call_phone_1"><a href="tel:+84956629907" >8 (495) 662-99-07</a></span><br>
+            <br>
+            <span>Звоните с 10.00 до 19.00!</span>
+            <p><a href="mailto:info@santehnika-24.ru"><span>info@santehnika-24.ru</span></a></p>
+            <p>2016 &copy;, <span>Интернет-магазин Сантехника 24</span><br>
+              - <a href="#">мебель и сантехника
+              
+              для ванных комнат</a></p>
+          </div>
+          <div class="col-md-6 col-sm-4"> <span class="bold">Адреса наших магазинов:</span>
+            <div>
+              <p><span> г.Москва,Тихорецкий б-р,д.1 ТЦ Москва,ряд Б,павильон Б-50</span></p>
+              <br>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-5"> <span class="bold">Поиск по коду товара</span>
+            <form class="search-code"  >
+              <div class="input-group">
+                <input type="text" class="form-control" name="code" placeholder="код товара">
+                <span class="input-group-btn">
+                <button class="btn btn-default" type="button">Найти!</button>
+                </span> </div>
+            </form>
+            <br>
+            <div class="payment_methods"> <img width="50" src="images/visa_logo.png" alt=""> <img width="50" src="images/mastercard_logo.png" alt=""> <img height="25" src="images/sberbank_logo.png" alt=""> </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="list-inline visible-lg visible-md clearfix">
+            <li><a href="about-magazine.html">О магазине</a></li>
+            <li><a href="delivery.html">Доставка и оплата</a></li>
+            <!--                <li><a href="#">Прайс-лист</a></li>-->
+            <li><a href="discounts.html">Скидки</a></li>
+            <!-- <li><a href="#">Акции</a></li> -->
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="for-objects.html">Для объектов</a></li>
+            <li><a href="about-us-comments.html">Отзывы о нас</a></li>
+            <li><a href="articles.html">Статьи</a></li>
+            <li><a href="guarantee.html">Гарантия</a></li>
+            <!--    <li><a href="#">Новости</a></li> -->
+            <li><a href="sitemap.html">Карта сайта</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="js/jquery.min.js"></script> 
+  <script src="js/components.js"></script> 
+  <script src="js/SmoothScroll.js"></script> 
+  <script type="text/javascript" src="js/se.js"></script> 
+  <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script> 
+  <script type="text/javascript" src="js/jquery.cookie.min.js"></script> 
+  <script type="text/javascript" src="js/jquery.fancybox.min.js"></script> 
+  <script type="text/javascript" src="js/jquery.fancybox-buttons.js"></script> 
+  <script type="text/javascript" src="js/jquery.fancybox-thumbs.js"></script> 
+  <script type="text/javascript" src="js/bootstrap.min.js"></script> 
+  <script type="text/javascript" src="js/custom.js"></script> 
+  <script type="text/javascript" src="js/cart.js"></script> 
+  <script type="text/javascript" src="js/scripts.js"></script> 
+</footer>
+<div id="scrollup"> <img alt="Прокрутить вверх" src="images/backtotop.png">
+  <div class="little-cart"> <a class="btn btn-default btn-lg dropdown-toggle" href="cart.html" rel="nofollow"> <span class="glyphicon glyphicon-shopping-cart"></span> <span class="number-in-cart">1</span> </a> </div>
+</div>
+</body>
+</html>

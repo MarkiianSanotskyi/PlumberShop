@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Articles</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/png">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/thumbs.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/media.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css" media="screen">
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox-buttons.css" media="screen">
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox-thumbs.css"  media="screen">
+</head>
+
+<body>
+<div class="wrapper">
+  <header>
+    <div class="top-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6 col-sm-3 col-md-2" id="logo"> <a href="index.html" title="Сантехника 24 – мебель и сантехника для ванных комнат"><img src="images/logo.gif" alt="Сантехника 24 – мебель и сантехника для ванных комнат"></a> </div>
+          <div class="col-xs-6 col-sm-2 col-md-4" id="cart"> <a class="btn btn-default btn-lg dropdown-toggle" href="cart.html" rel="nofollow"> <span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;<small class="hidden-xs"> Заргузка...</small> </a> </div>
+          <div class="col-xs-12 col-sm-7 col-md-6 clearfix" id="bigphone">
+            <div class="pull-right">
+              <div id="wh" style="float:left; margin-top:0">Звоните!<br>
+                с 10:00 до 19:00</div>
+              <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>&nbsp; <span class="geo_msk"> <a href="tel:+84956629907" class="phone">8 (495) 662-99-07</a><br>
+              <a id="callback" data-toggle="modal" data-target="#callback-form" class="hidden-xs">Заказать обратный звонок</a> </span> <span class="geo_region"> <a href="tel:+88005558563" class="phone">8 (800) 555-85-63</a><i class="i-block">Звонок бесплатный!</i> </span> </div>
+          </div>
+        </div>
+        <!--POPUP CART-->
+        <div class="modal fade" id="cart-modal" tabindex="-1" role="dialog" aria-labelledby="cartlabel" aria-hidden="true" style="display: none;">
+          <div class="modal-dialog">
+            <div class="modal-content mobile-modal-padding">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <p class="modal-title h3" id="cartlabel">Ваша корзина</p>
+              </div>
+              <div class="modal-body modal-with-overflow">
+                <table class="table cart">
+                  <thead>
+                    <tr>
+                      <th>Изобр.</th>
+                      <th>Название товара</th>
+                      <th>Кол-во</th>
+                      <th>Стоимость</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="item-25450 item">
+                      <td><div class="thumbnail"><img src="images/img-new-products/185466_thumb.jpg" alt="Sunrise раковина+пьедестал"></div></td>
+                      <td><a href="#">Vitra Sunrise раковина+пьедестал</a></td>
+                      <td class="count"><div class="input-group"> <span class="input-group-btn">
+                          <button class="btn btn-default minus" type="button">-</button>
+                          </span>
+                          <input type="text" class="form-control" name="count" value="1" data-item_id="25450" data-opt_id="">
+                          <span class="input-group-btn">
+                          <button class="btn btn-default plus" type="button">+</button>
+                          </span> </div></td>
+                      <td class="sum price" data-price="3500">3500&nbsp;<span class="glyphicon glyphicon-ruble"></span></td>
+                      <td><button type="button" class="close remove" data-dismiss="alert" aria-hidden="true">×</button></td>
+                    </tr>
+                  </tbody>
+                  <tfoot class="summary">
+                    <tr>
+                      <td colspan="2">Итого:</td>
+                      <td><span class="count">1</span>&nbsp;шт</td>
+                      <td colspan="2" class="price"><span class="sum">3500</span>&nbsp;<span class="glyphicon glyphicon-ruble"></span></td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                <a class="btn-primary btn" href="cart.html">Оформить заказ</a> </div>
+            </div>
+          </div>
+        </div>
+        
+        <!--POPUP CART END--> 
+        
+        <a class="btn btn-primary visible-xs" href="#" id="fullview">Полная версия</a> </div>
+    </div>
+  </header>
+  <div class="navbar navbar-default navbar-static-top top-menu" role="navigation">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="navbar-header clearfix">
+            <button type="button" class="navbar-toggle btn-default" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            <span class="visible-xs-block navbar-brand">Меню и поиск</span> </div>
+          <div class="navbar-collapse collapse clearfix">
+            <ul class="nav navbar-nav">
+              <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">О магазине<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="about-magazine.html">О магазине</a></li>
+                  <li><a href="about-us-comments.html">Отзывы о нас</a></li>
+                  <li><a href="articles.html">Статьи</a></li>
+                </ul>
+              </li>
+              <li><a href="delivery.html">Доставка</a></li>
+              <li><a href="payment.html">Оплата</a></li>
+              <li><a href="reciept.html" >Получение и возврат товара</a></li>
+              <li><a href="guarantee.html">Гарантия</a></li>
+              <li><a href="contacts.html" >Контакты</a></li>
+            </ul>
+            <form class="navbar-form navbar-right">
+              <div class="input-group">
+                <input type="text" class="form-control" name="words" placeholder="я ищу сантехнику ..." value="">
+                <span class="input-group-btn">
+                <button class="btn btn-default" type="button">Найти!</button>
+                </span> </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="content-box">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-3 col-lg-2">
+          <nav class="nav list-group left-menu">
+            <div class="list-header list-group-item">
+              <button type="button" class="navbar-toggle visible-xs" data-toggle="collapse" data-target=".left-menu-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+              <a href="catalogue.html">Каталог</a> </div>
+            <div class="left-menu-collapse collapse-xs collapse">
+              <ul class="left-menu-list clearfix">
+                <li><a href="#" class="list-group-item list-cat">Мебель для ванной</a><a class="c" data-toggle="collapse" data-target="#cat-898"><i class="caret"></i></a>
+                  <ul id="cat-898" class="slidedown-menu collapse">
+                    <li><a href="#" class="list-group-item list-subcat">Комплекты мебели</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Напольные тумбы</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Подвесные тумбы</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Шкафы и пеналы</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Навесные шкафы</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Зеркальные шкафы</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Зеркала</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Столешницы</a></li>
+                  </ul>
+                </li>
+                <li> <a href="#" class="list-group-item list-cat">Акриловые ванны</a> <a class="c" data-toggle="collapse" data-target="#cat-920"><i class="caret"></i></a>
+                  <ul id="cat-920" class="slidedown-menu collapse">
+                    <li><a href="#" class="list-group-item list-subcat">Прямоугольные ванны</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Овальные ванны</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Квадратные ванны</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Круглые ванны</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Угловые ванны</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Многогранные ванны</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Сливы-переливы</a></li>
+                  </ul>
+                </li>
+                <li> <a href="#" class="list-group-item list-cat">Чугунные ванны</a> <a class="c" data-toggle="collapse" data-target="#cat-931"><i class="caret"></i></a>
+                  <ul id="cat-931" class="slidedown-menu collapse">
+                    <li><a href="#" class="list-group-item list-subcat">Прямоугольные ванны</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Овальные ванны</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Отдельностоящие ванны</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Сливы-переливы</a></li>
+                  </ul>
+                </li>
+                <li> <a href="#" class="list-group-item list-cat border-none">Стальные ванны</a> </li>
+                <li> <a href="#" class="list-group-item list-cat">Ванны из литьевого мрамора</a> <a class="c" data-toggle="collapse" data-target="#cat-930"><i class="caret"></i></a>
+                  <ul id="cat-930" class="slidedown-menu collapse">
+                    <li><a href="#" class="list-group-item list-subcat">Прямоугольные ванны</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Овальные ванны</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Круглые ванны</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Отдельностоящие ванны</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Угловые ванны</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Асимметричные ванны</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Сливы-переливы</a></li>
+                  </ul>
+                </li>
+                <li> <a href="#" class="list-group-item list-cat">Смесители</a> <a class="c" data-toggle="collapse" data-target="#cat-911"><i class="caret"></i></a>
+                  <ul id="cat-911" class="slidedown-menu collapse">
+                    <li><a href="#" class="list-group-item list-subcat">для раковины</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">для кухни</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">для ванны и душа</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">для душа</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">на борт ванны</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">для биде</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">специальные смесители</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Комплектующие для смесителей</a></li>
+                  </ul>
+                </li>
+                <li> <a href="#" class="list-group-item list-cat">Душ</a> <a class="c" data-toggle="collapse" data-target="#cat-948"><i class="caret"></i></a>
+                  <ul id="cat-948" class="slidedown-menu collapse">
+                    <li><a href="#" class="list-group-item list-subcat">Душевые стойки</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Душевые панели</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Душевые гарнитуры</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Душевые лейки</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Верхний душ</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Гигиенические души</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Душевые шланги</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Держатели для душа</a></li>
+                  </ul>
+                </li>
+                <li> <a href="#" class="list-group-item list-cat">Душевые кабины</a> <a class="c" data-toggle="collapse" data-target="#cat-935"><i class="caret"></i></a>
+                  <ul id="cat-935" class="slidedown-menu collapse">
+                    <li><a href="#" class="list-group-item list-subcat">С баней</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">С  крышей</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Без крыши</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">С гидромассажем</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Без бани</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Сауны</a></li>
+                  </ul>
+                </li>
+                <li> <a href="#" class="list-group-item list-cat border-none">Душевые боксы</a> </li>
+                <li> <a href="#" class="list-group-item list-cat border-none">Душевые ограждения</a> </li>
+                <li> <a class="c" data-toggle="collapse" data-target="#cat-946"><i class="caret"></i></a>
+                  <ul id="cat-946" class="slidedown-menu collapse">
+                    <li><a href="/dushevie-dveri/" class="list-group-item list-subcat">Душевые двери</a> </li>
+                    <li><a href="/shtorki-dlya-vannoy/" class="list-group-item list-subcat">Шторки для ванной</a> </li>
+                    <li><a href="/dushevie-ugli/" class="list-group-item list-subcat">Душевые углы</a> </li>
+                  </ul>
+                </li>
+                <li> <a href="#" class="list-group-item list-cat border-none">Душевые поддоны</a> </li>
+                <li> <a href="#" class="list-group-item list-cat">Унитазы</a> <a class="c" data-toggle="collapse" data-target="#cat-960"><i class="caret"></i></a>
+                  <ul id="cat-960" class="slidedown-menu collapse">
+                    <li><a href="#" class="list-group-item list-subcat">Напольные </a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Подвесные</a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Приставные </a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Детские</a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Чаши Генуя</a> </li>
+                  </ul>
+                </li>
+                <li> <a href="#" class="list-group-item list-cat">Раковины</a> <a class="c" data-toggle="collapse" data-target="#cat-953"><i class="caret"></i></a>
+                  <ul id="cat-953" class="slidedown-menu collapse">
+                    <li><a href="#" class="list-group-item list-subcat">Накладные</a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Напольные</a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Угловые</a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Подвесные</a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Встраиваемые</a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Сифоны для раковин</a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Донные клапаны</a> </li>
+                  </ul>
+                </li>
+                <li> <a href="#" class="list-group-item list-cat">Биде</a> <a class="c" data-toggle="collapse" data-target="#cat-965"><i class="caret"></i></a>
+                  <ul id="cat-965" class="slidedown-menu collapse">
+                    <li><a href="#" class="list-group-item list-subcat">Напольные</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Подвесные</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Сифоны для биде</a></li>
+                  </ul>
+                </li>
+                <li> <a href="#" class="list-group-item list-cat border-none">Писсуары</a> </li>
+                <li> <a href="#" class="list-group-item list-cat">Полотенцесушители</a> <a class="c" data-toggle="collapse" data-target="#cat-971"><i class="caret"></i></a>
+                  <ul id="cat-971" class="slidedown-menu collapse">
+                    <li><a href="#" class="list-group-item list-subcat">Водяные</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Электрические</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Комплектующие</a></li>
+                  </ul>
+                </li>
+                <li> <a href="#" class="list-group-item list-cat">Системы инсталляции</a> <a class="c" data-toggle="collapse" data-target="#cat-969"><i class="caret"></i></a>
+                  <ul id="cat-969" class="slidedown-menu collapse">
+                    <li><a href="#" class="list-group-item list-subcat">Инсталляции для унитаза</a></li>
+                    <li> <a href="#" class="list-group-item list-subcat">Инсталляции для биде</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Инсталляции для писсуаров</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Инсталляции для раковин</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Смывные клавиши</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Смывные бачки</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Комплектующие</a></li>
+                    <li><a href="#" class="list-group-item list-subcat">Устройства управления смывом</a></li>
+                  </ul>
+                </li>
+                <li> <a href="#" class="list-group-item list-cat border-none">Аксессуары</a> </li>
+                <li> <a href="#" class="list-group-item list-cat border-none">Мини бассейны</a> </li>
+                <li> <a href="#" class="list-group-item list-cat">Комплектующие</a> <a class="c" data-toggle="collapse" data-target="#cat-980"><i class="caret"></i></a>
+                  <ul id="cat-980" class="slidedown-menu collapse">
+                    <li><a href="#" class="list-group-item list-subcat">Сифоны для биде</a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Сифоны для раковин</a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Шланги</a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Держатели для душа</a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Колонны</a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Штуцеры</a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Удлинители</a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Для смесителей</a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Донные клапаны</a> </li>
+                    <li><a href="#" class="list-group-item list-subcat">Сливы-переливы</a> </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="col-md-9 col-lg-10 col-sm-12">
+          <ol class="breadcrumb">
+            <li><a href="index.html">Сантехника 24</a></li>
+            <li><a href="about-magazine.html">О магазине</a></li>
+            <li class="active">Статьи</li>
+          </ol>
+          <h1>Статьи о сантехнике</h1>
+          <p>В этом разделе находятся полезные статьи о сантехнике</p>
+          <ul class="clearfix">
+            <li><a href="articles-inner.html">Плюсы и минусы акриловых ванн</a></li>
+            <li><a href="articles-inner.html">Навесная сантехника</a></li>
+            <li><a href="articles-inner.html">Как правильно выбрать душевую кабину в ванную комнату</a></li>
+            <li><a href="articles-inner.html">Как выбрать душевой поддон</a></li>
+            <li><a href="articles-inner.html">Нужен ли в ванной полотенцесушитель</a></li>
+            <li><a href="articles-inner.html">Гидромассажные ванны. Спа у себя дома</a></li>
+            <li><a href="articles-inner.html">Сантехника для гостиниц и отелей </a></li>
+            <li><a href="articles-inner.html">Как выбрать качественный и функциональный смеситель для биде </a></li>
+            <li><a href="articles-inner.html">Ванна для частного дома</a></li>
+            <li><a href="articles-inner.html">Полезные и приятные аксессуары для ванной комнаты</a></li>
+            <li><a href="articles-inner.html">Российские производители санфаянса</a></li>
+            <li><a href="articles-inner.html">Правильный уход за мойкой для кухни</a></li>
+            <li><a href="articles-inner.html">Смеситель как элемент декора </a></li>
+            <li><a href="articles-inner.html">Как выбрать биде</a></li>
+            <li><a href="articles-inner.html">Как увеличить пространство ванной комнаты </a></li>
+            <li><a href="articles-inner.html">Как увеличить пространство маленькой ванной комнаты</a></li>
+            <li><a href="articles-inner.html">Классификация сантехники по классам</a></li>
+            <li><a href="articles-inner.html">Установка сантехники и уход за ней</a></li>
+            <li><a href="articles-inner.html">Что такое гигиенический душ </a></li>
+            <li><a href="articles-inner.html">Что лучше – ванна или душевая кабина</a></li>
+            <li><a href="articles-inner.html">Разновидности писсуаров – как не ошибиться в выборе</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="empty"></div>
+</div>
+<footer>
+  <div id="footer">
+    <div class="container">
+      <div class="row">
+        <div>
+          <div class="col-md-3 col-sm-3"> <span class="bold">Наши контакты:</span><br>
+            <span class="phone ya-phone call_phone_1"><a href="tel:+84956629907">8 (495) 662-99-07</a></span><br>
+            <br>
+            <span>Звоните с 10.00 до 19.00!</span>
+            <p><a href="mailto:info@santehnika-24.ru"><span>info@santehnika-24.ru</span></a></p>
+            <p>2016 &copy;, <span>Интернет-магазин Сантехника 24</span><br>
+              - <a href="#">мебель и сантехника
+              
+              для ванных комнат</a></p>
+          </div>
+          <div class="col-md-6 col-sm-4"> <span class="bold">Адреса наших магазинов:</span>
+            <div>
+              <p><span> г.Москва,Тихорецкий б-р,д.1 ТЦ Москва,ряд Б,павильон Б-50</span></p>
+              <br>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-5"> <span class="bold">Поиск по коду товара</span>
+            <form class="search-code">
+              <div class="input-group">
+                <input type="text" class="form-control" name="code" placeholder="код товара">
+                <span class="input-group-btn">
+                <button class="btn btn-default" type="button">Найти!</button>
+                </span> </div>
+            </form>
+            <br>
+            <div class="payment_methods"> <img width="50" src="images/visa_logo.png" alt=""> <img width="50" src="images/mastercard_logo.png" alt=""> <img height="25" src="images/sberbank_logo.png" alt=""> </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="list-inline visible-lg visible-md clearfix">
+            <li><a href="about-magazine.html">О магазине</a></li>
+            <li><a href="delivery.html">Доставка и оплата</a></li>
+            <!--                <li><a href="#">Прайс-лист</a></li>-->
+            <li><a href="discounts.html">Скидки</a></li>
+            <!-- <li><a href="#">Акции</a></li> -->
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="for-objects.html">Для объектов</a></li>
+            <li><a href="about-us-comments.html">Отзывы о нас</a></li>
+            <li><a href="articles.html">Статьи</a></li>
+            <li><a href="guarantee.html">Гарантия</a></li>
+            <!--    <li><a href="#">Новости</a></li> -->
+            <li><a href="sitemap.html">Карта сайта</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="js/jquery.min.js"></script> 
+  <script src="js/components.js"></script> 
+  <script src="js/SmoothScroll.js"></script> 
+  <script type="text/javascript" src="js/se.js"></script> 
+  <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script> 
+  <script type="text/javascript" src="js/jquery.cookie.min.js"></script> 
+  <script type="text/javascript" src="js/jquery.fancybox.min.js"></script> 
+  <script type="text/javascript" src="js/jquery.fancybox-buttons.js"></script> 
+  <script type="text/javascript" src="js/jquery.fancybox-thumbs.js"></script> 
+  <script type="text/javascript" src="js/bootstrap.min.js"></script> 
+  <script type="text/javascript" src="js/custom.js"></script> 
+  <script type="text/javascript" src="js/cart.js"></script> 
+  <script type="text/javascript" src="js/scripts.js"></script> 
+</footer>
+<div id="scrollup"> <img alt="Прокрутить вверх" src="images/backtotop.png">
+  <div class="little-cart"> <a class="btn btn-default btn-lg dropdown-toggle" href="cart.html" rel="nofollow"> <span class="glyphicon glyphicon-shopping-cart"></span> </a> </div>
+</div>
+</body>
+</html>
